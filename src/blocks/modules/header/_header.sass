@@ -31,6 +31,7 @@
 			transform: rotate(180deg)
 
 .header
+	border-bottom: 1px solid #F2F2F2
 	&-head
 		padding: 15px 0
 		background: #F5F5F5
@@ -38,16 +39,104 @@
 			position: relative
 		&__btn
 			position: absolute
-			top: 0
+			top: -15px
 			left: 0
 			display: inline-block
-			padding: 14px 40px
+			padding: 12px 40px
 			font-family: $R
 			font-size: 15px
 			line-height: 25px
 			color: $white
 			background: linear-gradient(90deg, #005AA5 0%, #6EC6D3 100%)
-			border-radius: 5px
+			border-bottom-left-radius: 5px
+			border-bottom-right-radius: 5px
 			text-decoration: none
+			transition: 0.2s
 			span
 				font-family: $RB
+			&:hover
+				padding: 15px 40px
+		&__nav
+			display: flex
+			justify-content: flex-end
+			a
+				font-family: $R
+				font-size: 14px
+				line-height: 16px
+				color: #777777
+				text-decoration: none
+				margin-right: 50px
+				transition: 0.2s
+				border-bottom: 1px solid transparent
+				&:hover
+					border-bottom: 1px solid #777777
+	&-city
+		a
+			display: flex
+			align-items: center
+			color: #005AA5
+			margin-right: 0
+			&:hover
+				border-color: #005AA5
+			span
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 7px
+				height: 3px
+				margin-left: 5px
+	&-main
+		padding: 25px 0
+	&-block
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&-search
+		&__text
+			margin-bottom: 15px
+		span
+			font-family: $R
+			font-style: italic
+			font-size: 15px
+			line-height: 25px
+			color: #8E8E8E
+			
+			&:nth-child(2)
+				color: #E31E24
+		.search
+			width: 375px
+	&-contacts
+		a
+			display: block
+			font-family: $R
+			font-size: 26px
+			line-height: 27px
+			color: $color-text
+			font-feature-settings: 'pnum' on, 'lnum' on
+			text-decoration: none
+			margin-bottom: 5px
+		span
+			display: block
+			text-align: right
+			font-family: $R
+			font-size: 13px
+			line-height: 15px
+			color: $label-text
+	&-address
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		a
+			display: block
+			font-family: $R
+			font-size: 15px
+			line-height: 25px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: $color-text
+			text-decoration: none
+			margin-bottom: 10px
+			&:last-child
+				margin-bottom: 0
+			span
+				&:first-child
+					margin-right: 10px
