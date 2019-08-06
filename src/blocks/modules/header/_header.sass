@@ -140,3 +140,47 @@
 			span
 				&:first-child
 					margin-right: 10px
+.navbar
+	&-block
+		display: flex
+		justify-content: center
+		padding: 15px 0 17px
+	&-item
+		padding: 0 40px
+		cursor: pointer
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			right: 0
+			transform: translateY(-50%)
+			width: 1px
+			height: 18px
+			background: linear-gradient(180deg, rgba(0,100,170,1) 0%, rgba(160,70,120,1) 52.6%, rgba(220,30,30,1) 100%)
+		&:last-child:before
+			display: none
+		a
+			font-family: $RM
+			font-size: 16px
+			line-height: 25px
+			text-align: center
+			color: $color-text
+			text-decoration: none
+			outline: none
+			transition: 0.2s
+		&:hover a
+			color: $color-btn
+	&-list
+		a
+			position: relative
+			span
+				position: absolute
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 9px
+				height: 5px
+				top: 50%
+				right: -17px
+				transform: translateY(-50%)
