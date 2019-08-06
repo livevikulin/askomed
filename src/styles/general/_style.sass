@@ -2,6 +2,7 @@
 	padding: 50px 0
 h1
 	font-family: $RL
+	font-weight: 300
 	font-size: 48px
 	line-height: 56px
 	color: $color-title
@@ -289,3 +290,189 @@ p
 			font-size: 18px
 			line-height: 30px
 			color: #525B62
+.hero
+	&-slider
+		overflow: hidden
+		&__slide
+			padding: 69px 0
+			background: url('../../img/bg-slider.jpg')
+			position: relative
+		.slick-arrow
+			z-index: 1
+		.slick-prev
+			left: 325px
+			&:before
+				content: url('../../img/arrow-left.png')
+		.slick-next
+			right: 325px
+			&:before
+				content: url('../../img/arrow-right.png')
+		.slider-image
+			position: absolute
+			right: 0
+			top: 0
+.text-block
+	max-width: 658px
+	height: 392px
+	padding: 40px 60px
+	background: #ffffff
+	position: relative
+	h1
+		color: #005AA5
+	span
+		display: block
+		max-width: 387px
+		font-family: $R
+		font-size: 15px
+		line-height: 25px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: $color-text
+		margin-top: 19px
+	a
+		position: absolute
+		bottom: 40px
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 126px
+		height: 40px
+.vaccinations
+	background: #FBFBFB
+	padding: 50px 0 60px
+	&-block
+		h2
+			text-align: center
+	&-boxes
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		padding: 60px 0
+	&-box
+		width: 275px
+		height: 120px
+		box-shadow: 0px 2px 8px rgba(0, 113, 207, 0.12)
+		border-radius: 8px
+		background: #ffffff
+		margin-bottom: 25px
+		cursor: pointer
+		overflow: hidden
+		transition: 0.2s
+		position: relative
+		&:hover
+			box-shadow: 0px 8px 14px rgba(0, 113, 207, 0.12)
+		&:before
+			position: absolute
+			content: url('../../img/bg-vac.png')
+			top: 0
+			left: 0
+		&__image
+			position: absolute
+			top: 0
+			left: 0
+		&__name
+			display: block
+			font-family: $R
+			font-size: 15px
+			line-height: 25px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: $color-text
+			margin: 12px 0 0 112px
+		&__price
+			position: absolute
+			bottom: 12px
+			right: 12px
+			font-family: $RL
+			font-weight: 300
+			font-size: 15px
+			line-height: 18px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: #005AA5
+			span
+				font-family: $R
+				font-weight: normal
+				color: #E31E24
+	&-btns
+		text-align: center
+		a
+			margin-right: 12px
+			&:last-child
+				margin-right: 0
+.reasons
+	padding: 50px 0 105px
+	&-block
+		h2
+			max-width: 575px
+	&-boxes
+		display: flex
+		flex-wrap: wrap
+		padding-top: 40px
+	&-box
+		max-width: 374px
+		margin-right: 24px
+		margin-bottom: 30px
+		&:nth-child(3n+3)
+			margin-right: 0
+		&:nth-child(1n+4)
+			margin-bottom: 0
+		&__name
+			display: block
+			font-family: $RB
+			font-size: 18px
+			line-height: 27px
+			color: $color-title
+			margin-top: 15px
+			margin-bottom: 7px
+		&__text
+			font-family: $R
+			font-size: 15px
+			line-height: 25px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: $color-text
+.reason
+	width: 374px
+	height: 327px
+	background: url('../../img/reason-slider.png')
+	padding: 40px 68px
+	&-age
+		display: block
+		font-family: $RB
+		font-size: 124px
+		line-height: 146px
+		text-align: center
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: $color-title
+	&-text
+		display: block
+		font-family: $RB
+		font-size: 22px
+		line-height: 30px
+		text-align: center
+		color: $color-text
+	&-slides
+		text-align: center
+		padding-top: 25px
+		span
+			font-family: $R
+			font-size: 18px
+			line-height: 50px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: #454B52
+	.slick-arrow
+		width: 24px
+		height: 24px
+		border: 2px solid #005AA5
+		top: auto
+		bottom: -74px
+		&:before
+			content: url('../../img/play.png')
+			line-height: 0
+	.slick-next
+		right: 60px
+	.slick-prev
+		left: 60px
+		transform: matrix(-1, 0, 0, 1, 0, -12)
+	.slick-disabled
+		opacity: 0.3
+		&:before
+			opacity: 0.3
+
