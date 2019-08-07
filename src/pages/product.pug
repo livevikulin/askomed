@@ -1,0 +1,38 @@
+extends ../views/layouts/default
+block variables
+	- var title = "Карточка с товаром";
+	- var main = true;
+
+block content
+	main
+		.main
+			.breadcrumbs
+				.container
+					.breadcrumbs-item
+						a(href="#") Главная
+						span О компании
+			.product
+				.product-main
+					.container
+						.product-main__block
+							.product-image
+								img(src="img/product1.jpg", alt="")
+							.product-info
+								span.product-info__title Иммуноглобулин человека противоаллергический
+								.product-info__price
+									span.price 560
+										span ₽
+									span.product-price__info вакцина + введение
+								a(href="#").btn-r Записаться на прием
+								.product-info__text
+									p
+										span Производитель
+										span Россия
+									p
+										span Возраст
+										span Дети, взрослые, укушенные клещом
+									p
+										span Фасовка
+										span Ампула 1,0 на 10 кг веса
+				.container
+					
