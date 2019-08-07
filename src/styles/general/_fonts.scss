@@ -68,6 +68,26 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Medium.eot');
+	src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat-Medium.woff') format('woff'),
+	url('../fonts/Montserrat-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Regular.eot');
+	src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/OpenSans-Regular.woff') format('woff'),
+	url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 $R: 'Raleway Regular';
 $RB: 'Raleway Bold';
 $RI: 'Raleway Italic';

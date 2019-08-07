@@ -214,7 +214,7 @@ p
 		outline: none
 		padding: 8px 0
 		&:focus + label
-			top: 0
+			top: -5px
 	label
 		position: absolute
 		top: 10px
@@ -475,4 +475,500 @@ p
 		opacity: 0.3
 		&:before
 			opacity: 0.3
+.about
+	padding: 85px 0 190px
+	background: #FBFBFB
+	&-block
+		display: flex
+		justify-content: space-between
+		background: url('../../img/about-bg.png') no-repeat
+	&-text
+		padding: 60px 75px 75px
+		position: relative
+		span 
+			display: block
+			max-width: 372px
+			font-family: $R
+			font-size: 15px
+			line-height: 25px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: $color-text
+			margin: 20px 0 25px
+	&-buttons
+		a
+			margin-right: 10px
+			&:last-child
+					margin-right: 0
+	&-video
+		position: absolute
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 146px
+		height: 147px
+		right: -50px
+		bottom: -60px
+		background: url('../../img/about-video.png') no-repeat
+		span
+			position: absolute
+			display: block
+			max-width: 134px
+			bottom: -25px
+			right: -200px
+			font-family: Open Sans
+			font-style: italic
+			font-size: 16px
+			line-height: 25px
+			color: $color-text
+			margin: 0
+			&:before
+				position: absolute
+				content: url('../../img/line.png')
+				top: 0
+				left: -85px
+		&:before
+			position: absolute
+			content: url('../../img/Ellipse.png')
+			top: -21px
+			transition: 0.2s
+		&:hover:before
+			transform: scale(0.9)
+.stack
+	margin: 0 auto
+	position: relative
+	width: 620px
+	height: 390px
+	padding: 60px 0 0
+	list-style: none
+	pointer-events: none
 
+.stack__item
+	background: #fff
+	height: 100%
+	width: 100%
+	border-radius: 4px
+	text-align: center
+	overflow: hidden
+	position: absolute
+	opacity: 0
+	display: -webkit-flex
+	display: flex
+	-webkit-flex-direction: column
+	flex-direction: column
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	pointer-events: auto
+
+.stack__item img
+	width: 100%
+	display: block
+	pointer-events: none
+
+.button
+	position: relative
+	top: -150px
+	display: inline-block
+	cursor: pointer
+	width: 60px
+	height: 60px
+	z-index: 100
+	background: #141414
+	opacity: 0.6
+	border-radius: 50%
+	border: none
+	padding: 0
+
+.button--sonar::before
+	position: absolute
+	height: 26px
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	content: url('../../img/left-ar.png')
+.button--reject
+	left: 20px
+.button--accept
+	right: -475px
+	transform: rotate(180deg)
+
+.button--sonar.button--active::before
+	-webkit-animation: anim-effect-sonar 0.3s ease-out forwards
+	animation: anim-effect-sonar 0.3s ease-out forwards
+
+@-webkit-keyframes anim-effect-sonar
+	0%
+		opacity: 1
+		-webkit-transform: scale3d(0.9, 0.9, 1)
+		transform: scale3d(0.9, 0.9, 1)
+
+	to
+		opacity: 0
+		-webkit-transform: scale3d(1.4, 1.4, 1)
+		transform: scale3d(1.4, 1.4, 1)
+
+
+@keyframes anim-effect-sonar
+	0%
+		opacity: 1
+		-webkit-transform: scale3d(0.9, 0.9, 1)
+		transform: scale3d(0.9, 0.9, 1)
+	to
+		opacity: 0
+		-webkit-transform: scale3d(1.4, 1.4, 1)
+		transform: scale3d(1.4, 1.4, 1)
+
+
+.material-circle
+	width: 150vh
+	height: 150vh
+	margin: -75vh 0 0 -75vh
+	z-index: 0
+	border-radius: 50%
+	pointer-events: none
+	opacity: 0
+	position: absolute
+	z-index: 0
+	-webkit-transform: scale3d(0, 0, 1)
+	transform: scale3d(0, 0, 1)
+
+.material-circle--accept.material-circle--active
+	background: #81d47d
+
+.material-circle--reject.material-circle--active
+	background: #e66868
+
+.material-circle--active
+	-webkit-animation: anim-effect-material 0.6s ease-out forwards
+	animation: anim-effect-material 0.6s ease-out forwards
+
+@-webkit-keyframes anim-effect-material
+	0%
+		opacity: 1
+		-webkit-transform: scale3d(0, 0, 1)
+		transform: scale3d(0, 0, 1)
+	70%
+		opacity: 1
+		-webkit-transform: scale3d(1.4, 1.4, 1)
+		transform: scale3d(1.4, 1.4, 1)
+	100%
+		opacity: 0
+		-webkit-transform: scale3d(1.4, 1.4, 1)
+		transform: scale3d(1.4, 1.4, 1)
+
+
+@keyframes anim-effect-material
+	0%
+		opacity: 1
+		-webkit-transform: scale3d(0, 0, 1)
+		transform: scale3d(0, 0, 1)
+	70%
+		opacity: 1
+		-webkit-transform: scale3d(1.4, 1.4, 1)
+		transform: scale3d(1.4, 1.4, 1)
+	100%
+		opacity: 0
+		-webkit-transform: scale3d(1.4, 1.4, 1)
+		transform: scale3d(1.4, 1.4, 1)
+
+
+.button:focus
+	outline: none
+
+// .button--accept
+// 	color: #81d47d
+
+// .button--reject
+// 	color: #e66868
+
+.stack--wangi .stack__item--reject
+	-webkit-animation: wangiReject 0.5s forwards
+	animation: wangiReject 0.5s forwards
+	-webkit-transform-origin: 0% 0%
+	transform-origin: 0% 0%
+
+@-webkit-keyframes wangiReject
+	to
+		opacity: 0
+		-webkit-transform: translate3d(0, 400px,0) rotate3d(0,0,1,40deg)
+		transform: translate3d(0, 400px,0) rotate3d(0,0,1,40deg)
+
+@keyframes wangiReject
+	to
+		opacity: 0
+		-webkit-transform: translate3d(0, 400px,0) rotate3d(0,0,1,40deg)
+		transform: translate3d(0, 400px,0) rotate3d(0,0,1,40deg)
+
+.stack--wangi .stack__item--accept
+	-webkit-animation: wangiAccept 0.5s forwards
+	animation: wangiAccept 0.5s forwards
+	-webkit-transform-origin: 100% 0%
+	transform-origin: 100% 0%
+
+@-webkit-keyframes wangiAccept
+	to
+		opacity: 0
+		-webkit-transform: translate3d(0, 400px,0) rotate3d(0,0,1,-40deg)
+		transform: translate3d(0, 400px,0) rotate3d(0,0,1,-40deg)
+
+@keyframes wangiAccept 
+	to 
+		opacity: 0
+		-webkit-transform: translate3d(0, 400px,0) rotate3d(0,0,1,-40deg)
+		transform: translate3d(0, 400px,0) rotate3d(0,0,1,-40deg)
+
+.map
+	height: 530px
+	position: relative
+	&-block
+		position: absolute
+		top: -56px
+		left: 366px
+	&-info
+		max-width: 437px
+		padding: 40px 50px 60px
+		background: #ffffff
+		box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.12)
+		&__address
+			margin-top: 30px
+			span
+				display: block
+				font-family: Open Sans
+				font-size: 16px
+				line-height: 24px
+				color: $color-text
+				&:first-child
+					margin-bottom: 5px
+		&__phone
+			margin-top: 15px
+			span
+				font-family: Open Sans
+				font-size: 14px
+				line-height: 27px
+				color: $color-text
+			a
+				display: block
+				text-decoration: none
+				&:first-child
+					font-family: Montserrat
+					font-weight: 500
+					font-size: 26px
+					line-height: 24px
+					color: $color-text
+					padding-right: 15px
+					white-space: nowrap
+				&:last-child
+					font-family: Open Sans
+					font-size: 14px
+					line-height: 18px
+					color: #005AA5
+					padding-left: 15px
+					border-left: 1px solid #BDDEE9
+		&__mail
+			margin: 10px 0 25px
+			span
+				display: block
+				font-family: Open Sans
+				font-size: 14px
+				line-height: 27px
+				color: $color-text
+			a
+				font-family: Montserrat
+				font-weight: 500
+				font-size: 22px
+				line-height: 24px
+				color: $color-text
+				text-decoration: none
+	&-phone
+		display: flex
+		align-items: center
+.sub
+	padding: 40px 0 20px
+	background: url('../../img/sub-bg.jpg')
+	&-block
+		display: flex
+		justify-content: space-between
+		position: relative
+		&:before
+			position: absolute
+			content: url('../../img/plane.png')
+			bottom: -80px
+			right: 300px
+	&-box
+		position: relative
+		h3
+			color: $white
+			max-width: 306px
+		&__social
+			display: flex
+			align-items: center
+			margin-top: 20px
+			span
+				display: inline-block
+				max-width: 183px
+				font-family: $R
+				font-size: 16px
+				line-height: 25px
+				color: $white
+				margin-right: 5px
+			a
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 50px
+				height: 50px
+				background: #ffffff
+				box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.06)
+				border-radius: 12px
+				margin-right: 10px
+		&__input
+			width: 100%
+			max-width: 450px
+		input
+			width: 100%
+			font-family: $RB
+			font-size: 14px
+			line-height: 24px
+			letter-spacing: 0.1em
+			text-transform: uppercase
+			color: #8E8E8E
+			padding: 25px 150px 25px 25px
+			background: #ffffff
+			box-shadow: inset 0px 2px 4px rgba(32, 32, 32, 0.1)
+			border-radius: 16px
+			border: none
+			outline: none
+		&__info
+			span
+				display: block
+				max-width: 313px
+				font-family: $R
+				font-size: 15px
+				line-height: 25px
+				font-feature-settings: 'pnum' on, 'lnum' on
+				color: $white
+	&-btn 
+		position: absolute
+		top: 0
+		right: -1px
+		font-family: $RB
+		font-size: 14px
+		line-height: 24px
+		text-align: center
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: #FFFFFF
+		padding: 25px 28px
+		background: linear-gradient(0deg, #005AA5 52.6%, #3994CA 100%)
+		box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1)
+		border-top-right-radius: 16px
+		border-bottom-right-radius: 16px
+		text-decoration: none
+.feedback
+	padding: 80px 0
+	background: #ffffff
+	position: relative
+	&:before
+		position: absolute
+		max-height: 653px
+		content: url('../../img/fb-bg1.png')
+		top: 0
+		left: 0
+	&:after
+		position: absolute
+		max-height: 653px
+		content: url('../../img/fb-bg2.png')
+		top: 0
+		right: 0
+	&-block
+		display: flex
+		justify-content: space-between
+		position: relative
+		&:before
+			position: absolute
+			content: url('../../img/ceo.png')
+			bottom: -84px
+			left: 275px
+			z-index: 1
+		&:after
+			position: absolute
+			content: url('../../img/Ellipse-fb.png')
+			top: 40px
+			left: 235px
+	&-info
+		position: relative
+		top: -37px
+		left: -80px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		width: 455px
+		height: 455px
+		background: #FBFBFB
+		border-radius: 50%
+		&__title
+			display: block
+			max-width: 300px
+			font-family: $R
+			font-style: italic
+			font-size: 28px
+			line-height: 25px
+			color: $color-text
+			margin-left: -25px
+			position: relative
+			&:before
+				position: absolute
+				content: ''
+				bottom: -20px
+				left: 0
+				width: 171px
+				height: 6px
+				background: linear-gradient(90deg, #005AA5 0%, rgba(110, 198, 211, 0) 100%)
+		&__subtitle
+			display: block
+			max-width: 300px
+			font-family: $R
+			font-size: 15px
+			line-height: 25px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: $color-text
+			margin-top: 44px
+			z-index: 1
+	&-form
+		min-height: 494px
+		padding: 50px 50px 75px
+		background: url('../../img/form-bg.png') no-repeat rgba(255, 255, 255, 0.8)
+		z-index: 1
+		span
+			display: block
+			font-family: $RB
+			font-size: 32px
+			line-height: 50px
+			color: $color-title
+			margin-bottom: 20px
+		.input
+			display: inline-block
+			width: 230px
+			margin-right: 20px
+			input
+				width: 100%
+		.textarea
+			margin: 20px 0 30px
+			width: 100%
+			max-width: 485px
+			height: 92px
+			textarea
+				width: 100%
+		.checkbox
+			margin-bottom: 15px
+		.btn
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 150px
+			height: 48px
