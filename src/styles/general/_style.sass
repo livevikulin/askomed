@@ -1005,7 +1005,8 @@ p
 		&__block
 			display: flex
 	&-image
-		width: 500px
+		width: 100%
+		max-width: 500px
 		height: 432px
 		margin-right: 60px
 		border-radius: 16px
@@ -1020,18 +1021,261 @@ p
 			line-height: 56px
 			color: $color-title
 		&__price
-			margin-top: 27px
+			display: flex
+			align-items: center
+			margin: 27px 0 22px
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 250px
+			height: 60px
+		&__text
+			margin-top: 34px
+			width: 100%
+			max-width: 422px
+			p
+				display: block
+				margin-bottom: 10px
+				font-family: $R
+				font-size: 15px
+				line-height: 25px
+				font-feature-settings: 'pnum' on, 'lnum' on
+				overflow: hidden
+				&:after
+					content: '......................................................................................................................................'
+					display: block
+					white-space: nowrap
+					overflow: hidden
+					color: #BDBDBD
+				&:last-child
+					margin-bottom: 0
+				span
+					&:first-child
+						color: #BDBDBD
+						float: left
+					&:last-child
+						color: #454B52
+						float: right
+	&-price
+		&__info
+			font-family: $R
+			font-style: italic
+			font-size: 15px
+			line-height: 25px
+			color: #8E8E8E
 .price
 	display: inline-block
+	width: 130px
 	font-family: $R
 	font-size: 40px
 	line-height: 27px
 	font-feature-settings: 'pnum' on, 'lnum' on
 	color: $color-text
-	background: #FFE492
+	background: url('../../img/bg-price.png') no-repeat
 	padding: 10px 15px 10px 10px
+	margin-right: 10px
 	span
 		font-family: Montserrat
 		font-size: 30px
 		line-height: 24px
 		color: #8E8E8E
+.recipe
+	padding: 45px 0 70px
+	&-box
+		display: flex
+		margin-bottom: 30px
+		&:last-child .recipe-box__info
+			border: none
+		&__image
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 64px
+			height: 64px
+			background: linear-gradient(90deg, #6A5F99 0%, #A04678 52.6%, #BC526C 100%)
+			margin-right: 26px
+			border-radius: 50%
+		&__info
+			padding-bottom: 20px
+			border-bottom: 1px solid #BDDEE9
+		&__title
+			display: block
+			font-family: $RS
+			font-weight: 600
+			font-size: 18px
+			line-height: 21px
+			color: $color-title
+			margin-bottom: 13px
+		&__subtitle
+			display: block
+			max-width: 1080px
+			font-family: $R
+			font-size: 15px
+			line-height: 25px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: $color-text
+.vaccinations
+	&-table
+		display: table
+		width: 100%
+		border: 1px solid #E0E0E0
+		border-collapse: collapse
+	&-row
+		display: table-row
+		&:first-child
+			background: #F2F2F2
+			.vaccinations-col
+				font-family: $RS
+				font-weight: 600
+				font-size: 16px
+				line-height: 32px
+				color: $color-title
+				padding: 14px 0 14px 40px
+	&-col
+		display: table-cell
+		font-family: $R
+		font-size: 15px
+		line-height: 25px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: $color-text
+		padding: 30px 0 30px 40px
+		border: 1px solid #E0E0E0
+.faq
+	background: #FBFBFB
+	padding: 50px 0 85px
+	&-block
+		h2
+			text-align: center
+	&-boxes
+		margin-top: 23px
+	&-box
+		background: #FFFFFF
+		box-shadow: 0px 2px 8px rgba(0, 113, 207, 0.12)
+		border-radius: 8px
+		margin-bottom: 12px
+		&:last-child
+			margin-bottom: 0
+		&__button
+			display: flex
+			align-items: center
+			cursor: pointer
+			padding: 25px 27px 
+		&__image
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 34px
+			height: 34px
+			background: #2183D4
+			border-radius: 50%
+			margin-right: 25px
+		&__name
+			display: block
+			font-family: $R
+			font-size: 18px
+			line-height: 23px
+			color: #005AA5
+		&__content
+			display: none
+			font-family: $R
+			font-size: 15px
+			line-height: 25px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: $color-text
+			padding: 0px 40px 20px 86px
+.recommendations
+	padding: 50px 0 74px
+	background: url('../../img/recomend-bg.jpg') no-repeat
+	&-block
+		h2
+			text-align: center
+			color: $white
+			margin-bottom: 60px
+	&-slider
+		text-align: center
+		.slick-prev
+			&:before
+				content: url('../../img/arrow-left.png')
+		.slick-next
+			&:before
+				content: url('../../img/arrow-right.png')
+	&-item
+		width: 100%
+		max-width: 275px
+		background: #FFFFFF
+		box-shadow: 0px 2px 8px rgba(0, 113, 207, 0.12)
+		border-radius: 8px
+		overflow: hidden
+		&__image
+			width: 100%
+			border-top-left-radius: 8px
+			border-top-right-radius: 8px
+			img
+				width: 100%
+				object-fit: cover
+		&__info
+			height: 216px
+			padding: 12px 12px 20px
+	&-title
+		display: block
+		font-family: $RS
+		font-weight: 600
+		font-size: 18px
+		line-height: 27px
+		color: $color-title
+		text-align: left
+	&-subtitle
+		display: block
+		font-family: $R
+		font-size: 15px
+		line-height: 25px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: $color-text
+		margin-top: 5px
+		text-align: left
+	&-price
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+		bottom: -50px
+		.price
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 76px
+			height: 32px
+			font-size: 22px
+			background: url('../../img/bg-price-small.png') no-repeat
+			position: relative
+			left: -12px
+			span
+				font-size: 22px
+	&-more
+		font-family: $R
+		font-size: 15px
+		display: flex
+		align-items: center
+		color: $color-text
+		text-decoration: none
+		svg
+			margin-left: 5px
+.citation
+	padding: 40px 0 90px
+	background: #FBFBFB
+	&-block
+		font-family: $R
+		font-size: 15px
+		line-height: 25px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: #8E8E8E
+		position: relative
+		span
+			display: block
+			max-width: 961px
+		&:before
+			position: absolute
+			content: url('../../img/stethoscope.png')
+			top: -65px
+			right: -75px

@@ -11,6 +11,14 @@ $(document).ready(function() {
 		// autoplaySpeed: 4000
 	});
 	
+	//Слайдер с рекомендациями
+	$('.recommendations-slider').slick({
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		arrows: true,
+	});
+	
 	//Инициализация слайдера в причинах
 	$('.reason-slider').slick({
 		arrows: true,
@@ -20,6 +28,20 @@ $(document).ready(function() {
 	$('.reason-slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
 		let i = (currentSlide ? currentSlide : 0) + 1;
 		$('.reason-el').text(i);
+	});
+	
+	//Выпадашки в блоке с частыми вопросами
+	$('.faq-box__button').on('click', function() {
+		if ($('.faq-box__content').is(':visible')) {
+			$('.faq-box__content').slideUp();
+			$('.faq-box__image').css({
+				background: '#2183D4',
+			})
+		}
+		$(this).next('.faq-box__content').slideDown();
+		$(this).find('.faq-box__image').css({
+			background: '#BDDEE9',
+		})
 	});
 	
 	//Слайдер в блоке "О компании"
@@ -331,5 +353,7 @@ $(document).ready(function() {
 			});
 		});
 	})();
+	
+	
 });
 
