@@ -34,16 +34,28 @@ $(document).ready(function() {
 	$('.faq-box__button').on('click', function() {
 		if ($('.faq-box__content').is(':visible')) {
 			$('.faq-box__content').slideUp();
-			$('.faq-box__image').css({
-				background: '#2183D4',
-			})
+			$('.faq-box__minus').css({display: 'none'});
+			$('.faq-box__plus').show();
 		}
 		$(this).next('.faq-box__content').slideDown();
-		$(this).find('.faq-box__image').css({
-			background: '#BDDEE9',
-		})
+		$(this).find('.faq-box__plus').hide();
+		$(this).find('.faq-box__minus').css({display: 'flex'});
 	});
 	
+	//Выпадающий текст в боксе с инфойрмацией о специалисте
+	$('.specialists-box__next').on('click', function(e) {
+		e.preventDefault();
+		$(this).parent().find('.specialists-text__next').slideDown();
+		$(this).hide();
+		$(this).parent().find('.specialists-box__back').show();
+	});
+	$('.specialists-box__back').on('click', function(e) {
+		e.preventDefault();
+		$(this).parent().find('.specialists-text__next').slideUp();
+		$(this).hide();
+		$(this).parent().find('.specialists-box__next').show();
+	});
+
 	//Слайдер в блоке "О компании"
 	(function(window) {
 	

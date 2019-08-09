@@ -1161,13 +1161,22 @@ p
 			align-items: center
 			cursor: pointer
 			padding: 25px 27px 
-		&__image
+		&__plus
 			display: flex
 			align-items: center
 			justify-content: center
 			width: 34px
 			height: 34px
 			background: #2183D4
+			border-radius: 50%
+			margin-right: 25px
+		&__minus
+			display: none
+			align-items: center
+			justify-content: center
+			width: 34px
+			height: 34px
+			background: #BDDEE9
 			border-radius: 50%
 			margin-right: 25px
 		&__name
@@ -1482,6 +1491,291 @@ p
 			right: 21px
 			&:hover
 				right: 15px
-
-
-
+.specialists
+	padding: 20px 0 75px
+	background: #FBFBFB
+	&-title
+		display: block
+		font-family: $RL
+		font-weight: 300
+		font-size: 48px
+		line-height: 56px
+		text-align: center
+		color: $color-title
+	&-boxes
+		margin: 30px 0 40px
+	&-box
+		display: flex
+		justify-content: space-between	
+		margin-bottom: 12px
+		&:last-child
+			margin-bottom: 0
+		&__photo
+			width: 194px
+			height: 194px
+			border-radius: 50%
+			overflow: hidden
+			img
+				width: 100%
+				object-fit: cover
+		&__info
+			max-width: 920px
+			background: #FFFFFF
+			box-shadow: 0px 3px 10px rgba(0, 113, 207, 0.18)
+			border-radius: 8px
+			padding: 30px 25px 30px 50px
+			position: relative
+			&:before
+				display: block
+				width: 45px
+				height: 45px
+				position: absolute
+				content: ''
+				top: 30px
+				left: -22px
+				transform: rotate(45deg)
+				background: #FFFFFF
+				box-shadow: -5px 5px 10px rgba(0, 113, 207, 0.12)
+		&__name
+			font-family: $R
+			font-weight: 600
+			font-size: 18px
+			line-height: 27px
+			color: $color-title
+		&__specialty
+			display: flex
+			align-items: center
+			font-family: $R
+			font-size: 15px
+			line-height: 25px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: #8E8E8E
+			margin: 15px 0
+		&__next
+			display: flex
+			align-items: center
+			font-family: $R
+			font-size: 15px
+			line-height: 0px
+			color: $color-text
+			text-decoration: none
+			float: right
+			svg
+				margin-left: 5px
+		&__back
+			display: none
+			align-items: center
+			font-family: $R
+			font-size: 15px
+			line-height: 0px
+			color: $color-text
+			text-decoration: none
+			float: right
+			svg
+				margin-left: 5px
+				transform: rotate(-90deg)
+	&-specialty
+		display: block
+		padding-right: 20px
+		position: relative
+		&:before
+			display: block
+			width: 1px
+			height: 100%
+			position: absolute
+			content: ''
+			top: 0
+			right: 0
+			background: linear-gradient(180deg, #0064aa 0%, #a04678 52.6%, #dc1e1e 100%) 
+	&-experience
+		display: block
+		padding-left: 20px
+	&-text
+		margin-bottom: 30px
+		&__question
+			display: block
+			font-family: $RS
+			font-weight: 600
+			font-size: 15px
+			line-height: 20px
+			color: #005AA5
+			padding-left: 25px
+			margin-bottom: 10px
+			position: relative
+			&:before
+				display: block
+				width: 15px
+				height: 1px
+				position: absolute
+				content: ''
+				top: 50%
+				left: 0
+				transform: translateY(-50%)
+				background: #005AA5
+		&__answer
+			display: block
+			font-family: $R
+			font-size: 15px
+			line-height: 25px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: $color-text
+		&__next
+			display: none
+	&-btn 
+		display: block
+		font-family: $RS
+		font-weight: 600
+		font-size: 16px
+		line-height: 27px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: #005AA5
+		background: #F3F3F3
+		border-radius: 6px
+		text-align: center
+		padding: 12px 0
+		text-decoration: none
+		transition: 0.2s
+		margin-bottom: 12px
+		&:hover
+			background: #e6e6e6
+.centers
+	padding: 20px 0 85px
+	background: #FBFBFB
+	&-title
+		display: block
+		font-family: $RL
+		font-weight: 300
+		font-size: 48px
+		line-height: 56px
+		text-align: center
+		color: $color-title
+.center
+	margin-top: 50px
+	position: relative
+	&-info
+		width: 100%
+		max-width: 470px
+		padding: 45px
+		background: #FFFFFF
+		box-shadow: 0px 2px 8px rgba(0, 113, 207, 0.12)
+		margin-bottom: 25px
+		z-index: 1
+		position: relative
+		&__item
+			display: flex
+			align-items: center
+			font-family: $R
+			font-size: 15px
+			line-height: 27px
+			color: $color-text
+			font-feature-settings: 'pnum' on, 'lnum' on
+			margin-bottom: 10px
+			&:last-child
+				margin-bottom: 0
+			svg
+				margin-right: 15px
+			a
+				color: $color-text
+				&:hover
+					text-decoration: none
+	&-overview
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 100%
+		max-width: 470px
+		height: 240px
+		font-family: $RS
+		font-weight: 600
+		font-size: 38px
+		line-height: 27px
+		color: #FFFFFF
+		border-radius: 8px
+		overflow: hidden
+		text-decoration: none
+		font-feature-settings: 'pnum' on, 'lnum' on
+		background: url('../../img/center1.jpg') no-repeat
+		z-index: 1
+		position: relative
+		&:before
+			position: absolute
+			content: url('../../img/Ellipse2.png')
+			transition: 0.3s
+		&:hover:before
+			transform: rotate(180deg) scale(0.8)
+	&-map
+		position: absolute
+		z-index: 0
+	&-right
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		.center-map
+			top: 27px
+			left: 0
+	&-left
+		.center-map
+			top: 27px
+			right: 0
+.faqs
+	padding: 20px 0 110px
+	background: #FBFBFB
+	&-title
+		display: block
+		font-family: $RL
+		font-weight: 300
+		font-size: 48px
+		line-height: 56px
+		text-align: center
+		color: $color-title
+	.faq-boxes
+		margin: 35px 0 55px
+.services
+	&-title
+		display: block
+		font-family: $RS
+		font-weight: 600
+		font-size: 24px
+		line-height: 32px
+		text-align: center
+		color: $color-title
+		margin-bottom: 40px
+	&-boxes
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&-box
+		width: 100%
+		max-width: 370px
+		background: #FFFFFF
+		box-shadow: 0px 2px 8px rgba(0, 113, 207, 0.12)
+		border-radius: 8px
+		&__image
+			overflow: hidden
+			border-radius: 8px 8px 0 0
+			img
+				width: 100%
+				object-fit: cover
+		&__info
+			height: 132px
+			padding: 16px
+			span
+				display: block
+				font-family: $RS
+				font-weight: 600
+				font-size: 18px
+				line-height: 27px
+				color: $color-text
+		&__next
+			display: flex
+			align-items: center
+			font-family: $R
+			font-size: 15px
+			line-height: 0px
+			color: $color-text
+			float: right
+			text-decoration: none
+			position: relative
+			bottom: -60px
+			svg
+				margin-left: 5px
