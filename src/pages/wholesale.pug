@@ -1,0 +1,125 @@
+extends ../views/layouts/default
+block variables
+	- var title = "Главная оптовикам"
+	- var main = false;
+	- var wholesale = true;
+	
+block content
+	main
+		.wholesale
+			._banner
+				.container
+					span Оптовые поставки иммунобиологических препаратов, экспресс-тестов и изделий медицинского назначения для юридических лиц
+			._hero
+				.container
+					.wholesale__hero-block
+						span Регионы регулярных поставок
+						a(href="#") Подробнее
+						._point
+							img(src="img/text.png", alt="")
+			.reasons
+				.container
+					.reasons-block
+						h2 7 причин, почему стоит обратиться в АСКО-Мед плюс
+						.reasons-boxes
+							.reasons-box
+								.reasons-box__logo
+									img(src="img/reas1.png", alt="")
+								.reasons-text
+									span.reasons-box__name Гарантия соблюдения «холодовой цепи»
+									span.reasons-box__text Мы используем современные индикаторы температуры – эффективное средство экспресс-контроля соблюдения режима «холодовой цепи».
+							.reasons-box
+								.reasons-box__logo
+									img(src="img/reas2.png", alt="")
+								.reasons-text
+									span.reasons-box__name Наличие ассортимента на своем складе
+									span.reasons-box__text Всегда в наличии: вакцины, аллергены, иммуноглобулины,бактериофаги, анатоксины, сыворотки и изделия мед. назначения. Мы готовы в кратчайшие сроки собрать заказ и подготовить его к доставке.
+							.reasons-box
+								.reasons-box__logo
+									img(src="img/reas3.png", alt="")
+								.reasons-text
+									span.reasons-box__name Мы знаем все детали своего дела
+									span.reasons-box__text В нашей команде провизоры, врачи, экономисты, маркетологи, юристы, финансисты, логисты. Все эти разные люди объединены общей целью – обеспечить доставку качественных препаратов нашим клиентам даже в самых удаленных регионах России.
+							.reasons-box
+								.reasons-box__logo
+									img(src="img/reas4.png", alt="")
+								.reasons-text
+									span.reasons-box__name Грамотная логистика
+									span.reasons-box__text Вы получите заказ максимально быстро, ведь мы не накапливаем грузы для доставки по направлениям, а передаем их перевозчикам в день согласования заявки. Кстати, возможна доставка «до дверей»!
+							.reasons-box
+								.reasons-box__logo
+									img(src="img/reas5.png", alt="")
+								.reasons-text
+									span.reasons-box__name Экономия вашего времени
+									span.reasons-box__text Вы всегда сможете оперативно связаться с нами, любым удобным способом: — звонок персональному менеджеру, — запрос через сайт
+							.reasons-box
+								.reasons-box__logo
+									img(src="img/reas6.png", alt="")
+								.reasons-text
+									span.reasons-box__name Индивидуальный подход к любым вопросам клиентов
+									span.reasons-box__text Оказываем помощь и вновь открывающимся вакцинальным центрам, так и государственным и муниципальным ЛПУ. 
+							.reasons-box
+								.reasons-box__logo
+									img(src="img/reas7.png", alt="")
+								.reasons-text
+									span.reasons-box__name Собственный автопарк
+									span.reasons-box__text Наш курьер в фирменной жилетке и кепке бережно доставит ваш заказ.
+			.chief
+				.container
+					.chief-block
+						._info
+							span Уважаемые коллеги!
+							p Уже 23 года мы занимаемся оптовыми поставками иммунобиологических препаратов. За это время мы досконально изучили все детали и тонкости работы с вакцинами, сыворотками, имуноглобулинами. 
+							p Для нас это стало делом жизни, делом от которого мы получаем удовлетворение. Удовлетворение от того, что наша работа помогает спасать детей и взрослых от страшных инфекций. Удовлетворение от причастности к развитию и успехам  наших постоянных и новых партнеров.
+							p Наши термоконтейнеры бывали в разных уголках страны, но основные регионы поставок для нас — это Сибирь и Дальний Восток. Мы заработали имидж надежного партнера и поставщика. Нам доверяют поставку ИБП Министерства здравоохранения субъектов РФ, правоохранительные органы и силовые структуры, крупные холдинги, государственные и частные клиники. 
+							p Наш приоритет – выстраивание долгосрочных отношений с партнерами. Для этого мы каждый день стараемся предложить оптимальные цены, удобные способы доставки и приятные условия работы.
+							p Будем рады видеть вас в числе наших постоянных партнёров!
+							p Сделайте заказ на поставку ИБП у нас и убедитесь в моих словах! А если это окажется не так, напишите мне на электронную почту: e.osipov@asko-med.ru и поделитесь своим впечатлением о нашей работе.
+							._btns
+								a(href="#").btn Подробнее
+								a(href="#").btn Написать директору
+						._photo
+							img(src="img/photo-ceo.png", alt="")
+			.company
+				.container
+					.company-block
+						span._title О компании
+						.company-content
+							._box
+								.reason
+									.reason-slider
+										.reason-slide
+											span.reason-age 25
+											span.reason-text лет работы
+										.reason-slide
+											span.reason-age 25
+											span.reason-text лет работы
+										.reason-slide
+											span.reason-age 25
+											span.reason-text лет работы
+									.reason-slides
+										span.reason-el 1
+										span  / 3
+								a(href="#").about-video
+									<svg xmlns="http://www.w3.org/2000/svg" width="46" height="51" viewBox="0 0 46 51" fill="none">
+										<path d="M43.8847 22.0228C46.5818 23.5564 46.5818 27.4436 43.8847 28.9772L6.47714 50.2472C3.81056 51.7634 0.499998 49.8375 0.499998 46.77L0.5 4.22999C0.5 1.16249 3.81056 -0.763433 6.47714 0.752791L43.8847 22.0228Z" fill="white"/>
+									</svg>
+									span смотреть видео о компании
+							._box
+								.about-slider
+									ul#stack_wangi.stack.stack--wangi
+										li.stack__item
+											img(src="img/about-img1.png" alt="")
+										li.stack__item
+											img(src="img/about-img2.png" alt="")
+										li.stack__item
+											img(src="img/about-img1.png" alt="")
+										li.stack__item
+											img(src="img/about-img2.png" alt="")
+										li.stack__item
+											img(src="img/about-img1.png" alt="")
+										li.stack__item
+											img(src="img/about-img2.png" alt="")
+									button.button.button--sonar.button--reject(data-stack="stack_wangi")
+									button.button.button--sonar.button--accept(data-stack="stack_wangi")
+						
