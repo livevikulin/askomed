@@ -24,6 +24,18 @@ $(document).ready(function() {
 		arrows: true,
 		infinite: false,
 	});
+	
+	//Инициализация слайдера в отзывах
+	$('.reviews__slider').slick({
+		centerMode: true,
+		slidesToShow: 3,
+		variableWidth: true,
+		dots: true,
+		cssEase: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+		autoplay:true,
+        autoplaySpeed: 3500
+	});
+	
 	//Меняем у слайдера номер
 	$('.reason-slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
 		let i = (currentSlide ? currentSlide : 0) + 1;

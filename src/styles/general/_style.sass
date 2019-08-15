@@ -152,10 +152,14 @@ p
 		color: #777777
 		background: $color-search
 		border-radius: 20px
-		padding: 8px 50px 8px 17px
-		border: none
+		padding: 3px 50px 3px 17px
+		border: 2px solid transparent
 		outline: none
 		box-sizing: border-box
+		&:focus
+			background: #FFFFFF
+			border: 2px solid #BDDEE9
+			box-sizing: border-box
 	a
 		position: absolute
 		width: 16px
@@ -1845,6 +1849,16 @@ p
 		width: 100%
 		max-width: 497px
 		margin-left: 30px
+	.faqs
+		padding: 68px 0 96px
+		&-title
+			display: block
+			font-family: Montserrat
+			font-weight: bold
+			font-size: 32px
+			line-height: 32px
+			color: $color-title
+			text-align: left
 .chief
 	padding: 60px 0
 	background: linear-gradient(90deg, #6A5F99 0%, #A04678 52.6%, #BC526C 100%)
@@ -1914,5 +1928,278 @@ p
 			.about-video
 				position: relative
 				right: -70px
+.news
+	padding: 60px 0 55px
+	background: linear-gradient(90deg, rgba(106, 95, 153, 0.9) 0%, rgba(160, 70, 120, 0.9) 52.6%, rgba(188, 82, 108, 0.9) 100%)
+	&-block
+		&__title
+			display: block
+			font-family: $RB
+			font-size: 32px
+			line-height: 48px
+			color: #FFFFFF
+			margin-bottom: 40px
+		&__btn
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 164px
+			font-family: Montserrat
+			font-weight: 600
+			font-size: 16px
+			line-height: 27px
+			color: #FFFFFF
+			border: 1px solid #FFFFFF
+			border-radius: 6px
+			padding: 12px 20px
+			margin: 40px auto 0
+			text-decoration: none
+			transition: 0.2s
+			&:hover
+				background: #ffffff
+				color: rgba(160, 70, 120, 0.9)
+	&-boxes
+		display: flex
+		justify-content: space-between
+	&-box
+		display: flex
+		width: 573px
+		background: #ffffff
+		box-shadow: 0px 2px 8px rgba(0, 113, 207, 0.12)
+		border-radius: 8px
+		&__image
+			width: 240px
+			height: 240px
+			border-radius: 8px 0 0 8px
+			overflow: hidden
+			flex: none
+			img
+				width: 100%
+				object-fit: cover
+		&__info
+			padding: 23px 16px 21px 25px
+			position: relative
+		&__data
+			display: block
+			font-family: $R
+			font-size: 15px
+			line-height: 18px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: $label-text
+			margin-bottom: 8px
+		&__name
+			display: block
+			font-family: $RB
+			font-size: 18px
+			line-height: 27px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: $color-text
+		&__btn
+			display: flex
+			align-items: center
+			position: absolute
+			bottom: 21px
+			right: 16px
+			font-family: $R
+			font-size: 15px
+			line-height: 0px
+			color: $color-text
+			text-decoration: none
+			svg
+				margin-left: 5px
+.animBtn
+	transition: 0.2s
+	&:hover
+		color: #005AA5
+		svg
+			animation: animBtn 0.5s infinite 
 				
-	
+@keyframes animBtn
+	0%
+		transform: translateX(0)
+	50%
+		transform: translateX(3px)
+	100%
+		transform: translateX(0)
+
+.reviews
+	padding: 81px 0 88px
+	overflow: hidden
+	&__title
+		font-family: $RB
+		font-size: 32px
+		line-height: 48px
+		color: $color-title
+		margin-bottom: 50px
+	&__slide
+		display: flex !important
+		width: 928px
+		background: #FFFFFF
+		box-shadow: 0px 15px 40px rgba(0, 113, 207, 0.16)
+		border-radius: 20px
+		padding: 40px 80px 50px 35px
+		position: relative
+		&:before
+			position: absolute
+			content: url('../img/Union.png')
+			top: -37px
+			right: 50px
+	&__slider
+		.slick-list
+			overflow: visible
+		.slick-slide
+			width: 928px
+			opacity: 0.35
+			margin: 0 18px
+		.slick-center
+			opacity: 1
+			transition: opacity 1s
+		.slick-dots
+			bottom: -55px
+		.slick-dots li button:before
+			content: ''
+			width: 12px
+			height: 12px
+			background: #D8D8D8
+			border-radius: 50%
+		.slick-dots li.slick-active button:before
+			background: #ffffff
+		.slick-dots li.slick-active button:after
+			position: absolute
+			content: url('../img/Ellipse3.png')
+			top: -5px
+			left: -5px
+		.slick-arrow
+			width: 60px
+			height: 60px
+			background: #005AA5
+			opacity: 0.14
+			box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.06)
+			border-radius: 50%
+			z-index: 10
+			transition: 0.2s
+			&:hover
+				opacity: 0.5
+				background: #005AA5
+		.slick-next
+			right: 420px
+			&:focus
+				background: #005AA5
+			&:before
+				content: url('../img/a-right.png')
+				width: 8px
+				height: 24px
+		.slick-prev
+			left: 420px
+			&:focus
+				background: #005AA5
+			&:before
+				content: url('../img/a-left.png')
+				width: 8px
+				height: 24px
+	&-slide
+		&__image
+			padding-right: 27px
+			border-right: 1px solid #DDF2F9
+		&__info
+			padding-left: 40px
+			span
+				font-family: $RB
+				font-size: 16px
+				line-height: 32px
+				letter-spacing: 0.1em
+				text-transform: uppercase
+				font-feature-settings: 'pnum' on, 'lnum' on
+				color: $color-text
+			p
+				font-family: $R
+				font-size: 15px
+				line-height: 25px
+				font-feature-settings: 'pnum' on, 'lnum' on
+				color: $color-text
+				margin-top: 20px
+	&-read
+		display: flex
+		align-items: center
+		text-decoration: none
+		font-family: $R
+		font-size: 15px
+		line-height: 0px
+		color: $color-text
+		margin-top: 20px
+		svg
+			margin-left: 5px
+.ask
+	padding: 88px 0 73px
+	background: url('../img/ask-bg.jpg') no-repeat
+	background-size: cover
+	&-block
+		display: flex
+		justify-content: space-between
+		&__contacts
+			max-width: 274px
+			height: 228px
+			padding: 35px 43px 65px
+			background: linear-gradient(180deg, rgba(153, 95, 148, 0.95) -3.12%, rgba(160, 70, 120, 0.95) 51.12%, rgba(188, 82, 108, 0.95) 100%)
+			span
+				display: block
+				font-family: $R
+				font-size: 15px
+				line-height: 25px
+				text-align: center
+				font-feature-settings: 'pnum' on, 'lnum' on
+				color: #FFFFFF
+				margin-bottom: 5px
+		&__form
+			max-width: 585px
+			padding: 46px 50px 75px
+			background: #ffffff
+			.input
+				display: inline-block
+				width: 232px
+				margin-right: 17px
+				&:nth-child(3)
+					margin-right: 0
+				input
+					width: 100%
+			.textarea
+				width: 100%
+				margin: 15px 0 30px
+				textarea
+					width: 100%
+					max-width: 485px
+					min-width: 485px
+					min-height: 97px
+					max-height: 97px
+			.btn
+				margin-top: 15px
+	&-contacts
+		&__phone
+			display: block
+			font-family: $R
+			font-size: 24px
+			line-height: 24px
+			text-align: center
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: #FFFFFF
+			text-decoration: none
+			margin-bottom: 25px
+		&__mail
+			display: block
+			font-family: $R
+			font-size: 20px
+			line-height: 24px
+			text-align: center
+			color: #FFFFFF
+			transition: 0.2s
+			&:hover
+				text-decoration: none
+	&-form
+		&__title
+			display: block
+			font-family: $RB
+			font-size: 32px
+			line-height: 50px
+			color: $color-title
+			margin-bottom: 18px
+		
