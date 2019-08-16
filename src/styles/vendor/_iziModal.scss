@@ -527,21 +527,21 @@ html.iziModal-isAttached{
 @-webkit-keyframes iziM-comingIn {
     0% {
         opacity: 0;
-        transform: scale(0.9) translateY(-20px) perspective( 600px ) rotateX( 10deg );
+        transform: scale(0.9) translateY(-20px) perspective( 698px ) rotateX( 10deg );
     }
     100% {
         opacity: 1;
-        transform: scale(1) translateY(0) perspective( 600px ) rotateX( 0 ); 
+        transform: scale(1) translateY(0) perspective( 698px ) rotateX( 0 ); 
     }
 }
 @-moz-keyframes iziM-comingIn {
     0% {
         opacity: 0;
-        transform: scale(0.9) translateY(-20px) perspective( 600px ) rotateX( 10deg );
+        transform: scale(0.9) translateY(-20px) perspective( 698px ) rotateX( 10deg );
     }
     100% {
         opacity: 1;
-        transform: scale(1) translateY(0) perspective( 600px ) rotateX( 0 ); 
+        transform: scale(1) translateY(0) perspective( 698px ) rotateX( 0 ); 
     }
 }
 @keyframes iziM-comingIn {

@@ -49,6 +49,15 @@ $(document).ready(function() {
 		});
 	});
 	
+	//Модалки
+	$("#record").iziModal();
+	
+	$('.next_step').on('click', function() {
+		$(this).parents('.record-step').addClass('step_none');
+		$(this).parents('.record-step').next().removeClass('step_none');
+	});
+	
+	
 	//Инициализация слайдера на главной
 	$('.hero-slider').slick({
 		arrows: true,

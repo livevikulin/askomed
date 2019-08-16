@@ -1,2 +1,23 @@
-#modal
-	span Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, eligendi placeat a harum itaque ipsa at. Eaque odio quibusdam consectetur cupiditate, totam et quae provident commodi reprehenderit, cum nam similique!
+.record#record
+	.record-step
+		span._title Шаг 1.<br>Выберите удобный центр
+		span._close(data-izimodal-close="#record")
+			<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.239648 15.7614C0.398869 15.9218 0.608254 16.0014 0.817639 16.0014C1.02702 16.0014 1.23641 15.9218 1.39563 15.7614L7.99976 9.15731L14.6044 15.7614C14.7636 15.9217 14.973 16.0013 15.1824 16.0013C15.3917 16.0013 15.6011 15.9217 15.7604 15.7625C16.0799 15.443 16.0799 14.9239 15.7604 14.6043L9.15654 8.00053L15.7604 1.39672C16.0799 1.07719 16.0799 0.559179 15.7604 0.239648C15.4408 -0.0798828 14.9228 -0.0798828 14.6033 0.239648L7.99947 6.84346L1.39672 0.240712C1.07719 -0.0788195 0.559179 -0.0788195 0.239648 0.240712C-0.0798828 0.560243 -0.0798828 1.07825 0.239648 1.39778L6.84265 8.00028L0.239648 14.6033C-0.0798828 14.9228 -0.0798828 15.4419 0.239648 15.7614Z" fill="white"/>
+			</svg>
+		form._form(action="#")
+			.checkbox
+				input(type="radio" name="record_address" id="record_address1" checked)
+				label(for="record_address1") Немировича-Данченко, 165, оф. 2
+			.checkbox
+				input(type="radio" name="record_address" id="record_address2")
+				label(for="record_address2") Крылова, 34
+			._map
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa5669194a2b3db9363c0691415f842ea0e9d080a0ddefeb67b5e2c560086c1a9&amp;width=578&amp;height=264&amp;lang=ru_RU&amp;scroll=false"></script>
+			a.btn.next_step(href="#") Далее
+	.record-step.step_none
+		span._title Шаг 2.<br>Введите свои данные
+		span._close(data-izimodal-close="#record")
+			<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.239648 15.7614C0.398869 15.9218 0.608254 16.0014 0.817639 16.0014C1.02702 16.0014 1.23641 15.9218 1.39563 15.7614L7.99976 9.15731L14.6044 15.7614C14.7636 15.9217 14.973 16.0013 15.1824 16.0013C15.3917 16.0013 15.6011 15.9217 15.7604 15.7625C16.0799 15.443 16.0799 14.9239 15.7604 14.6043L9.15654 8.00053L15.7604 1.39672C16.0799 1.07719 16.0799 0.559179 15.7604 0.239648C15.4408 -0.0798828 14.9228 -0.0798828 14.6033 0.239648L7.99947 6.84346L1.39672 0.240712C1.07719 -0.0788195 0.559179 -0.0788195 0.239648 0.240712C-0.0798828 0.560243 -0.0798828 1.07825 0.239648 1.39778L6.84265 8.00028L0.239648 14.6033C-0.0798828 14.9228 -0.0798828 15.4419 0.239648 15.7614Z" fill="white"/>
+			</svg>

@@ -1,0 +1,55 @@
+.record
+	width: 100%
+	max-width: 698px !important
+	&-step
+		padding: 55px 60px
+		background: #ffffff
+		position: relative
+		&__title
+			display: block
+			font-family: $RB
+			font-size: 24px
+			line-height: 32px
+			color: $color-title
+		&__close
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 36px
+			height: 36px
+			position: absolute
+			top: 55px
+			right: 60px
+			border-radius: 50%
+			background: #005AA5
+			cursor: pointer
+			transition: 0.2s
+			&:hover
+				transform: rotate(180deg)
+		&__form
+			padding-top: 30px
+			.checkbox
+				margin-bottom: 15px
+				label
+					font-family: $R
+					font-size: 15px
+					line-height: 25px
+					font-feature-settings: 'pnum' on, 'lnum' on
+					color: $color-text
+					&:before
+						top: 50%
+						transform: translateY(-50%)
+					&:after
+						top: 50%
+						transform: translateY(-50%)
+			.btn
+				display: block
+				width: 160px
+				margin-left: auto
+		&__map
+			margin-top: 30px
+			margin-bottom: 56px
+	
+.step_none
+	display: none
+	transition: 0.5s
