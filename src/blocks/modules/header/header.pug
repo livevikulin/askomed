@@ -29,14 +29,27 @@ if(main)
 						a(href="#").header-head__btn Купить вакцины / иммунопрепараты 
 							span оптом
 						.header-head__nav
-							a(href="#") Страховым компаниям
-							a(href="#") Клинические исследования
+							a(href="#").header-head__nav-button Страховым компаниям
+							a(href="#").header-head__nav-button Клинические исследования
 							.header-city
-								a(href="#").header-city__this Новосибирск 
-									span
+								a(href="#").header-city__this
+									span Новосибирск
+									<svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5" fill="none">
+										<path d="M1 1L4.5 4L8 1" stroke="#454B52"/>
+									</svg>
+								._question
+									p
+										span Ваш город - 
+										span Новосибирск?
+									a(href="#").btn.city_btn Да
+									a(href="#")._other-btn Нет, другой
+								._choice
+									a.header-city__choice-this(href="#") 
+										span Новосибирск
 										<svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5" fill="none">
 											<path d="M1 1L4.5 4L8 1" stroke="#454B52"/>
 										</svg>
+									a.header-city__choice-other(href="#") Барнаул
 			.header-main
 				.container
 					.header-block
@@ -57,38 +70,49 @@ if(main)
 							a(href="#") 8 800 555 8409
 							span бесплатно по России
 						.header-address 
-							a(href="#")
+							._item
 								span
 									<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
 										<path d="M4 1V3.87097H0.967741C0.433273 3.87097 0 4.30424 0 4.83871C0 5.37318 0.433273 5.80645 0.967741 5.80645H4V9C4 9.55228 4.44772 10 5 10C5.55228 10 6 9.55228 6 9V5.80645H9.03226C9.56673 5.80645 10 5.37318 10 4.83871C10 4.30424 9.56673 3.87097 9.03226 3.87097H6V1C6 0.447715 5.55228 0 5 0C4.44772 0 4 0.447716 4 1Z" fill="#E31E24"/>
 									</svg>
 								span Немировича-Данченко, 165, оф. 2
-							a(href="#")
+								a._btn(href="#" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown") Записаться на прием
+									
+							._item
 								span
 									<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
 										<path d="M4 1V3.87097H0.967741C0.433273 3.87097 0 4.30424 0 4.83871C0 5.37318 0.433273 5.80645 0.967741 5.80645H4V9C4 9.55228 4.44772 10 5 10C5.55228 10 6 9.55228 6 9V5.80645H9.03226C9.56673 5.80645 10 5.37318 10 4.83871C10 4.30424 9.56673 3.87097 9.03226 3.87097H6V1C6 0.447715 5.55228 0 5 0C4.44772 0 4 0.447716 4 1Z" fill="#E31E24"/>
 									</svg>
 								span Крылова, 34
+								a._btn(href="#" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown") Записаться на прием
+									
 		nav
 			.navbar
 				.container
 					.navbar-block
 						.navbar-item
-							a(href="#") Вакцины
+							a(href="#")._link Вакцины
 						.navbar-item
-							a(href="#") Инфекции
+							a(href="#")._link Инфекции
 						.navbar-item
-							a(href="#") Цены
+							a(href="#")._link Цены
 						.navbar-item
-							a(href="#") Вакцинация юр.лиц
+							a(href="#")._link Вакцинация юр.лиц
 						.navbar-item
-							a(href="#") Блог
+							a(href="#")._link Блог
 						.navbar-item.navbar-list
-							a(href="#") О компании
+							a(href="#").navbar-item__link.navbar-list__link О компании
 								span
 									<svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5" fill="none">
 										<path d="M1 1L4.5 4L8 1" stroke="#454B52"/>
 									</svg>
+							ul.navbar-list__block
+								li
+									a(href="#") Информация
+								li
+									a(href="#") Вакансии
+								li
+									a(href="#") Специалисты
 if (wholesale)
 	header
 		.header-wholesale

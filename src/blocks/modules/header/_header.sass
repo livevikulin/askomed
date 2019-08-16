@@ -59,7 +59,7 @@
 		&__nav
 			display: flex
 			justify-content: flex-end
-			a
+			&-button
 				font-family: $R
 				font-size: 14px
 				line-height: 16px
@@ -71,20 +71,100 @@
 				&:hover
 					border-bottom: 1px solid #777777
 	&-city
-		a
+		position: relative
+		&__this
 			display: flex
 			align-items: center
+			font-family: $R
+			font-size: 14px
+			line-height: 16px
 			color: #005AA5
-			margin-right: 0
+			text-decoration: none
+			transition: 0.2s
 			&:hover
-				border-color: #005AA5
+				span
+					border: none
 			span
-				display: flex
-				justify-content: center
-				align-items: center
-				width: 7px
-				height: 3px
+				height: 18px
+				border-bottom: 1px dotted #005AA5
+			svg
 				margin-left: 5px
+		&__question
+			width: 240px
+			background: #ffffff
+			box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.24)
+			border-radius: 8px
+			padding: 15px 24px
+			position: absolute
+			top: 30px
+			right: 0
+			z-index: 99
+			&:before
+				position: absolute
+				content: ''
+				top: -8px
+				right: 20px
+				width: 15px
+				height: 15px
+				background: #ffffff
+				transform: rotate(45deg)
+			p
+				margin-bottom: 15px
+			span 
+				font-family: $R
+				font-size: 15px
+				line-height: 25px
+				font-feature-settings: 'pnum' on, 'lnum' on
+				color: $color-text
+				&:last-child
+					color: #005AA5
+			.btn
+				color: #ffffff
+				margin-right: 25px
+		&__other-btn
+			font-family: $R
+			font-size: 15px
+			line-height: 25px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: #005AA5
+			border-bottom: 1px dotted #005AA5
+			text-decoration: none
+			&:hover
+				border: none
+		&__choice
+			display: none
+			position: absolute
+			top: -15px
+			right: -40px
+			width: 168px
+			background: #F5F5F5
+			box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.24)
+			border-radius: 0px 0px 8px 8px
+			padding: 10px 27px
+			z-index: 99
+			&-this
+				display: block
+				font-family: $R
+				font-size: 14px
+				line-height: 26px
+				font-feature-settings: 'pnum' on, 'lnum' on
+				color: #005AA5
+				text-decoration: none
+				margin-bottom: 20px
+				span
+					border-bottom: 1px dotted #005AA5
+				svg
+					transform: rotate(180deg)
+					margin-left: 5px
+			&-other
+				font-family: $R
+				font-size: 14px
+				line-height: 26px
+				font-feature-settings: 'pnum' on, 'lnum' on
+				color: $color-text
+				text-decoration: none
+				&:hover
+					color: #005AA5
 	&-main
 		padding: 25px 0
 	&-block
@@ -126,20 +206,47 @@
 		display: flex
 		flex-direction: column
 		align-items: flex-end
-		a
+		&__item
 			display: block
 			font-family: $R
 			font-size: 15px
-			line-height: 25px
+			line-height: 26px
 			font-feature-settings: 'pnum' on, 'lnum' on
 			color: $color-text
 			text-decoration: none
 			margin-bottom: 10px
+			cursor: pointer
+			position: relative
 			&:last-child
 				margin-bottom: 0
 			span
 				&:first-child
 					margin-right: 10px
+		&__btn
+			display: none
+			width: 193px
+			position: absolute
+			top: 26px
+			right: 0
+			font-family: $RM
+			font-size: 16px
+			line-height: 27px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: #FFFFFF
+			background: linear-gradient(180deg, #6EC6D3 0%, #129AAE 100%)
+			box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.06)
+			border-radius: 4px
+			padding: 10px 15px
+			text-decoration: none
+			z-index: 98
+			&:before
+				position: absolute
+				content: ''
+				top: -16px
+				right: 10px
+				border: 8px solid transparent
+				border-top: 8px solid #6DC6D3
+				transform: rotate(180deg)
 	
 .navbar
 	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.06)
@@ -162,7 +269,7 @@
 			background: linear-gradient(180deg, rgba(0,100,170,1) 0%, rgba(160,70,120,1) 52.6%, rgba(220,30,30,1) 100%)
 		&:last-child:before
 			display: none
-		a
+		&__link
 			font-family: $RM
 			font-size: 16px
 			line-height: 25px
@@ -171,10 +278,13 @@
 			text-decoration: none
 			outline: none
 			transition: 0.2s
-		&:hover a
-			color: $color-btn
+		&:hover 
+			.navbar-item__link
+				color: $color-btn
 	&-list
-		a
+		position: relative
+		&__link
+			z-index: 100
 			position: relative
 			span
 				position: absolute
@@ -183,9 +293,33 @@
 				align-items: center
 				width: 9px
 				height: 5px
-				top: 50%
+				top: 40%
 				right: -17px
 				transform: translateY(-50%)
+		&__block
+			display: none
+			position: absolute
+			left: 0
+			top: -30px
+			background: #ffffff
+			list-style: none
+			padding: 60px 0 0
+			box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.24)
+			border-radius: 0px 0px 8px 8px
+			z-index: 99
+			li
+				padding: 20px 40px
+				a
+					font-family: $RM
+					font-weight: 500
+					font-size: 16px
+					line-height: 19px
+					color: $color-text
+					text-decoration: none
+				&:hover
+					background: #F2F2F2
+				&:last-child
+					border-radius: 0px 0px 8px 8px
 .header-wholesale
 	&__head
 		padding: 9px 0

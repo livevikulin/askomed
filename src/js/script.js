@@ -1,9 +1,54 @@
 import "jquery";
 import "slick-slider";
+import "izimodal";
 
 
 $(document).ready(function() {
-
+	
+	//Выбор города
+	$('.city_btn').on('click', function() {
+		$(this).parent().hide();
+	});
+	
+	$('.header-city__this').on('click', function() {
+		$(this).parent().find('.header-city__choice').slideDown();
+	});
+	
+	$('.header-city__choice a').on('click', function() {
+		$(this).parent().slideUp();
+	});
+	
+	$('.header-city__other-btn').on('click', function() {
+		$(this).parent().hide();
+		$('.header-city__choice').slideDown();
+	});
+	
+	//Запись на прием
+	$('.header-address__item').on('mousemove', function() {
+		$(this).find('.header-address__btn').show();
+	});
+	$('.header-address__item').on('mouseout', function() {
+		$(this).find('.header-address__btn').hide();
+	})
+	
+	//Выпадашка в меню
+	var mList = $('.navbar-list');
+	
+	mList.on('mousemove', function() {
+		$(this).find('.navbar-list__block').show();
+		$('.navbar-list__link span').css({
+			transform: 'rotate(180deg)',
+			transition: '0.2s'
+		});
+	});
+	mList.on('mouseout', function() {
+		$(this).find('.navbar-list__block').hide();
+		$('.navbar-list__link span').css({
+			transform: 'rotate(0deg)',
+			transition: '0.2s'
+		});
+	});
+	
 	//Инициализация слайдера на главной
 	$('.hero-slider').slick({
 		arrows: true,
