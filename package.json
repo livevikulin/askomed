@@ -53,8 +53,10 @@
 	"dependencies": {
 		"classie": "^1.0.0",
 		"dynamics": "^1.0.0",
+		"inputmask": "^4.0.8",
 		"izimodal": "^1.5.1",
 		"jquery": "^3.4.1",
+		"jquery.maskedinput": "^1.4.1",
 		"modernizr": "^3.7.1",
 		"slick-slider": "^1.8.2",
 		"smart-grid": "^2.1.2"

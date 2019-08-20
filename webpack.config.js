@@ -32,7 +32,7 @@ module.exports = {
 
 	resolve: {
 		alias: {
-			'jquery': require.resolve('jquery'),
+			"jquery": require.resolve('jquery'),
 			"%modules%": path.resolve(__dirname, "src/blocks/modules"),
 			"%components%": path.resolve(__dirname, "src/blocks/components")
 		}

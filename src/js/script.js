@@ -1,6 +1,7 @@
 import "jquery";
 import "slick-slider";
 import "izimodal";
+import "jquery.maskedinput";
 
 
 $(document).ready(function() {
@@ -56,7 +57,18 @@ $(document).ready(function() {
 		$(this).parents('.record-step').addClass('step_none');
 		$(this).parents('.record-step').next().removeClass('step_none');
 	});
+	$('.btn-back').on('click', function() {
+		$(this).parents('.record-step').addClass('step_none');
+		$(this).parents('.record-step').prev().removeClass('step_none');
+	});
+	$('.btn-submit').on('click', function() {
+		$(this).parents('.record-step').addClass('step_none');
+		$(this).parents('.record-step').next().removeClass('step_none');
+	});
 	
+	//Маски
+	$("#record_born").mask("99 / 99 / 9999");
+	$("#record_phone").mask("+7 (999)-999-99-99");
 	
 	//Инициализация слайдера на главной
 	$('.hero-slider').slick({

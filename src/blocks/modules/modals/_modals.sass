@@ -28,20 +28,6 @@
 				transform: rotate(180deg)
 		&__form
 			padding-top: 30px
-			.checkbox
-				margin-bottom: 15px
-				label
-					font-family: $R
-					font-size: 15px
-					line-height: 25px
-					font-feature-settings: 'pnum' on, 'lnum' on
-					color: $color-text
-					&:before
-						top: 50%
-						transform: translateY(-50%)
-					&:after
-						top: 50%
-						transform: translateY(-50%)
 			.btn
 				display: block
 				width: 160px
@@ -49,7 +35,164 @@
 		&__map
 			margin-top: 30px
 			margin-bottom: 56px
-	
+	&-form
+		&__address
+			margin-bottom: 15px
+			label
+				font-family: $R
+				font-size: 15px
+				line-height: 25px
+				font-feature-settings: 'pnum' on, 'lnum' on
+				color: $color-text
+				&:before
+					top: 50%
+					transform: translateY(-50%)
+				&:after
+					top: 50%
+					transform: translateY(-50%)
+		&__FIO
+			display: flex
+			justify-content: space-between
+		&__name
+			display: inline-block
+			width: 182px
+			input
+				width: 100%
+				border-color: #E0E0E0
+		&__born
+			width: 100%
+			margin-top: 30px
+			input
+				width: 100%
+				border-color: #E0E0E0
+		&__parent
+			width: 100%
+			margin-top: 30px
+			input
+				width: 100%
+				border-color: #E0E0E0
+			label
+				&:before
+					display: none
+			span
+				position: absolute
+				bottom: -25px
+				display: block
+				font-family: $R
+				font-size: 13px
+				line-height: 22px
+				color: #6EC6D3
+				margin-top: 5px
+		&__contacts
+			display: flex
+			justify-content: space-between
+			margin-top: 35px
+		&__contact
+			width: 281px
+			input
+				width: 100%
+				border-color: #E0E0E0
+			&:last-child
+				label
+					&:before
+						display: none
+		&__other
+			width: 100%
+			margin-top: 30px
+			input
+				width: 100%
+				border-color: #E0E0E0
+			label
+				&:before
+					display: none
+		&__check
+			margin-top: 40px
+			label
+				max-width: 450px
+				font-size: 13px
+				line-height: 20px
+				color: #8E8E8E
+				cursor: pointer
+		&__btns
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-top: 60px
+			.btn-back
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 160px
+				background: #ffffff
+				font-family: $RM
+				font-size: 16px
+				line-height: 27px
+				font-feature-settings: 'pnum' on, 'lnum' on
+				color: $color-text
+				border: 1px solid #DEDEDE
+				border-radius: 6px
+				padding: 12px 20px
+				text-decoration: none
+				transition: 0.2s
+				&:hover
+					border-color: $color-text
+			.btn-submit
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 238px
+				font-family: $RM
+				font-size: 16px
+				line-height: 27px
+				font-feature-settings: 'pnum' on, 'lnum' on
+				color: #FFFFFF
+				background: #2183D4
+				border-radius: 6px
+				padding: 12px 20px
+				text-decoration: none
+				transition: 0.2s
+				&:hover
+					background: #3877ab
+	&-info
+		background: #FBFBFB
+		border: 1px solid #FBFBFB
+		padding: 25px
+		margin-top: 25px
+		p
+			display: block
+			margin-bottom: 15px
+			overflow: hidden
+			&:last-child
+				margin-bottom: 0
+			span
+				&:first-child
+					font-family: $R
+					font-size: 15px
+					line-height: 25px
+					font-feature-settings: 'pnum' on, 'lnum' on
+					color: #8E8E8E
+					float: left
+				&:last-child
+					font-family: $R
+					font-size: 15px
+					line-height: 25px
+					font-feature-settings: 'pnum' on, 'lnum' on
+					color: #454B52
+					float: right
+			&:after
+				content: '......................................................................................................................................'
+				display: block
+				white-space: nowrap
+				overflow: hidden
+				color: #BDBDBD
+	&-thanks
+		display: block
+		font-family: $RB
+		font-size: 18px
+		line-height: 32px
+		text-align: center
+		color: #005AA5
+		margin-top: 75px
 .step_none
 	display: none
 	transition: 0.5s
