@@ -68,7 +68,7 @@ $(document).ready(function() {
 	
 	//Маски
 	$("#record_born").mask("99 / 99 / 9999");
-	$("#record_phone").mask("+7 (999)-999-99-99");
+	$("#record_phone, #wfb_phone, #fb_phone").mask("+7 (999)-999-99-99");
 	
 	//Инициализация слайдера на главной
 	$('.hero-slider').slick({
@@ -118,6 +118,14 @@ $(document).ready(function() {
 		$(this).next('.faq-box__content').slideDown();
 		$(this).find('.faq-box__plus').hide();
 		$(this).find('.faq-box__minus').css({display: 'flex'});
+	});
+	
+	//Выпадашки в каталоге
+	$('.catalog-item__button').on('click', function() {
+		$(this).parent().siblings().find('.catalog-item__block').slideUp();
+		$(this).next().slideToggle();
+		$(this).parent().siblings().removeClass('visible');
+		$(this).parent().toggleClass('visible');
 	});
 	
 	//Выпадающий текст в боксе с инфойрмацией о специалисте

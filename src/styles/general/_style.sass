@@ -2365,3 +2365,235 @@ p
 			display: block
 			width: 306px
 			margin: 0 auto
+.insurance
+	padding: 40px 0 50px
+	&-block
+		h1
+			text-align: center
+		&__subtitle
+			display: block
+			font-family: $RM
+			font-size: 24px
+			line-height: 32px
+			text-align: center
+			color: $color-title
+			margin-top: 30px
+		&__choice
+			display: block
+			font-family: $RB
+			font-size: 16px
+			line-height: 32px
+			text-align: center
+			letter-spacing: 0.1em
+			text-transform: uppercase
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: $color-title
+			margin-top: 10px
+	&-boxes
+		display: flex
+		margin-top: 35px
+	&-box
+		width: 100%
+		max-width: 565px
+		margin-right: 40px
+		&:last-child
+			margin-right: 0
+		&__image
+			width: 100%
+			border-radius: 10px
+			overflow: hidden
+			img
+				width: 100%
+				object-fit: cover
+		&__link
+			display: block
+			max-width: 250px
+			font-family: $RB
+			font-size: 16px
+			line-height: 19px
+			text-align: center
+			text-decoration-line: underline
+			color: #005AA5
+			margin: 25px auto 0
+			transition: 0.2s
+			&:hover
+				text-decoration: none
+		.succsess-list
+			padding: 0 25px 0 50px
+			margin-top: 20px
+	&-partners
+		background: #FBFBFB
+		padding-top: 65px
+		.partners-block__title
+			font-family: $RB
+			font-size: 32px
+			line-height: 32px
+			text-align: center
+			color: $color-title
+	&-reviews
+		.reviews__title
+			display: block
+			text-align: center
+.hotline
+	padding: 40px 0 50px
+	background: linear-gradient(90deg, #6A5F99 0%, #A04678 52.6%, #BC526C 100%)
+	&-block
+		width: 100%
+		max-width: 523px
+		margin: 0 auto
+		position: relative
+		&:before
+			position: absolute
+			content: url('../img/hotline-bg.png')
+			bottom: -54px
+			right: -270px
+		&__text
+			font-family: $R
+			font-size: 24px
+			line-height: 32px
+			color: #FFFFFF
+			margin-right: 30px
+		&__phone
+			font-family: $RB
+			font-size: 27px
+			line-height: 32px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: #FFFFFF
+			text-decoration: none
+.insurance-feedback
+	padding: 50px 0 100px
+	background: url('../img/bg-wfeedback.png') #ffffff
+	&__title
+		display: block
+		font-family: $RB
+		font-size: 32px
+		line-height: 50px
+		color: $color-title
+		padding-left: 26px
+	&__blocks
+		display: flex
+		justify-content: space-between
+	&__block
+		padding-top: 50px
+	&__phone
+		display: block
+		font-family: $R
+		font-size: 20px
+		line-height: 23px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: $color-text
+		text-decoration: none
+		margin-top: 20px
+		svg
+			margin-right: 10px
+	ul
+		list-style: none
+		padding: 0
+		margin-top: 30px
+		li
+			display: flex
+			svg
+				height: 22px
+				margin-right: 15px
+			div
+				max-width: 450px
+			span
+				display: block
+				&:first-child
+					font-family: $RB
+					font-size: 15px
+					line-height: 25px
+					color: $color-text
+				&:last-child
+					font-family: $R
+					font-size: 15px
+					line-height: 25px
+					font-feature-settings: 'pnum' on, 'lnum' on
+					color: $color-text
+	&__form
+		background: url('../img/')
+.catalog
+	padding: 45px 0 170px
+	background: #fbfbfb
+	&-block
+		h1
+			text-align: center
+		&__search
+			display: flex
+			align-items: center
+			position: relative
+			width: 100%
+			margin-top: 70px
+			input
+				width: 100%
+				max-width: 1020px
+				font-family: $RB
+				font-size: 18px
+				line-height: 27px
+				color: #8E8E8E
+				padding: 16px 33px
+				background: #F0F0F0
+				border-radius: 8px 0 0 8px
+				border: none
+				outline: none
+			&-btn
+				display: flex
+				align-items: center
+				font-family: $RM
+				font-size: 16px
+				line-height: 27px
+				font-feature-settings: 'pnum' on, 'lnum' on
+				color: #FFFFFF
+				background: linear-gradient(0deg, #0E73C7 13.11%, #3994CA 100%)
+				box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1)
+				border-radius: 0px 8px 8px 0px
+				padding: 16px 27px
+				text-decoration: none
+				svg
+					margin-right: 10px
+	&-items
+		padding-top: 60px
+	&-item
+		border-bottom: 1px solid #E0E0E0
+		padding: 0 0 25px 0
+		margin-bottom: 25px
+		cursor: pointer
+		&__button
+			display: flex
+			align-items: center
+			padding-left: 15px
+		&__plus
+			display: block
+			width: 34px
+			height: 34px
+			border-radius: 50%
+			background: #2183D4
+			padding: 10px
+		&__minus
+			display: none
+			width: 34px
+			height: 34px
+			border-radius: 50%
+			background: #BDDEE9
+			padding: 5px 10px
+		&__name
+			font-family: $R
+			font-size: 24px
+			line-height: 32px
+			color: $color-text
+			margin-left: 25px
+		&__block
+			display: none
+			padding-top: 40px
+			.vaccinations-box
+				display: inline-block
+				margin-right: 19px
+				&:nth-child(4n+4)
+					margin-right: 0
+.visible
+	.catalog-item__minus
+		display: block
+	.catalog-item__plus
+		display: none
+	.catalog-item__name
+		color: #005AA5

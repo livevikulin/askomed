@@ -1,0 +1,349 @@
+extends ../views/layouts/default
+block variables
+	- var title = "Карточка с товаром"
+	- var main = false;
+	- var wholesale = true;
+	
+block content
+	main
+		.wholesale
+			._banner
+				.container
+					span Оптовые поставки иммунобиологических препаратов, экспресс-тестов и изделий медицинского назначения для юридических лиц
+		.breadcrumbs
+			.container
+				.breadcrumbs-item
+					a(href="#") Главная
+					span О компании
+		.catalog
+			.container
+				.catalog-block
+					h1 Выберите нужный препарат
+					._search
+						input(type="text" placeholder="Поиск по препарату")
+						a.catalog-block__search-btn(href="#")
+							<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.9062 14.9062C15.9688 14.9688 16 15.0625 16 15.1562C16 15.2812 15.9688 15.375 15.9062 15.4375L15.1875 16.125C15.0938 16.2188 15 16.25 14.9062 16.25C14.7812 16.25 14.7188 16.2188 14.6562 16.125L10.8438 12.3438C10.7812 12.2812 10.75 12.1875 10.75 12.0938V11.6562C10.1562 12.1562 9.5 12.5625 8.78125 12.8438C8.03125 13.125 7.28125 13.25 6.5 13.25C5.3125 13.25 4.21875 12.9688 3.21875 12.375C2.21875 11.8125 1.4375 11.0312 0.875 10.0312C0.28125 9.03125 0 7.9375 0 6.75C0 5.5625 0.28125 4.5 0.875 3.5C1.4375 2.5 2.21875 1.71875 3.21875 1.125C4.21875 0.5625 5.3125 0.25 6.5 0.25C7.6875 0.25 8.75 0.5625 9.75 1.125C10.75 1.71875 11.5312 2.5 12.125 3.5C12.6875 4.5 13 5.5625 13 6.75C13 7.5625 12.8438 8.3125 12.5625 9.03125C12.2812 9.78125 11.9062 10.4375 11.4062 11H11.8438C11.9375 11 12.0312 11.0312 12.0938 11.0938L15.9062 14.9062ZM6.5 11.75C7.375 11.75 8.21875 11.5312 9 11.0938C9.75 10.6562 10.375 10.0312 10.8125 9.25C11.25 8.5 11.5 7.65625 11.5 6.75C11.5 5.875 11.25 5.03125 10.8125 4.25C10.375 3.5 9.75 2.875 9 2.4375C8.21875 2 7.375 1.75 6.5 1.75C5.59375 1.75 4.75 2 4 2.4375C3.21875 2.875 2.59375 3.5 2.15625 4.25C1.71875 5.03125 1.5 5.875 1.5 6.75C1.5 7.65625 1.71875 8.5 2.15625 9.25C2.59375 10.0312 3.21875 10.6562 4 11.0938C4.75 11.5312 5.59375 11.75 6.5 11.75Z" fill="white"/>
+							</svg>
+							span Найти
+					.catalog-items
+						.catalog-item
+							._button
+								span._plus
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.61763 1.38227C5.61763 0.618848 6.23685 0 7.00009 0C7.76332 0 8.38219 0.618848 8.38219 1.38227V5.61763H12.6177C13.3812 5.61763 14 6.23668 14 6.99991C14 7.76332 13.3812 8.38219 12.6177 8.38219H8.38219V12.6175C8.38219 13.381 7.76332 14 7.00009 14C6.23685 14 5.61763 13.381 5.61763 12.6175V8.38219H1.38246C0.618848 8.38219 0 7.76332 0 6.99991C0 6.23668 0.618848 5.61763 1.38246 5.61763H5.61763V1.38227Z" fill="white"/>
+									</svg>
+								span._minus
+									<svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.78113 0.61773C7 0.617697 7.56699 0.617672 7.84178 0.617706C8.60502 0.617706 8.94942 0.61781 9.5 0.61781L10.5 0.617676H12.6177C13.3812 0.617676 14 1.23673 14 1.99996C14 2.76337 13.3812 3.38224 12.6177 3.38224H10H9C8.60974 3.38224 7.76324 3.38224 7 3.38224C6.23676 3.38224 5.22316 3.38224 4.5 3.38224H3H1.38246C0.618848 3.38224 0 2.76337 0 1.99996C0 1.23673 0.618848 0.617676 1.38246 0.617676H5.61763L6.78113 0.61773Z" fill="white"/>
+									</svg>
+								span._name Термоиндикаторы
+							._block
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+						.catalog-item
+							._button
+								span._plus
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.61763 1.38227C5.61763 0.618848 6.23685 0 7.00009 0C7.76332 0 8.38219 0.618848 8.38219 1.38227V5.61763H12.6177C13.3812 5.61763 14 6.23668 14 6.99991C14 7.76332 13.3812 8.38219 12.6177 8.38219H8.38219V12.6175C8.38219 13.381 7.76332 14 7.00009 14C6.23685 14 5.61763 13.381 5.61763 12.6175V8.38219H1.38246C0.618848 8.38219 0 7.76332 0 6.99991C0 6.23668 0.618848 5.61763 1.38246 5.61763H5.61763V1.38227Z" fill="white"/>
+									</svg>
+								span._minus
+									<svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.78113 0.61773C7 0.617697 7.56699 0.617672 7.84178 0.617706C8.60502 0.617706 8.94942 0.61781 9.5 0.61781L10.5 0.617676H12.6177C13.3812 0.617676 14 1.23673 14 1.99996C14 2.76337 13.3812 3.38224 12.6177 3.38224H10H9C8.60974 3.38224 7.76324 3.38224 7 3.38224C6.23676 3.38224 5.22316 3.38224 4.5 3.38224H3H1.38246C0.618848 3.38224 0 2.76337 0 1.99996C0 1.23673 0.618848 0.617676 1.38246 0.617676H5.61763L6.78113 0.61773Z" fill="white"/>
+									</svg>
+								span._name Аллергены и аллергоиды
+							._block
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+						.catalog-item
+							._button
+								span._plus
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.61763 1.38227C5.61763 0.618848 6.23685 0 7.00009 0C7.76332 0 8.38219 0.618848 8.38219 1.38227V5.61763H12.6177C13.3812 5.61763 14 6.23668 14 6.99991C14 7.76332 13.3812 8.38219 12.6177 8.38219H8.38219V12.6175C8.38219 13.381 7.76332 14 7.00009 14C6.23685 14 5.61763 13.381 5.61763 12.6175V8.38219H1.38246C0.618848 8.38219 0 7.76332 0 6.99991C0 6.23668 0.618848 5.61763 1.38246 5.61763H5.61763V1.38227Z" fill="white"/>
+									</svg>
+								span._minus
+									<svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.78113 0.61773C7 0.617697 7.56699 0.617672 7.84178 0.617706C8.60502 0.617706 8.94942 0.61781 9.5 0.61781L10.5 0.617676H12.6177C13.3812 0.617676 14 1.23673 14 1.99996C14 2.76337 13.3812 3.38224 12.6177 3.38224H10H9C8.60974 3.38224 7.76324 3.38224 7 3.38224C6.23676 3.38224 5.22316 3.38224 4.5 3.38224H3H1.38246C0.618848 3.38224 0 2.76337 0 1.99996C0 1.23673 0.618848 0.617676 1.38246 0.617676H5.61763L6.78113 0.61773Z" fill="white"/>
+									</svg>
+								span._name Бактериофаги
+							._block
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+						.catalog-item
+							._button
+								span._plus
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.61763 1.38227C5.61763 0.618848 6.23685 0 7.00009 0C7.76332 0 8.38219 0.618848 8.38219 1.38227V5.61763H12.6177C13.3812 5.61763 14 6.23668 14 6.99991C14 7.76332 13.3812 8.38219 12.6177 8.38219H8.38219V12.6175C8.38219 13.381 7.76332 14 7.00009 14C6.23685 14 5.61763 13.381 5.61763 12.6175V8.38219H1.38246C0.618848 8.38219 0 7.76332 0 6.99991C0 6.23668 0.618848 5.61763 1.38246 5.61763H5.61763V1.38227Z" fill="white"/>
+									</svg>
+								span._minus
+									<svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.78113 0.61773C7 0.617697 7.56699 0.617672 7.84178 0.617706C8.60502 0.617706 8.94942 0.61781 9.5 0.61781L10.5 0.617676H12.6177C13.3812 0.617676 14 1.23673 14 1.99996C14 2.76337 13.3812 3.38224 12.6177 3.38224H10H9C8.60974 3.38224 7.76324 3.38224 7 3.38224C6.23676 3.38224 5.22316 3.38224 4.5 3.38224H3H1.38246C0.618848 3.38224 0 2.76337 0 1.99996C0 1.23673 0.618848 0.617676 1.38246 0.617676H5.61763L6.78113 0.61773Z" fill="white"/>
+									</svg>
+								span._name Вакцины и анатоксины
+							._block
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+						.catalog-item
+							._button
+								span._plus
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.61763 1.38227C5.61763 0.618848 6.23685 0 7.00009 0C7.76332 0 8.38219 0.618848 8.38219 1.38227V5.61763H12.6177C13.3812 5.61763 14 6.23668 14 6.99991C14 7.76332 13.3812 8.38219 12.6177 8.38219H8.38219V12.6175C8.38219 13.381 7.76332 14 7.00009 14C6.23685 14 5.61763 13.381 5.61763 12.6175V8.38219H1.38246C0.618848 8.38219 0 7.76332 0 6.99991C0 6.23668 0.618848 5.61763 1.38246 5.61763H5.61763V1.38227Z" fill="white"/>
+									</svg>
+								span._minus
+									<svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.78113 0.61773C7 0.617697 7.56699 0.617672 7.84178 0.617706C8.60502 0.617706 8.94942 0.61781 9.5 0.61781L10.5 0.617676H12.6177C13.3812 0.617676 14 1.23673 14 1.99996C14 2.76337 13.3812 3.38224 12.6177 3.38224H10H9C8.60974 3.38224 7.76324 3.38224 7 3.38224C6.23676 3.38224 5.22316 3.38224 4.5 3.38224H3H1.38246C0.618848 3.38224 0 2.76337 0 1.99996C0 1.23673 0.618848 0.617676 1.38246 0.617676H5.61763L6.78113 0.61773Z" fill="white"/>
+									</svg>
+								span._name Иммуноглобулины
+							._block
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+						.catalog-item
+							._button
+								span._plus
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.61763 1.38227C5.61763 0.618848 6.23685 0 7.00009 0C7.76332 0 8.38219 0.618848 8.38219 1.38227V5.61763H12.6177C13.3812 5.61763 14 6.23668 14 6.99991C14 7.76332 13.3812 8.38219 12.6177 8.38219H8.38219V12.6175C8.38219 13.381 7.76332 14 7.00009 14C6.23685 14 5.61763 13.381 5.61763 12.6175V8.38219H1.38246C0.618848 8.38219 0 7.76332 0 6.99991C0 6.23668 0.618848 5.61763 1.38246 5.61763H5.61763V1.38227Z" fill="white"/>
+									</svg>
+								span._minus
+									<svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.78113 0.61773C7 0.617697 7.56699 0.617672 7.84178 0.617706C8.60502 0.617706 8.94942 0.61781 9.5 0.61781L10.5 0.617676H12.6177C13.3812 0.617676 14 1.23673 14 1.99996C14 2.76337 13.3812 3.38224 12.6177 3.38224H10H9C8.60974 3.38224 7.76324 3.38224 7 3.38224C6.23676 3.38224 5.22316 3.38224 4.5 3.38224H3H1.38246C0.618848 3.38224 0 2.76337 0 1.99996C0 1.23673 0.618848 0.617676 1.38246 0.617676H5.61763L6.78113 0.61773Z" fill="white"/>
+									</svg>
+								span._name Сыворотки
+							._block
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+						.catalog-item
+							._button
+								span._plus
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.61763 1.38227C5.61763 0.618848 6.23685 0 7.00009 0C7.76332 0 8.38219 0.618848 8.38219 1.38227V5.61763H12.6177C13.3812 5.61763 14 6.23668 14 6.99991C14 7.76332 13.3812 8.38219 12.6177 8.38219H8.38219V12.6175C8.38219 13.381 7.76332 14 7.00009 14C6.23685 14 5.61763 13.381 5.61763 12.6175V8.38219H1.38246C0.618848 8.38219 0 7.76332 0 6.99991C0 6.23668 0.618848 5.61763 1.38246 5.61763H5.61763V1.38227Z" fill="white"/>
+									</svg>
+								span._minus
+									<svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.78113 0.61773C7 0.617697 7.56699 0.617672 7.84178 0.617706C8.60502 0.617706 8.94942 0.61781 9.5 0.61781L10.5 0.617676H12.6177C13.3812 0.617676 14 1.23673 14 1.99996C14 2.76337 13.3812 3.38224 12.6177 3.38224H10H9C8.60974 3.38224 7.76324 3.38224 7 3.38224C6.23676 3.38224 5.22316 3.38224 4.5 3.38224H3H1.38246C0.618848 3.38224 0 2.76337 0 1.99996C0 1.23673 0.618848 0.617676 1.38246 0.617676H5.61763L6.78113 0.61773Z" fill="white"/>
+									</svg>
+								span._name Тесты диагностические
+							._block
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+						.catalog-item
+							._button
+								span._plus
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.61763 1.38227C5.61763 0.618848 6.23685 0 7.00009 0C7.76332 0 8.38219 0.618848 8.38219 1.38227V5.61763H12.6177C13.3812 5.61763 14 6.23668 14 6.99991C14 7.76332 13.3812 8.38219 12.6177 8.38219H8.38219V12.6175C8.38219 13.381 7.76332 14 7.00009 14C6.23685 14 5.61763 13.381 5.61763 12.6175V8.38219H1.38246C0.618848 8.38219 0 7.76332 0 6.99991C0 6.23668 0.618848 5.61763 1.38246 5.61763H5.61763V1.38227Z" fill="white"/>
+									</svg>
+								span._minus
+									<svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.78113 0.61773C7 0.617697 7.56699 0.617672 7.84178 0.617706C8.60502 0.617706 8.94942 0.61781 9.5 0.61781L10.5 0.617676H12.6177C13.3812 0.617676 14 1.23673 14 1.99996C14 2.76337 13.3812 3.38224 12.6177 3.38224H10H9C8.60974 3.38224 7.76324 3.38224 7 3.38224C6.23676 3.38224 5.22316 3.38224 4.5 3.38224H3H1.38246C0.618848 3.38224 0 2.76337 0 1.99996C0 1.23673 0.618848 0.617676 1.38246 0.617676H5.61763L6.78113 0.61773Z" fill="white"/>
+									</svg>
+								span._name Перчатки
+							._block
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+						.catalog-item
+							._button
+								span._plus
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.61763 1.38227C5.61763 0.618848 6.23685 0 7.00009 0C7.76332 0 8.38219 0.618848 8.38219 1.38227V5.61763H12.6177C13.3812 5.61763 14 6.23668 14 6.99991C14 7.76332 13.3812 8.38219 12.6177 8.38219H8.38219V12.6175C8.38219 13.381 7.76332 14 7.00009 14C6.23685 14 5.61763 13.381 5.61763 12.6175V8.38219H1.38246C0.618848 8.38219 0 7.76332 0 6.99991C0 6.23668 0.618848 5.61763 1.38246 5.61763H5.61763V1.38227Z" fill="white"/>
+									</svg>
+								span._minus
+									<svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.78113 0.61773C7 0.617697 7.56699 0.617672 7.84178 0.617706C8.60502 0.617706 8.94942 0.61781 9.5 0.61781L10.5 0.617676H12.6177C13.3812 0.617676 14 1.23673 14 1.99996C14 2.76337 13.3812 3.38224 12.6177 3.38224H10H9C8.60974 3.38224 7.76324 3.38224 7 3.38224C6.23676 3.38224 5.22316 3.38224 4.5 3.38224H3H1.38246C0.618848 3.38224 0 2.76337 0 1.99996C0 1.23673 0.618848 0.617676 1.38246 0.617676H5.61763L6.78113 0.61773Z" fill="white"/>
+									</svg>
+								span._name Салфетки
+							._block.lol
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+								.vaccinations-box
+									.vaccinations-box__image
+										img(src="img/vac1.png", alt="")
+									span.vaccinations-box__name Грипп
+									span.vaccinations-box__price от 
+										span 6789 ₽
+						
+
