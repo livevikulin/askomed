@@ -2597,3 +2597,256 @@ p
 		display: none
 	.catalog-item__name
 		color: #005AA5
+.vaccines
+	padding: 30px 0 70px
+	background: #fbfbfb
+	&-block
+		h1
+			text-align: center
+	&-tabs
+		padding-top: 20px
+.tabs
+	display: flex
+	list-style: none
+	padding: 0
+	background: #FFFFFF
+	border: 1px solid #BDDEE9
+	border-radius: 8px
+	&__item
+		display: flex
+		justify-content: center
+		align-items: center
+		border-right: 1px solid #BDDEE9
+		&:last-child
+			width: 100%
+			border-right: none
+			border-radius: 0 7px 7px 0
+			a
+				width: 100%
+				border-radius: 0 7px 7px 0
+		a
+			display: block
+			font-family: $R
+			font-size: 15px
+			line-height: 25px
+			text-align: center
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: #525B62
+			text-decoration: none
+			padding: 16px 21px
+			white-space: nowrap
+			&:hover
+				background: #f2f3f4
+	&-block
+		display: flex
+		height: 548px
+		padding: 60px 70px 50px 40px
+		background: url('../img/bg-vacc.png')
+		&__image
+			width: 204px
+			height: 204px
+			border-radius: 50%
+			overflow: hidden
+			margin-right: 50px
+			flex: none
+			img
+				width: 100%
+				object-fit: cover
+		&__info
+			width: 100%
+			.btn
+				padding: 12px 20px
+		&__title
+			display: block
+			font-family: $RB
+			font-size: 16px
+			line-height: 32px
+			letter-spacing: 0.1em
+			text-transform: uppercase
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: #8E8E8E
+			margin-bottom: 15px
+		&__list
+			margin-top: 15px
+			margin-bottom: 30px
+			span
+				font-family: $R
+				font-size: 15px
+				line-height: 25px
+				font-feature-settings: 'pnum' on, 'lnum' on
+				color: $color-text
+			a 
+				font-family: $R
+				font-size: 15px
+				line-height: 25px
+				color: $color-text
+				text-decoration: none
+				float: right
+				svg
+					margin-left: 5px
+			li
+				&:after
+					display: block
+					content: '...........................................................................................................................'
+					overflow: hidden
+					white-space:nowrap
+					line-height: 25px
+					margin: 0 5px
+			.dot-list
+				span 
+					float: left
+
+.vaccine-name
+	display: flex
+	width: fit-content
+	margin: 0
+	position: relative
+	&__num
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 24px
+		height: 24px
+		font-family: $R
+		font-size: 16px
+		line-height: 0px
+		color: $color-title
+		border-radius: 50%
+		background: #BDDEE9
+		margin-right: 7px
+	&__text
+		font-family: $R
+		font-size: 16px
+		line-height: 24px
+		color: $color-title
+		margin-right: 7px
+	&__link
+		font-family: $R
+		font-size: 16px
+		line-height: 24px
+		color: #005AA5
+		&:hover
+			text-decoration: none
+	&__star
+		display: block
+		position: absolute
+		top: -5px
+		right: -20px
+		cursor: pointer
+		&:hover ~ .vaccine-name__info
+			opacity: 1
+	&__info
+		display: block
+		height: 36px
+		position: absolute
+		top: -15px
+		right: -350px
+		font-family: $R
+		font-size: 14px
+		line-height: 20px
+		color: #E31E24
+		padding: 8px 10px
+		background: #FFFFFF
+		box-shadow: 0px 0px 12px rgba(0, 100, 170, 0.2)
+		border-radius: 4px
+		white-space: nowrap
+		opacity: 0
+		transition: 0.2s
+		&:before
+			position: absolute
+			width: 10px
+			height: 10px
+			content: ''
+			top: 50%
+			left: -5px
+			transform: translateY(-50%) rotate(45deg)
+			background: #ffffff
+.active-tab
+	background: #BDDEE9
+	position: relative
+	&:before
+		position: absolute
+		content: ''
+		width: 20px
+		height: 20px
+		bottom: -9px
+		left: 50%
+		transform: translateX(-50%) rotate(45deg)
+		background: #BDDEE9
+	a
+		color: #005AA5
+		&:hover
+			background: none
+	&:first-child
+		border-radius: 6px 0 0 6px
+	&:last-child
+		border-radius: 0 6px 6px 0
+.problems
+	margin-top: 60px
+	&__title
+		display: block
+		font-family: $RM
+		font-size: 24px
+		line-height: 32px
+		text-align: center
+		color: $color-title
+		margin-bottom: 50px
+	&__boxes
+		display: flex
+		flex-wrap: wrap
+		.vaccinations-box
+			margin-right: 23px
+			&:nth-child(4n+4)
+				margin-right: 0
+.choice-drugs
+	padding: 60px 0 85px
+.choice-drug
+	&__title
+		display: block
+		font-family: $RM
+		font-size: 24px
+		line-height: 32px
+		text-align: center
+		color: $color-title
+		margin-bottom: 40px
+	&__search
+		display: flex
+		align-items: center
+		position: relative
+		width: 100%
+		input
+			width: 100%
+			max-width: 1020px
+			font-family: $RB
+			font-size: 18px
+			line-height: 27px
+			color: #8E8E8E
+			padding: 16px 33px
+			background: #F0F0F0
+			border-radius: 8px 0 0 8px
+			border: none
+			outline: none
+		&-btn
+			display: flex
+			align-items: center
+			font-family: $RM
+			font-size: 16px
+			line-height: 27px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: #FFFFFF
+			background: linear-gradient(0deg, #0E73C7 13.11%, #3994CA 100%)
+			box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1)
+			border-radius: 0px 8px 8px 0px
+			padding: 16px 27px
+			text-decoration: none
+			svg
+				margin-right: 10px
+	&__boxes
+		display: flex
+		flex-wrap: wrap
+		margin-top: 24px
+		.recommendations-item
+			margin-right: 23px
+			margin-bottom: 28px
+			&:nth-child(4n+4)
+				margin-right: 0

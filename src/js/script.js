@@ -141,6 +141,23 @@ $(document).ready(function() {
 		$(this).hide();
 		$(this).parent().find('.specialists-box__next').show();
 	});
+	
+	//Табы на странице с вакцинами
+	$('.tabs__item a').click(function(e) {
+		e.preventDefault();
+	});
+	$('.tabs-block').hide();
+	$('.tabs-block:first').show();
+	$('.tabs__item:first').addClass('active-tab');
+	$('.tabs__item').on('click', function() {
+		$('.tabs__item').removeClass('active-tab');
+		$(this).addClass('active-tab');
+		$('.tabs-block').hide();
+		
+		var selectTab = $(this).find('a').attr('href');
+		$(selectTab).fadeIn();
+	});
+	
 
 	//Слайдер в блоке "О компании"
 	(function(window) {

@@ -56,6 +56,7 @@
 		"inputmask": "^4.0.8",
 		"izimodal": "^1.5.1",
 		"jquery": "^3.4.1",
+		"jquery-ui-bundle": "^1.12.1-migrate",
 		"jquery.maskedinput": "^1.4.1",
 		"modernizr": "^3.7.1",
 		"slick-slider": "^1.8.2",
