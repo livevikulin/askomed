@@ -1,0 +1,16 @@
+extends ../views/layouts/default
+block variables
+	- var title = "Такой страницы не существует"
+	- var main = true;
+	- var wholesale = false;
+	
+block content
+	main
+		.error
+			.container
+				.error-page
+					span._text Такой страницы не существует, либо она была удалена. 
+					span._text Воспользуйтесь строкой поиска или навигацией через меню сайта.
+					span._main-text 404
+					._image
+						img(src="img/404-img.png", alt="")

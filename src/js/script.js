@@ -51,7 +51,7 @@ $(document).ready(function() {
 	});
 	
 	//Модалки
-	$("#record").iziModal();
+	$("#record, #partner, #question, #question_succsess, #price").iziModal();
 	
 	$('.next_step').on('click', function() {
 		$(this).parents('.record-step').addClass('step_none');
@@ -68,7 +68,17 @@ $(document).ready(function() {
 	
 	//Маски
 	$("#record_born").mask("99 / 99 / 9999");
-	$("#record_phone, #wfb_phone, #fb_phone").mask("+7 (999)-999-99-99");
+	$("#record_phone, #wfb_phone, #fb_phone, #partner_phone, #question_phone, #price_phone").mask("+7 (999)-999-99-99");
+	
+	//Если инпут заполнен, убираем подсказку
+	var $input = $('.field');
+	$input.on('change', function() {
+		if ($(this).val() != '') {
+			$(this).next('label').hide();
+		} else {
+			$(this).next('label').show();
+		}
+	});
 	
 	//Инициализация слайдера на главной
 	$('.hero-slider').slick({

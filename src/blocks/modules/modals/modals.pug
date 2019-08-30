@@ -24,30 +24,30 @@
 		form._form(action="#")
 			.record-form__FIO
 				.input.record-form__name
-					input(type="text" id="record_name")
+					input(type="text" class="field" id="record_name")
 					label(for="record_name") Фамилия
 				.input.record-form__name
-					input(type="text" id="record_surname")
+					input(type="text" class="field" id="record_surname")
 					label(for="record_surname") Имя
 				.input.record-form__name
-					input(type="text" id="record_thirdName")
+					input(type="text" class="field" id="record_thirdName")
 					label(for="record_thirdName") Отчество
 			.input.record-form__born
-				input(type="text" id="record_born")
+				input(type="text" class="field" id="record_born")
 				label(for="record_born") Дата рождения
 			.input.record-form__parent
-				input(type="text" id="record_parent")
+				input(type="text" class="field" id="record_parent")
 				label(for="record_parent") Представитель
 				span Если пациенту меньше 14 лет, укажите ФИО его представителя
 			.record-form__contacts
 				.input.record-form__contact
-					input(type="text" id="record_phone")
+					input(type="text" class="field" id="record_phone")
 					label(for="record_phone") Контактный телефон
 				.input.record-form__contact
-					input(type="text" id="record_mail")
+					input(type="text" class="field" id="record_mail")
 					label(for="record_mail") Email для связи
 			.input.record-form__other
-				input(type="text" id="record_other")
+				input(type="text" class="field" id="record_other")
 				label(for="record_other") Дополнительная информация
 			.checkbox.record-form__check
 				input(type="checkbox" id="record_check")
@@ -75,3 +75,83 @@
 				span Стоимость:
 				span 560 руб.
 		span.record-thanks Спасибо за доверие!
+.modal-partner#partner
+	._block
+		span._title Стань партнером
+		span._close(data-izimodal-close="#partner")
+			<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.239648 15.7614C0.398869 15.9218 0.608254 16.0014 0.817639 16.0014C1.02702 16.0014 1.23641 15.9218 1.39563 15.7614L7.99976 9.15731L14.6044 15.7614C14.7636 15.9217 14.973 16.0013 15.1824 16.0013C15.3917 16.0013 15.6011 15.9217 15.7604 15.7625C16.0799 15.443 16.0799 14.9239 15.7604 14.6043L9.15654 8.00053L15.7604 1.39672C16.0799 1.07719 16.0799 0.559179 15.7604 0.239648C15.4408 -0.0798828 14.9228 -0.0798828 14.6033 0.239648L7.99947 6.84346L1.39672 0.240712C1.07719 -0.0788195 0.559179 -0.0788195 0.239648 0.240712C-0.0798828 0.560243 -0.0798828 1.07825 0.239648 1.39778L6.84265 8.00028L0.239648 14.6033C-0.0798828 14.9228 -0.0798828 15.4419 0.239648 15.7614Z" fill="#005AA5"/>
+			</svg>
+		form(action="#")
+			.input._input
+				input(type="text" class="field" id="partner_name")
+				label(for="partner_name") Название компании
+			.input._input
+				input(type="text" class="field" id="partner_email")
+				label(for="partner_email") Email для связи
+			.input._input
+				input(type="text" class="field" id="partner_phone")
+				label(for="partner_phone") Телефон для связи
+			.input._input
+				input(type="text" class="field" id="partner_info")
+				label(for="partner_info") Расскажите кратко о вашей компании
+			.checkbox.partner-form__check
+				input(type="checkbox" id="partner_check")
+				label(for="partner_check") Я согласен с политикой конфиденциальности и пользовательским соглашением
+			a(href="#").btn._btn Отправить
+.modal-question#question
+	._block
+		span._title Задайте свой вопрос
+		span._subtitle Введите контактные данные ниже и мы ответим Вам в течение ближайших 24 часов (в рабочие дни)
+		span._close(data-izimodal-close="#question")
+			<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.239648 15.7614C0.398869 15.9218 0.608254 16.0014 0.817639 16.0014C1.02702 16.0014 1.23641 15.9218 1.39563 15.7614L7.99976 9.15731L14.6044 15.7614C14.7636 15.9217 14.973 16.0013 15.1824 16.0013C15.3917 16.0013 15.6011 15.9217 15.7604 15.7625C16.0799 15.443 16.0799 14.9239 15.7604 14.6043L9.15654 8.00053L15.7604 1.39672C16.0799 1.07719 16.0799 0.559179 15.7604 0.239648C15.4408 -0.0798828 14.9228 -0.0798828 14.6033 0.239648L7.99947 6.84346L1.39672 0.240712C1.07719 -0.0788195 0.559179 -0.0788195 0.239648 0.240712C-0.0798828 0.560243 -0.0798828 1.07825 0.239648 1.39778L6.84265 8.00028L0.239648 14.6033C-0.0798828 14.9228 -0.0798828 15.4419 0.239648 15.7614Z" fill="#005AA5"/>
+			</svg>
+		form(action="#")
+			.input._input
+				input(type="text" class="field" id="question_name")
+				label(for="question_name") Имя
+			.input._input
+				input(type="text" class="field" id="question_mail")
+				label(for="question_mail") Email для связи
+			.input._input
+				input(type="text" class="field" id="question_phone")
+				label(for="question_phone") Телефон
+			.input._input
+				input(type="text" class="field" id="question_text")
+				label(for="question_text") Ваш вопрос
+			.checkbox.question-form__check
+				input(type="checkbox" id="question_check")
+				label(for="question_check") Я согласен с политикой конфиденциальности и пользовательским соглашением
+			a.btn._btn(href="#" data-izimodal-open="#question_succsess" data-izimodal-transitionin="fadeInDown") Отправить вопрос
+.modal-question#question_succsess
+	._block
+		span._title Мы получили ваш вопрос
+		span._subtitle Мы свяжемся с вами  в течение ближайших 24 часов (в рабочие дни) для озвучивания актуальной стоимости с учетом индивидуальной скидки для вас на объем
+		span._close(data-izimodal-close="#question")
+			<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.239648 15.7614C0.398869 15.9218 0.608254 16.0014 0.817639 16.0014C1.02702 16.0014 1.23641 15.9218 1.39563 15.7614L7.99976 9.15731L14.6044 15.7614C14.7636 15.9217 14.973 16.0013 15.1824 16.0013C15.3917 16.0013 15.6011 15.9217 15.7604 15.7625C16.0799 15.443 16.0799 14.9239 15.7604 14.6043L9.15654 8.00053L15.7604 1.39672C16.0799 1.07719 16.0799 0.559179 15.7604 0.239648C15.4408 -0.0798828 14.9228 -0.0798828 14.6033 0.239648L7.99947 6.84346L1.39672 0.240712C1.07719 -0.0788195 0.559179 -0.0788195 0.239648 0.240712C-0.0798828 0.560243 -0.0798828 1.07825 0.239648 1.39778L6.84265 8.00028L0.239648 14.6033C-0.0798828 14.9228 -0.0798828 15.4419 0.239648 15.7614Z" fill="#005AA5"/>
+			</svg>
+		span._thanks Спасибо за доверие!
+.modal-price#price
+	._block
+		span._title Запрос стоимости
+		span._subtitle Введите контактные данные ниже и мы свяжемся с вами  в течение ближайших 24 часов (в рабочие дни) для озвучивания актуальной стоимости с учетом индивидуальной скидки для вас на объем
+		span._close(data-izimodal-close="#question")
+			<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.239648 15.7614C0.398869 15.9218 0.608254 16.0014 0.817639 16.0014C1.02702 16.0014 1.23641 15.9218 1.39563 15.7614L7.99976 9.15731L14.6044 15.7614C14.7636 15.9217 14.973 16.0013 15.1824 16.0013C15.3917 16.0013 15.6011 15.9217 15.7604 15.7625C16.0799 15.443 16.0799 14.9239 15.7604 14.6043L9.15654 8.00053L15.7604 1.39672C16.0799 1.07719 16.0799 0.559179 15.7604 0.239648C15.4408 -0.0798828 14.9228 -0.0798828 14.6033 0.239648L7.99947 6.84346L1.39672 0.240712C1.07719 -0.0788195 0.559179 -0.0788195 0.239648 0.240712C-0.0798828 0.560243 -0.0798828 1.07825 0.239648 1.39778L6.84265 8.00028L0.239648 14.6033C-0.0798828 14.9228 -0.0798828 15.4419 0.239648 15.7614Z" fill="#005AA5"/>
+			</svg>
+		form(action="#")
+			.input._input
+				input(type="text" class="field" id="price_name")
+				label(for="price_name") Имя
+			.input._input
+				input(type="text" class="field" id="price_mail")
+				label(for="price_mail") Email для связи
+			.input._input
+				input(type="text" class="field" id="price_phone")
+				label(for="price_phone") Телефон
+			.checkbox.price-form__check
+				input(type="checkbox" id="price_check")
+				label(for="price_check") Я согласен с политикой конфиденциальности и пользовательским соглашением
+			a.btn._btn(href="#") Получить прайс-лист

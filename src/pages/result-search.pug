@@ -1,0 +1,93 @@
+extends ../views/layouts/default
+block variables
+	- var title = "Результат поиска"
+	- var main = true;
+	- var wholesale = false;
+	
+block content
+	main
+		.breadcrumbs
+			.container
+				.breadcrumbs-item
+					a(href="#") Главная
+					span О компании
+		.result
+			.container
+				.result-block
+					h1 Результаты поиска
+					._search
+						.choice-drug__search
+							input(type="text" placeholder="Поиск по препарату")
+							a.catalog-block__search-btn(href="#")
+								<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.9062 14.9062C15.9688 14.9688 16 15.0625 16 15.1562C16 15.2812 15.9688 15.375 15.9062 15.4375L15.1875 16.125C15.0938 16.2188 15 16.25 14.9062 16.25C14.7812 16.25 14.7188 16.2188 14.6562 16.125L10.8438 12.3438C10.7812 12.2812 10.75 12.1875 10.75 12.0938V11.6562C10.1562 12.1562 9.5 12.5625 8.78125 12.8438C8.03125 13.125 7.28125 13.25 6.5 13.25C5.3125 13.25 4.21875 12.9688 3.21875 12.375C2.21875 11.8125 1.4375 11.0312 0.875 10.0312C0.28125 9.03125 0 7.9375 0 6.75C0 5.5625 0.28125 4.5 0.875 3.5C1.4375 2.5 2.21875 1.71875 3.21875 1.125C4.21875 0.5625 5.3125 0.25 6.5 0.25C7.6875 0.25 8.75 0.5625 9.75 1.125C10.75 1.71875 11.5312 2.5 12.125 3.5C12.6875 4.5 13 5.5625 13 6.75C13 7.5625 12.8438 8.3125 12.5625 9.03125C12.2812 9.78125 11.9062 10.4375 11.4062 11H11.8438C11.9375 11 12.0312 11.0312 12.0938 11.0938L15.9062 14.9062ZM6.5 11.75C7.375 11.75 8.21875 11.5312 9 11.0938C9.75 10.6562 10.375 10.0312 10.8125 9.25C11.25 8.5 11.5 7.65625 11.5 6.75C11.5 5.875 11.25 5.03125 10.8125 4.25C10.375 3.5 9.75 2.875 9 2.4375C8.21875 2 7.375 1.75 6.5 1.75C5.59375 1.75 4.75 2 4 2.4375C3.21875 2.875 2.59375 3.5 2.15625 4.25C1.71875 5.03125 1.5 5.875 1.5 6.75C1.5 7.65625 1.71875 8.5 2.15625 9.25C2.59375 10.0312 3.21875 10.6562 4 11.0938C4.75 11.5312 5.59375 11.75 6.5 11.75Z" fill="white"/>
+								</svg>
+								span Найти
+						ul
+							li
+								a(href="#").select-item Все 
+									span (13)
+							li
+								a(href="#") Вакцины 
+									span (4)
+							li
+								a(href="#") Инфекции 
+									span (1)
+							li
+								a(href="#") Статьи 
+									span (3)
+					._box
+						span._name-box Вакцины:
+						.drug-items
+							.recommendations-item
+								.recommendations-item__image
+									img(src="img/recomend-img1.jpg", alt="")
+								.recommendations-item__info
+									span.recommendations-title Адасель
+									span.recommendations-subtitle Назначается в качестве превентивной меры в период общей профилактика гриппа
+									.recommendations-price
+										span.price 560
+											span ₽
+										a(href="#").recommendations-more.animBtn Подробнее
+											<svg xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewBox="0 0 7 10" fill="none">
+												<path d="M1 1L5.51724 5L1 9" stroke="#005AA5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+							.recommendations-item
+								.recommendations-item__image
+									img(src="img/recomend-img2.jpg", alt="")
+								.recommendations-item__info
+									span.recommendations-title Хаврикс
+									span.recommendations-subtitle Назначается в качестве превентивной меры в период общей профилактика гриппа
+									.recommendations-price
+										span.price 560
+											span ₽
+										a(href="#").recommendations-more.animBtn Подробнее
+											<svg xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewBox="0 0 7 10" fill="none">
+												<path d="M1 1L5.51724 5L1 9" stroke="#005AA5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+							.recommendations-item
+								.recommendations-item__image
+									img(src="img/recomend-img3.jpg", alt="")
+								.recommendations-item__info
+									span.recommendations-title Гриппол
+									span.recommendations-subtitle Назначается в качестве превентивной меры в период общей профилактика гриппа
+									.recommendations-price
+										span.price 560
+											span ₽
+										a(href="#").recommendations-more.animBtn Подробнее
+											<svg xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewBox="0 0 7 10" fill="none">
+												<path d="M1 1L5.51724 5L1 9" stroke="#005AA5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+							.recommendations-item
+								.recommendations-item__image
+									img(src="img/recomend-img4.jpg", alt="")
+								.recommendations-item__info
+									span.recommendations-title Инфанрикс
+									span.recommendations-subtitle Назначается в качестве превентивной меры в период общей профилактика гриппа
+									.recommendations-price
+										span.price 560
+											span ₽
+										a(href="#").recommendations-more.animBtn Подробнее
+											<svg xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewBox="0 0 7 10" fill="none">
+												<path d="M1 1L5.51724 5L1 9" stroke="#005AA5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
