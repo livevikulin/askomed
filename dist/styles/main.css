@@ -1686,14 +1686,15 @@ p {
   .hero-slider .slick-arrow {
     z-index: 1; }
   .hero-slider .slick-prev {
-    left: 325px; }
+    left: calc((100% - 1170px) / 2 - 50px); }
     .hero-slider .slick-prev:before {
       content: url("../../img/arrow-left.png"); }
   .hero-slider .slick-next {
-    right: 325px; }
+    right: calc((100% - 1170px) / 2 - 50px); }
     .hero-slider .slick-next:before {
       content: url("../../img/arrow-right.png"); }
   .hero-slider .slider-image {
+    width: calc(100% - 32%);
     position: absolute;
     right: 0;
     top: 0; }
@@ -1866,7 +1867,8 @@ p {
 
 .about {
   padding: 85px 0 190px;
-  background: #FBFBFB; }
+  background: #FBFBFB;
+  overflow-x: hidden; }
   .about-block {
     display: flex;
     justify-content: space-between;
@@ -2177,7 +2179,8 @@ p {
       position: absolute;
       content: url("../../img/plane.png");
       bottom: -80px;
-      right: 300px; }
+      right: 300px;
+      z-index: 1; }
   .sub-box {
     position: relative; }
     .sub-box h3 {
@@ -5402,5 +5405,12 @@ p {
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
+    @media (max-width: 1200px) {
+  .container {
+    width: 95%; }
+  .header-search .search {
+    width: 285px; }
+  .header-search__text {
+    width: 185px; } }
 
 /*# sourceMappingURL=maps/main.css.map */

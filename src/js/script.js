@@ -5,6 +5,10 @@ import "jquery.maskedinput";
 
 
 $(document).ready(function() {
+
+	$('.banner-close').on('click', function() {
+		$('.banner').hide();
+	});
 	
 	//Выбор города
 	$('.city_btn').on('click', function() {
@@ -481,4 +485,5 @@ $(document).ready(function() {
 	
 	
 });
+
 

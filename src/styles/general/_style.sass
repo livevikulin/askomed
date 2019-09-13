@@ -306,14 +306,15 @@ p
 		.slick-arrow
 			z-index: 1
 		.slick-prev
-			left: 325px
+			left: calc((100% - 1170px) / 2 - 50px)
 			&:before
 				content: url('../../img/arrow-left.png')
 		.slick-next
-			right: 325px
+			right: calc((100% - 1170px) / 2 - 50px)
 			&:before
 				content: url('../../img/arrow-right.png')
 		.slider-image
+			width: calc(100% - 32%)
 			position: absolute
 			right: 0
 			top: 0
@@ -484,6 +485,7 @@ p
 .about
 	padding: 85px 0 190px
 	background: #FBFBFB
+	overflow-x: hidden
 	&-block
 		display: flex
 		justify-content: space-between
@@ -803,6 +805,7 @@ p
 			content: url('../../img/plane.png')
 			bottom: -80px
 			right: 300px
+			z-index: 1
 	&-box
 		position: relative
 		h3
@@ -2945,3 +2948,8 @@ p
 .select-item
 	color: $color-text !important
 	border: none !important
+	
+	
+@media (max-width: 1200px)
+	.container
+		width: 95%
