@@ -1364,6 +1364,9 @@ h1, h2, h3, h4, h5, h6, p {
 .test {
   padding: 50px 0; }
 
+h1, h2, h3, h4 {
+  margin-bottom: 15px; }
+
 h1 {
   font-family: "Raleway Light";
   font-weight: 300;
@@ -1392,6 +1395,12 @@ h4 {
   color: #141414; }
 
 p {
+  font-family: "Raleway Regular";
+  font-size: 15px;
+  line-height: 25px;
+  color: #454B52; }
+
+ul {
   font-family: "Raleway Regular";
   font-size: 15px;
   line-height: 25px;
