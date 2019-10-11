@@ -1683,6 +1683,9 @@ p {
     padding: 69px 0;
     background: url("../../img/bg-slider.jpg");
     position: relative; }
+  .hero-slider .slick-slide {
+    width: 100% !important;
+    max-width: 1920px; }
   .hero-slider .slick-arrow {
     z-index: 1; }
   .hero-slider .slick-prev {
