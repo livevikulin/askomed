@@ -72,7 +72,7 @@ $(document).ready(function() {
 	
 	//Маски
 	$("#record_born").mask("99 / 99 / 9999");
-	$("#record_phone, #wfb_phone, #fb_phone, #partner_phone, #question_phone, #price_phone").mask("+7 (999)-999-99-99");
+	$(".js-phone").mask("+7 (999)-999-99-99");
 	
 	//Если инпут заполнен, убираем подсказку
 	var $input = $('.field');
