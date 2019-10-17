@@ -2,9 +2,20 @@ import "jquery";
 import "slick-slider";
 import "izimodal";
 import "jquery.maskedinput";
+import "@fancyapps/fancybox";
 
 
 $(document).ready(function() {
+
+	$('[data-fancybox]').fancybox({
+		youtube : {
+			controls : 1,
+			showinfo : 1
+		},
+		vimeo : {
+			color : 'f00'
+		}
+	});
 
 	$('.banner-close').on('click', function() {
 		$('.banner').hide();
