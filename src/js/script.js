@@ -65,10 +65,6 @@ $(document).ready(function() {
 		$(this).parents('.record-step').addClass('step_none');
 		$(this).parents('.record-step').prev().removeClass('step_none');
 	});
-	$('.btn-submit').on('click', function() {
-		$(this).parents('.record-step').addClass('step_none');
-		$(this).parents('.record-step').next().removeClass('step_none');
-	});
 	
 	//Маски
 	$("#record_born").mask("99 / 99 / 9999");

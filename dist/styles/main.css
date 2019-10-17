@@ -1424,6 +1424,9 @@ ul {
       line-height: 25px;
       color: #454B52; }
 
+.input-error {
+  border-color: red; }
+
 .dot-list {
   list-style: none; }
   .dot-list li {
