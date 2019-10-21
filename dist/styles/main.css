@@ -2106,13 +2106,16 @@ p {
   font-family: "Raleway Regular";
   font-size: 15px;
   line-height: 25px;
-  color: #454B52; }
+  color: #454B52;
+  margin-bottom: 15px; }
 
 ul {
   font-family: "Raleway Regular";
   font-size: 15px;
   line-height: 25px;
   color: #454B52; }
+  ul li {
+    margin-bottom: 15px; }
 
 .number-list {
   counter-reset: item;
