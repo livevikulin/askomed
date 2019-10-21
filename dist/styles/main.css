@@ -3355,7 +3355,10 @@ ul {
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(0, 113, 207, 0.12);
     border-radius: 8px;
-    overflow: hidden; }
+    overflow: hidden;
+    transition: 0.2s; }
+    .recommendations-item:hover {
+      box-shadow: 0px 2px 8px rgba(0, 113, 207, 0.12); }
     .recommendations-item__image {
       width: 100%;
       border-top-left-radius: 8px;
@@ -3365,7 +3368,8 @@ ul {
         object-fit: cover; }
     .recommendations-item__info {
       height: 216px;
-      padding: 12px 12px 20px; }
+      padding: 12px 12px 20px;
+      position: relative; }
   .recommendations-title {
     display: block;
     font-family: "Raleway Semibold";
@@ -3387,8 +3391,8 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    bottom: -50px; }
+    position: absolute;
+    bottom: 15px; }
     .recommendations-price .price {
       display: flex;
       justify-content: center;
@@ -3407,7 +3411,9 @@ ul {
     display: flex;
     align-items: center;
     color: #454B52;
-    text-decoration: none; }
+    text-decoration: none;
+    position: relative;
+    right: -65px; }
     .recommendations-more svg {
       margin-left: 5px; }
 
@@ -5326,10 +5332,9 @@ ul {
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.06); }
   .navbar-block {
     display: flex;
-    justify-content: center;
-    padding: 15px 0 17px; }
+    justify-content: center; }
   .navbar-item {
-    padding: 0 40px;
+    padding: 15px 40px;
     cursor: pointer;
     position: relative; }
     .navbar-item:before {
