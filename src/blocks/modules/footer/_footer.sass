@@ -98,3 +98,74 @@
 			line-height: 25px
 			font-feature-settings: 'pnum' on, 'lnum' on
 			color: #333333
+.footer-mobile
+	display: none
+	.footer-menu
+		&__item
+			padding: 15px 24px
+			border-bottom: 1px solid #E0E0E0
+			a
+				display: block
+				font-family: Montserrat
+				font-style: normal
+				font-weight: bold
+				font-size: 13px
+				line-height: 27px
+				letter-spacing: 0.1em
+				text-transform: uppercase
+				color: #454B52
+				text-decoration: none
+				position: relative
+				svg
+					position: absolute
+					right: 0
+					top: 50%
+					transform: translateY(-50%)
+					&:before
+						position: absolute
+						content: ''
+						top: 0
+						left: 50%
+						transform: translateX(-50%)
+						width: 4px
+						height: 7px
+						background: #ffffff
+		&__drop
+			display: none
+			padding-top: 15px
+			a
+				font-family: $R
+				font-style: normal
+				font-weight: normal
+				font-size: 15px
+				line-height: 24px
+				letter-spacing: 0em
+				text-transform: none
+				color: #535353
+				margin-bottom: 10px
+	.footer-social
+		display: flex
+		justify-content: space-between
+		padding: 24px 12px
+		&__block
+			width: 96px
+			height: 96px
+			flex-wrap: wrap
+			margin-bottom: 0
+			a
+				width: 48px
+				height: 48px
+
+
+@media (max-width: 999px)
+	.footer-logo
+		display: none
+@media (max-width: 768px)
+	.footer-main
+		display: none
+	.footer-mobile
+		display: block
+	.footer-block
+		flex-direction: column
+	.footer-developer
+		margin-top: 15px

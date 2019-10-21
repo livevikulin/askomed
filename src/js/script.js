@@ -122,6 +122,13 @@ $(document).ready(function() {
 		autoplay:true,
         autoplaySpeed: 3500
 	});
+
+	//Инициализация слайдера в мобильной версии  О компании
+	$('.js-about').slick({
+		arrows: true,
+		// autoplay: true,
+		// autoplaySpeed: 4000
+	});
 	
 	//Меняем у слайдера номер
 	$('.reason-slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
