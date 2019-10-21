@@ -490,7 +490,6 @@ $(document).ready(function() {
 		});
 	})();
 	
-	
 });
 
 
