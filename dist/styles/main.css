@@ -3259,33 +3259,31 @@ ul {
       font-feature-settings: 'pnum' on, 'lnum' on;
       color: #454B52; }
 
-.vaccinations-table {
+table {
   display: table;
   width: 100%;
   border: 1px solid #E0E0E0;
   border-collapse: collapse; }
-
-.vaccinations-row {
-  display: table-row; }
-  .vaccinations-row:first-child {
-    background: #F2F2F2; }
-    .vaccinations-row:first-child .vaccinations-col {
-      font-family: "Raleway Semibold";
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 32px;
-      color: #141414;
-      padding: 14px 0 14px 40px; }
-
-.vaccinations-col {
-  display: table-cell;
-  font-family: "Raleway Regular";
-  font-size: 15px;
-  line-height: 25px;
-  font-feature-settings: 'pnum' on, 'lnum' on;
-  color: #454B52;
-  padding: 30px 0 30px 40px;
-  border: 1px solid #E0E0E0; }
+  table tr {
+    display: table-row; }
+    table tr:first-child {
+      background: #F2F2F2; }
+      table tr:first-child td {
+        font-family: "Raleway Semibold";
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+        color: #141414;
+        padding: 14px 0 14px 40px; }
+  table td {
+    display: table-cell;
+    font-family: "Raleway Regular";
+    font-size: 15px;
+    line-height: 25px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #454B52;
+    padding: 30px 0 30px 40px;
+    border: 1px solid #E0E0E0; }
 
 .faq {
   background: #FBFBFB;
