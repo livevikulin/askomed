@@ -2927,6 +2927,7 @@ ul {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-shrink: 0;
         width: 50px;
         height: 50px;
         background: #ffffff;
@@ -5351,7 +5352,7 @@ table {
     display: none; }
     .header-mobile__banner {
       background: linear-gradient(90deg, #F09819 0.49%, #EDDE5D 100%);
-      padding: 6px 12px 8px;
+      padding: 10px 12px;
       position: relative; }
       .header-mobile__banner a {
         position: absolute;
@@ -6357,6 +6358,67 @@ table {
   .header-search__text {
     width: 185px; } }
     @media (max-width: 999px) {
+  .container {
+    width: 95%;
+    margin: 0 auto; }
+  .reason {
+    width: 336px;
+    height: 312px;
+    background: url("../img/mobile-reason.png");
+    padding: 30px 50px; }
+  .reasons-box:nth-child(3n+3) {
+    margin-right: 24px; }
+  .reasons-box:nth-child(2n+2) {
+    margin-right: 0; }
+  .reasons-box:nth-child(4n+4) {
+    margin-bottom: 30px; }
+  .about {
+    padding-bottom: 250px; }
+  .about-block {
+    flex-direction: column;
+    background: none; }
+  .about-text {
+    padding-top: 0;
+    padding-bottom: 35px; }
+    .about-text span {
+      min-width: 100%; }
+  .about-slider {
+    width: 620px;
+    margin: 0 auto; }
+  .about-video {
+    right: 50%;
+    bottom: -640px; }
+  .map-block {
+    top: -25px;
+    left: 60px; }
+  .sub-block {
+    flex-direction: column;
+    align-items: center; }
+    .sub-block:before {
+      display: none; }
+  .sub-box h3 {
+    max-width: 100%; }
+  .sub-box span {
+    max-width: 100%; }
+  .sub-box__info span {
+    max-width: 440px; }
+  .sub-box__input {
+    margin: 25px 0; }
+  .feedback-block {
+    flex-direction: column;
+    align-items: center; }
+    .feedback-block:after {
+      display: none; }
+    .feedback-block:before {
+      content: url("../img/director-mobile.png");
+      top: 195px;
+      left: auto;
+      bottom: auto; }
+  .feedback-info {
+    height: auto;
+    background: none;
+    left: 0;
+    margin-bottom: 150px; }
   header {
     display: none; }
   .header-mobile {
