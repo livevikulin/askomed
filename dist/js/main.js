@@ -169,9 +169,9 @@ eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset
   !*** ./src/blocks/modules/header/header.js ***!
   \*********************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYmxvY2tzL21vZHVsZXMvaGVhZGVyL2hlYWRlci5qcy5qcyIsInNvdXJjZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/blocks/modules/header/header.js\n");
+eval("/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {\n  $('.burger').on('click', function () {\n    $('.mobile-nav').addClass('menu-active');\n  });\n  $('.close').on('click', function () {\n    $('.mobile-nav').removeClass('menu-active');\n  });\n  $('.item-down a').on('click', function () {\n    $(this).children().toggleClass('rotate');\n    $(this).next().slideToggle();\n  });\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYmxvY2tzL21vZHVsZXMvaGVhZGVyL2hlYWRlci5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9ibG9ja3MvbW9kdWxlcy9oZWFkZXIvaGVhZGVyLmpzP2U3ZGEiXSwic291cmNlc0NvbnRlbnQiOlsiJChkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24gKCkge1xuICAkKCcuYnVyZ2VyJykub24oJ2NsaWNrJywgZnVuY3Rpb24gKCkge1xuICAgICQoJy5tb2JpbGUtbmF2JykuYWRkQ2xhc3MoJ21lbnUtYWN0aXZlJyk7XG4gIH0pO1xuICAkKCcuY2xvc2UnKS5vbignY2xpY2snLCBmdW5jdGlvbiAoKSB7XG4gICAgJCgnLm1vYmlsZS1uYXYnKS5yZW1vdmVDbGFzcygnbWVudS1hY3RpdmUnKTtcbiAgfSk7XG4gICQoJy5pdGVtLWRvd24gYScpLm9uKCdjbGljaycsIGZ1bmN0aW9uICgpIHtcbiAgICAkKHRoaXMpLmNoaWxkcmVuKCkudG9nZ2xlQ2xhc3MoJ3JvdGF0ZScpO1xuICAgICQodGhpcykubmV4dCgpLnNsaWRlVG9nZ2xlKCk7XG4gIH0pO1xufSk7Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/blocks/modules/header/header.js\n");
 
 /***/ }),
 

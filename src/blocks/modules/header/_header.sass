@@ -249,6 +249,194 @@
 				border: 8px solid transparent
 				border-top: 8px solid #6DC6D3
 				transform: rotate(180deg)
+	&-mobile
+		display: none
+		&__banner
+			background: linear-gradient(90deg, #F09819 0.49%, #EDDE5D 100%)
+			padding: 6px 12px 8px
+			position: relative
+			a
+				position: absolute
+				right: 12px
+				top: 50%
+				transform: translateY(-50%)
+				cursor: pointer
+			p
+				font-family: $ROB
+				font-size: 14px
+				line-height: 18px
+				color: #454B52
+				margin: 0
+				text-align: center
+				span
+					&:first-child
+						color: #E31E24
+.mobile-menu
+	display: flex
+	align-items: center
+	padding: 15px 12px 18px
+	position: relative
+	&__logo
+		height: 43px
+	&__btn
+		position: absolute
+		right: 104px
+		display: block
+		width: 82px
+		font-family: $RB
+		font-size: 13px
+		line-height: 15px
+		color: #FFFFFF
+		text-align: center
+		background: linear-gradient(90deg, #005AA5 0%, #6EC6D3 100%)
+		border-radius: 18px
+		padding: 3px 0
+		text-decoration: none
+	&__phone
+		position: absolute
+		right: 58px
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 36px
+		height: 36px
+		border-radius: 50%
+		background: #F2F2F2
+	&__search
+		position: absolute
+		right: 12px
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 36px
+		height: 36px
+		border-radius: 50%
+		background: #F2F2F2
+	.mobile-nav
+		position: absolute
+		top: 0
+		left: 0
+		transform: translateX(-100vw)
+		width: 100vw
+		height: 100vh
+		background: #ffffff
+		z-index: 99
+		transition: 0.3s
+		.close
+			padding: 20px 0
+			border-bottom: 1px solid #E0E0E0
+			&__btn
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 36px
+				height: 36px
+				margin-left: 12px
+		.city
+			padding: 10px 0
+			border-bottom: 1px solid #E0E0E0
+			&__choice
+				margin-left: 24px
+				p
+					display: flex
+					font-family: Open Sans
+					font-style: normal
+					font-weight: normal
+					font-size: 14px
+					line-height: 30px
+					color: #454B52
+					margin: 0
+					span
+						display: flex
+						align-items: center
+						margin-left: 12px
+						color: #005AA5
+						svg
+							margin-left: 10px
+			&__address
+				margin-left: 36px
+				p
+					margin-bottom: 7px
+					font-feature-settings: 'pnum' on, 'lnum' on
+					&:last-child
+						margin-bottom: 0
+					svg
+						margin-right: 10px
+		.nav
+			padding: 13px 24px 20px
+			&__item
+				padding: 8px 0
+				border-bottom: 1px solid #E0E0E0
+				a
+					display: block
+					font-family: Montserrat
+					font-style: normal
+					font-weight: 500
+					font-size: 15px
+					line-height: 27px
+					color: #454B52
+					text-decoration: none
+					position: relative
+					svg
+						position: absolute
+						right: 0
+						top: 50%
+						transform: translateY(-50%)
+						transition: 0.2s
+			&__item-menu
+				display: none
+				padding-top: 10px
+				margin-left: 15px
+				a
+					margin-bottom: 5px
+		.link
+			padding: 0px 24px 20px
+			border-bottom: 1px solid #E0E0E0
+			a
+				display: block
+				font-family: Open Sans
+				font-style: normal
+				font-weight: normal
+				font-size: 14px
+				line-height: 21px
+				color: #777777
+				text-decoration: none
+				margin-bottom: 10px
+				&:last-child
+					margin-bottom: 0
+		.phone
+			padding: 20px 24px
+			a
+				font-family: Montserrat
+				font-style: normal
+				font-weight: 500
+				font-size: 18px
+				line-height: 27px
+				color: #454B52
+				margin-right: 15px
+				text-decoration: none
+			span
+				font-family: Open Sans
+				font-style: normal
+				font-weight: normal
+				font-size: 14px
+				line-height: 21px
+				color: #8E8E8E
+.menu-active
+	transform: translateX(0)!important
+	transition: 0.3s
+.rotate
+	transform: rotate(180deg) !important
+.burger
+	margin-right: 17px
+	&__icon
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 36px
+		height: 36px
+		border-radius: 50%
+		background: #005AA5
 	
 .navbar
 	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.06)
@@ -256,7 +444,6 @@
 		display: flex
 		justify-content: center
 	&-item
-		padding: 15px 40px
 		cursor: pointer
 		position: relative
 		&:before
@@ -271,6 +458,7 @@
 		&:last-child:before
 			display: none
 		&__link
+			display: block
 			font-family: $RM
 			font-size: 16px
 			line-height: 25px
@@ -278,6 +466,7 @@
 			color: $color-text
 			text-decoration: none
 			outline: none
+			padding: 15px 40px
 			transition: 0.2s
 		&:hover 
 			.navbar-item__link
@@ -294,14 +483,14 @@
 				align-items: center
 				width: 9px
 				height: 5px
-				top: 40%
-				right: -17px
+				top: 48%
+				right: 0
 				transform: translateY(-50%)
 		&__block
 			display: none
 			position: absolute
 			left: 0
-			top: -30px
+			top: -16px
 			background: #ffffff
 			list-style: none
 			padding: 60px 0 0
@@ -310,6 +499,7 @@
 			z-index: 99
 			li
 				padding: 20px 40px
+				margin: 0
 				a
 					font-family: $RM
 					font-weight: 500
@@ -386,3 +576,9 @@
 				width: 285px
 			&__text
 				width: 185px
+
+@media (max-width: 999px)
+	header
+		display: none
+	.header-mobile
+		display: block
