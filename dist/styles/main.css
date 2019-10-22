@@ -2136,7 +2136,7 @@ ul {
       color: #454B52; }
 
 .input-error {
-  border-color: red; }
+  border-color: red !important; }
 
 .dot-list {
   list-style: none; }
@@ -3677,7 +3677,8 @@ table {
       width: 100%;
       height: 100%;
       top: 0;
-      left: 0; }
+      left: 0;
+      z-index: 1; }
 
 .pagination {
   border: 1px solid #BDDEE9;
@@ -6537,8 +6538,6 @@ table {
     display: block; }
   .footer-logo {
     display: none; } }
-<<<<<<< HEAD
-=======
     @media (max-width: 768px) {
   .vaccinations-boxes {
     display: none; }
@@ -6609,7 +6608,6 @@ table {
   .sub-box input {
     font-size: 13px;
     padding-left: 10px; } }
->>>>>>> 51627638f44dcbf7d50ba4040c1433beb704155b
     @media all and (max-height: 576px) {
   .fancybox-slide {
     padding-left: 6px;
