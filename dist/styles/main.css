@@ -6422,7 +6422,9 @@ table {
   header {
     display: none; }
   .header-mobile {
-    display: block; } }
+    display: block; }
+  .footer-logo {
+    display: none; } }
     @media all and (max-height: 576px) {
   .fancybox-slide {
     padding-left: 6px;
