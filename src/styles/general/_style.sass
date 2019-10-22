@@ -418,6 +418,41 @@ ul
 			margin-right: 12px
 			&:last-child
 				margin-right: 0
+	&-mobile
+		display: none
+		padding: 35px 0
+.vaccination-mobile
+	display: flex
+	align-items: center
+	justify-content: space-between
+	width: 100%
+	padding: 15px 12px
+	margin-bottom: 8px
+	background: #FFFFFF
+	box-shadow: 0px 2px 8px rgba(0, 113, 207, 0.12)
+	border-radius: 8px
+	text-decoration: none
+	&:last-child
+		margin-bottom: 0
+	&__name
+		display: block
+		font-family: Montserrat
+		font-style: normal
+		font-weight: 500
+		font-size: 15px
+		line-height: 21px
+		color: #454B52
+	&__price
+		display: block
+		font-family: Open Sans
+		font-style: normal
+		font-weight: 300
+		font-size: 15px
+		line-height: 15px
+		color: #005AA5
+		span
+			font-weight: normal
+			color: #E31E24
 .reasons
 	padding: 50px 0 105px
 	&-block
@@ -555,6 +590,24 @@ ul
 			transition: 0.2s
 		&:hover:before
 			transform: scale(0.9)
+.slider-about
+	display: none
+	&__slide
+		width: 100%
+		img
+			width: 100%
+			height: 100%
+			object-fit: contain
+	.slick-arrow
+		z-index: 10
+	.slick-prev
+		left: 12px
+		&:before
+			content: url('../img/slide-prev.png')
+	.slick-next
+		right: 50px
+		&:before
+			content: url('../img/slide-next.png')
 .stack
 	margin: 0 auto
 	position: relative
@@ -3056,4 +3109,68 @@ table
 		background: none
 		left: 0
 		margin-bottom: 150px
-		
+
+@media (max-width: 768px)
+	.vaccinations-boxes
+		display: none
+	.vaccinations-mobile
+		display: block
+	.reasons-block
+		h2
+			text-align: center
+			margin: 0 auto
+	.reasons-boxes
+		flex-direction: column
+		align-items: center
+	.reasons-box
+		display: flex
+		margin-right: 0
+		&:nth-child(3n+3)
+			margin-right: 0
+		&__logo
+			margin-right: 14px
+		&__name
+			line-height: 15px
+			margin-top: 0
+	.reason
+		margin-top: 30px
+	.about-text
+		padding-left: 0
+		padding-right: 0
+		h2
+			text-align: center
+		span
+			text-align: center
+		.about-buttons
+			text-align: center
+	.about-slider
+		display: none
+	.slider-about
+		display: block
+	.map
+		height: auto
+		&-block
+			position: static
+		&-info
+			max-width: 100%
+			box-shadow: none
+	.feedback-form
+		background-image: none
+@media (max-width: 635px)
+	.feedback
+		padding-bottom: 0
+		&:before
+			display: none
+		&:after
+			display: none
+	.feedback-form
+		padding-left: 0
+		padding-right: 0
+		.input
+			width: 100%
+	.map-info
+		padding: 40px 10px 60px
+	.sub-box
+		input
+			font-size: 13px
+			padding-left: 10px
