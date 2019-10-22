@@ -5653,7 +5653,7 @@ table {
         width: 9px;
         height: 5px;
         top: 48%;
-        right: 0;
+        right: 15px;
         transform: translateY(-50%); }
     .navbar-list__block {
       display: none;
