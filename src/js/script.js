@@ -157,15 +157,21 @@ $(document).ready(function() {
 	});
 	
 	//Выпадашки в блоке с частыми вопросами
+	// $('.faq-box__button').on('click', function() {
+	// 	if ($('.faq-box__content').is(':visible')) {
+	// 		$('.faq-box__content').slideUp();
+	// 		$('.faq-box__minus').css({display: 'none'});
+	// 		$('.faq-box__plus').show();
+	// 	}
+	// 	$(this).next('.faq-box__content').slideDown();
+	// 	$(this).find('.faq-box__plus').hide();
+	// 	$(this).find('.faq-box__minus').css({display: 'flex'});
+	// });
 	$('.faq-box__button').on('click', function() {
-		if ($('.faq-box__content').is(':visible')) {
-			$('.faq-box__content').slideUp();
-			$('.faq-box__minus').css({display: 'none'});
-			$('.faq-box__plus').show();
-		}
-		$(this).next('.faq-box__content').slideDown();
-		$(this).find('.faq-box__plus').hide();
-		$(this).find('.faq-box__minus').css({display: 'flex'});
+		$(this).parent().siblings().find('.faq-box__content').slideUp();
+		$(this).next().slideToggle();
+		$(this).parent().siblings().removeClass('visible');
+		$(this).parent().toggleClass('visible');
 	});
 	
 	//Выпадашки в каталоге

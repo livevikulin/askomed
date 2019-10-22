@@ -4824,6 +4824,12 @@ table {
 .visible .catalog-item__name {
   color: #005AA5; }
 
+.visible .faq-box__plus {
+  display: none; }
+
+.visible .faq-box__minus {
+  display: flex; }
+
 .vaccines {
   padding: 30px 0 70px;
   background: #fbfbfb; }
