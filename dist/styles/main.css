@@ -3675,8 +3675,9 @@ table {
       color: #454B52;
       text-decoration: none;
       text-align: right;
-      position: relative;
-      bottom: -35px; }
+      position: absolute;
+      bottom: 30px;
+      right: 30px; }
       .blog-box__next svg {
         margin-left: 5px; }
     .blog-box__link {
@@ -6631,7 +6632,6 @@ table {
     display: block; }
   .footer-logo {
     display: none; } }
-<<<<<<< HEAD
     @media (max-width: 916px) {
   .drug-items .recommendations-item:nth-child(3n+3) {
     margin-right: 23px; }
@@ -6641,8 +6641,6 @@ table {
     margin-right: 23px; }
   .choice-drug__boxes .recommendations-item:nth-child(2n+2) {
     margin-right: 0; } }
-=======
->>>>>>> fc5e0e1a8ff76ef25a1751b0cdee0b445b54274b
     @media (max-width: 768px) {
   .vaccinations-boxes {
     display: none; }
@@ -6698,8 +6696,6 @@ table {
     padding: 30px 35px 50px; }
   .blog-box__image {
     display: none; }
-  .blog-box__next {
-    bottom: -20px; }
   .pagination-num a {
     padding: 10px 15px; }
   .blog-tabs {
@@ -6750,7 +6746,6 @@ table {
     padding: 40px 10px 60px; }
   .sub-box input {
     font-size: 13px;
-<<<<<<< HEAD
     padding-left: 10px; }
   .recommendations-block h2 {
     font-size: 24px;
@@ -6798,9 +6793,6 @@ table {
       margin-right: 0; }
   .info-image:before {
     display: none; } }
-=======
-    padding-left: 10px; } }
->>>>>>> fc5e0e1a8ff76ef25a1751b0cdee0b445b54274b
     @media all and (max-height: 576px) {
   .fancybox-slide {
     padding-left: 6px;
