@@ -591,7 +591,7 @@ ul
 		&:hover:before
 			transform: scale(0.9)
 .slider-about
-	display: none
+	display: none !important
 	&__slide
 		width: 100%
 		img
@@ -1200,6 +1200,7 @@ ul
 			background: linear-gradient(90deg, #6A5F99 0%, #A04678 52.6%, #BC526C 100%)
 			margin-right: 26px
 			border-radius: 50%
+			flex-shrink: 0
 		&__info
 			padding-bottom: 20px
 			border-bottom: 1px solid #BDDEE9
@@ -1219,9 +1220,11 @@ ul
 			line-height: 25px
 			font-feature-settings: 'pnum' on, 'lnum' on
 			color: $color-text
+	&-table
+		overflow-x: scroll
 table
 	display: table
-	width: 100%
+	width: 1170px
 	border: 1px solid #E0E0E0
 	border-collapse: collapse
 	tr
@@ -1234,7 +1237,7 @@ table
 				font-size: 16px
 				line-height: 32px
 				color: $color-title
-				padding: 14px 0 14px 40px
+				padding: 14px 40px 14px 40px
 	td
 		display: table-cell
 		font-family: $R
@@ -1273,6 +1276,7 @@ table
 			background: #2183D4
 			border-radius: 50%
 			margin-right: 25px
+			flex-shrink: 0
 		&__minus
 			display: none
 			align-items: center
@@ -1282,6 +1286,7 @@ table
 			background: #BDDEE9
 			border-radius: 50%
 			margin-right: 25px
+			flex-shrink: 0
 		&__name
 			display: block
 			font-family: $R
@@ -1306,6 +1311,8 @@ table
 			margin-bottom: 60px
 	&-slider
 		text-align: center
+		.slick-slide
+			margin-right: 23px
 		.slick-prev
 			&:before
 				content: url('../img/arrow-left.png')
@@ -1313,8 +1320,7 @@ table
 			&:before
 				content: url('../img/arrow-right.png')
 	&-item
-		width: 100%
-		max-width: 275px
+		width: 275px !important
 		background: #FFFFFF
 		box-shadow: 0px 2px 8px rgba(0, 113, 207, 0.12)
 		border-radius: 8px
@@ -1430,6 +1436,7 @@ table
 		max-width: 520px
 		padding-top: 55px
 		border-radius: 12px
+		margin-left: 20px
 		position: relative
 		&:before
 			position: absolute
@@ -1896,6 +1903,7 @@ table
 		&__info
 			height: 132px
 			padding: 16px
+			position: relative
 			span
 				display: block
 				font-family: $RS
@@ -1912,8 +1920,9 @@ table
 			color: $color-text
 			float: right
 			text-decoration: none
-			position: relative
-			bottom: -60px
+			position: absolute
+			bottom: 20px
+			right: 15px
 			svg
 				margin-left: 5px
 .wholesale
@@ -2721,6 +2730,7 @@ table
 		justify-content: center
 		align-items: center
 		border-right: 1px solid #BDDEE9
+		margin-bottom: 0
 		&:last-child
 			width: 100%
 			border-right: none
@@ -2818,6 +2828,7 @@ table
 		border-radius: 50%
 		background: #BDDEE9
 		margin-right: 7px
+		flex-shrink: 0
 	&__text
 		font-family: $R
 		font-size: 16px
@@ -3047,7 +3058,52 @@ table
 @media (max-width: 1200px)
 	.container
 		width: 95%
+	.drug-items 
+		justify-content: center
+		.recommendations-item
+			&:nth-child(1n+5)
+				margin-bottom: 28px
+			&:nth-child(4n+4)
+				margin-right: 23px
+				margin-bottom: 28px
+			&:nth-child(3n+3)
+				margin-right: 0
+	.tabs
+		flex-wrap: wrap
+		background: none
+		border: none
+	.tabs__item
+		border: 1px solid #BDDEE9
+		border-radius: 6px
+		margin-right: 5px
+		margin-bottom: 5px
+		&:last-child
+			width: auto
+			border: 1px solid #BDDEE9
+			border-radius: 6px
+		a
+			padding: 15px
+	.active-tab
+			&:before
+				display: none
+			&:first-child
+				border-radius: 6px
+	.tabs-block
+		background: none
+		border: 10px solid #A04678
+	.choice-drug__boxes
+		justify-content: center
+		.recommendations-item
+			&:nth-child(1n+5)
+				margin-bottom: 28px
+			&:nth-child(4n+4)
+				margin-right: 23px
+				margin-bottom: 28px
+			&:nth-child(3n+3)
+				margin-right: 0
 @media (max-width: 999px)
+	main
+		overflow-x: hidden
 	.reason
 		width: 336px
 		height: 312px
@@ -3109,6 +3165,62 @@ table
 		background: none
 		left: 0
 		margin-bottom: 150px
+	.product-image
+		margin-right: 30px
+	.product-info__title
+		font-size: 35px
+		line-height: 40px
+	.recommendations-slider
+		.slick-prev
+			left: 0
+		.slick-next
+			right: 0
+	.citation
+		overflow: hidden
+	.citation-block
+		&:before
+			content: url('../img/stethoscope-mob.png')
+			top: 91px
+			right: -25px
+	.info-block
+		flex-direction: column-reverse
+	.info-image
+		margin: 0 auto 40px
+	.info-subtitle
+		max-width: 100%
+	.centers-block
+		padding-bottom: 50px
+	.center-info
+		margin: 0 auto 25px
+	.center-overview
+		margin: 0 auto 25px
+	.center-map
+		width: 100%
+		position: static
+		text-align: center
+		margin: 0 auto
+		iframe
+			width: 100% !important
+	.tabs-block__image
+		width: 185px
+		height: 185px
+		margin-right: 20px
+	.tabs-block
+		padding: 60px 25px
+		
+@media (max-width: 916px)
+	.drug-items 
+		.recommendations-item
+			&:nth-child(3n+3)
+				margin-right: 23px
+			&:nth-child(2n+2)
+				margin-right: 0
+	.choice-drug__boxes
+		.recommendations-item
+			&:nth-child(3n+3)
+				margin-right: 23px
+			&:nth-child(2n+2)
+				margin-right: 0
 
 @media (max-width: 768px)
 	.vaccinations-boxes
@@ -3146,7 +3258,7 @@ table
 	.about-slider
 		display: none
 	.slider-about
-		display: block
+		display: block !important
 	.map
 		height: auto
 		&-block
@@ -3156,6 +3268,48 @@ table
 			box-shadow: none
 	.feedback-form
 		background-image: none
+	.product-main__block
+		flex-direction: column
+	.product-image
+		height: auto
+		margin-right: 0
+		margin-bottom: 16px
+	.blog-box__info
+		padding: 30px 35px 50px
+	.blog-box__image
+		display: none
+	.blog-box__next
+		bottom: -20px
+	.pagination-num 
+		a
+			padding: 10px 15px
+	.blog-tabs
+		flex-direction: column
+	.specialists-box
+		flex-direction: column
+		align-items: center
+		margin-bottom: 30px
+	.specialists-box__photo
+		margin-bottom: 35px
+	.specialists-box__info
+		&:before
+			top: -37px
+			left: 50%
+			transform: rotate(135deg) translateX(50%)
+	.services-boxes
+		justify-content: center
+	.services-box
+		margin-bottom: 15px
+	.tabs-block
+		padding: 25px
+	.tabs-block__image
+		display: none
+	.problems
+		.vaccinations-mobile
+			padding-top: 0
+	.problems__boxes
+		display: none
+		
 @media (max-width: 635px)
 	.feedback
 		padding-bottom: 0
@@ -3174,3 +3328,64 @@ table
 		input
 			font-size: 13px
 			padding-left: 10px
+	.recommendations-block 
+		h2
+			font-size: 24px
+			line-height: 32px
+	.recommendations-slider
+		.slick-slide
+			margin-right: 0
+	.product-info__title
+		font-size: 27px
+		line-height: 36px
+	.product-info
+		a
+			width: 100%
+	.recipe-box__image
+		width: 46px
+		height: 46px
+	table 
+		tr
+			&:first-child 
+				td
+					padding: 10px 12px
+		td
+			padding: 10px 12px
+	.faq-block 
+		h2
+			font-size: 24px
+			line-height: 32px
+	.faq-box__name
+		font-weight: 600
+	.citation-block
+		&:before
+			top: 241px
+	.tabs-block
+		border: none
+		padding: 25px 0
+	.tabs-block__info 
+		.btn
+			width: 100%
+			margin-top: 25px
+	.tabs-block__list 
+		a
+			float: left
+			font-weight: 700
+		li
+			&:after
+				display: none
+			
+@media (max-width: 603px)
+	.drug-items 
+		.recommendations-item
+			margin-right: 0
+			&:nth-child(3n+3)
+				margin-right: 0
+	.choice-drug__boxes
+		.recommendations-item
+			margin-right: 0
+			&:nth-child(3n+3)
+				margin-right: 0
+	.info-image
+		&:before
+			display: none
