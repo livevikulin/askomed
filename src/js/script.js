@@ -66,7 +66,7 @@ $(document).ready(function() {
 	});
 	
 	//Модалки
-	$("#record, #partner, #question, #question_succsess, #price").iziModal();
+	$("#record, #partner, #question, #question_succsess, #start_partner, #review_detail, #write_director, #order_phone, #price, #write_us").iziModal();
 	
 	$('.next_step').on('click', function() {
 		$(this).parents('.record-step').addClass('step_none');
