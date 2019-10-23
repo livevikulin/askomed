@@ -2694,9 +2694,12 @@ ul {
       transition: 0.2s; }
     .about-video:hover:before {
       transform: scale(0.9); }
+    .about-video__mobile {
+      display: none; }
 
 .slider-about {
-  display: none !important; }
+  display: none !important;
+  z-index: 10; }
   .slider-about__slide {
     width: 100%; }
     .slider-about__slide img {
@@ -4099,7 +4102,7 @@ table {
 
 .wholesale .reasons-box {
   display: flex;
-  width: 100%;
+  width: 50%;
   max-width: 564px;
   margin-right: 0; }
   .wholesale .reasons-box__name {
@@ -4254,6 +4257,7 @@ table {
         width: 100%;
         object-fit: cover; }
     .news-box__info {
+      width: 100%;
       padding: 23px 16px 21px 25px;
       position: relative; }
     .news-box__data {
@@ -4359,7 +4363,8 @@ table {
       opacity: 0.5;
       background: #005AA5; }
   .reviews__slider .slick-next {
-    right: 420px; }
+    right: auto;
+    left: 75%; }
     .reviews__slider .slick-next:focus {
       background: #005AA5; }
     .reviews__slider .slick-next:before {
@@ -4367,7 +4372,8 @@ table {
       width: 8px;
       height: 24px; }
   .reviews__slider .slick-prev {
-    left: 420px; }
+    left: auto;
+    right: 75%; }
     .reviews__slider .slick-prev:focus {
       background: #005AA5; }
     .reviews__slider .slick-prev:before {
@@ -6493,6 +6499,16 @@ table {
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
+    @media (max-width: 1600px) {
+  .reviews__slider .slick-prev {
+    right: 79%; }
+  .reviews__slider .slick-next {
+    left: 79%; } }
+    @media (max-width: 1400px) {
+  .reviews__slider .slick-prev {
+    right: 83%; }
+  .reviews__slider .slick-next {
+    left: 83%; } }
     @media (max-width: 1200px) {
   .container {
     width: 95%; }
@@ -6505,6 +6521,10 @@ table {
       margin-bottom: 28px; }
     .drug-items .recommendations-item:nth-child(3n+3) {
       margin-right: 0; }
+  .reviews__slider .slick-prev {
+    right: 89%; }
+  .reviews__slider .slick-next {
+    left: 89%; }
   .tabs {
     flex-wrap: wrap;
     background: none;
@@ -6536,10 +6556,24 @@ table {
       margin-bottom: 28px; }
     .choice-drug__boxes .recommendations-item:nth-child(3n+3) {
       margin-right: 0; }
+  .news-block__title {
+    text-align: center; }
+  .news-boxes {
+    flex-direction: column;
+    align-items: center; }
+  .news-box {
+    margin-bottom: 20px; }
+    .news-box:last-child {
+      margin-bottom: 0; }
   .header-search .search {
     width: 285px; }
   .header-search__text {
     width: 185px; } }
+    @media (max-width: 1100px) {
+  .navbar-item__link {
+    padding: 15px 35px; }
+  .navbar-list__block li {
+    padding: 15px 30px; } }
     @media (max-width: 999px) {
   .container {
     width: 95%;
@@ -6557,6 +6591,18 @@ table {
     margin-right: 0; }
   .reasons-box:nth-child(4n+4) {
     margin-bottom: 30px; }
+  .reasons-block h2 {
+    max-width: 100%;
+    text-align: center; }
+  .wholesale .reasons-boxes {
+    flex-direction: column;
+    align-items: center; }
+  .wholesale .reasons-box {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0; }
+  .wholesale .reasons-text {
+    max-width: 100%; }
   .about {
     padding-bottom: 250px; }
   .about-block {
@@ -6644,6 +6690,58 @@ table {
     margin-right: 20px; }
   .tabs-block {
     padding: 60px 25px; }
+  .chief-block__info {
+    max-width: 100%; }
+    .chief-block__info span {
+      text-align: center; }
+  .chief-block__photo {
+    display: none; }
+  .chief-block__btns {
+    text-align: center; }
+  .company {
+    padding-bottom: 265px; }
+    .company .reason {
+      margin-top: 0; }
+  .company-block__title {
+    text-align: center; }
+  .company-content {
+    flex-direction: column;
+    align-items: center; }
+  .company-content__box {
+    margin-right: 0;
+    z-index: 1; }
+    .company-content__box .reason {
+      height: 327px; }
+    .company-content__box:first-child {
+      height: 327px; }
+  .company-content__box .about-video {
+    bottom: -500px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%); }
+  .reviews__title {
+    text-align: center; }
+  .reviews__slide {
+    flex-direction: column;
+    padding: 40px 35px; }
+    .reviews__slide:before {
+      display: none; }
+  .reviews-slide__image {
+    padding: 0 0 20px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #DDF2F9; }
+    .reviews-slide__image img {
+      margin: 0 auto; }
+  .reviews-slide__info {
+    padding-left: 0; }
+    .reviews-slide__info span {
+      display: block;
+      text-align: center; }
+  .reviews-read {
+    float: right; }
+  .reviews__slider .slick-slide {
+    margin: 0 5px; }
   header {
     display: none; }
   .header-mobile {
@@ -6659,6 +6757,15 @@ table {
     margin-right: 23px; }
   .choice-drug__boxes .recommendations-item:nth-child(2n+2) {
     margin-right: 0; } }
+    @media (max-width: 900px) {
+  .ask-block {
+    flex-direction: column;
+    align-items: center; }
+  .ask-block__contacts {
+    width: 100%;
+    max-width: 585px; }
+  .ask-block__form {
+    width: 100%; } }
     @media (max-width: 768px) {
   .vaccinations-boxes {
     display: none; }
@@ -6740,6 +6847,33 @@ table {
     padding-top: 0; }
   .problems__boxes {
     display: none; }
+  .company-content {
+    display: block; }
+  .company-content__box {
+    margin-bottom: 25px; }
+    .company-content__box .reason {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      background: #ffffff;
+      background-image: none;
+      padding: 20px 0;
+      border: 10px solid #A04678; }
+    .company-content__box .about-video {
+      display: none; }
+  .about-video__mobile {
+    display: block;
+    position: relative; }
+    .about-video__mobile .about-video {
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      transform: translateY(35%); }
+      .about-video__mobile .about-video span {
+        right: -165px; }
+        .about-video__mobile .about-video span:before {
+          top: -5px;
+          left: -75px; }
   .footer-main {
     display: none; }
   .footer-mobile {
@@ -6799,7 +6933,18 @@ table {
     float: left;
     font-weight: 700; }
   .tabs-block__list li:after {
-    display: none; } }
+    display: none; }
+  .reviews__slide {
+    padding: 40px 15px; } }
+    @media (max-width: 615px) {
+  .ask-block__form {
+    padding: 45px 25px 75px; }
+    .ask-block__form .input {
+      width: 100%; }
+      .ask-block__form .input:nth-child(2) {
+        margin-bottom: 15px; }
+    .ask-block__form .textarea textarea {
+      min-width: 100%; } }
     @media (max-width: 603px) {
   .drug-items .recommendations-item {
     margin-right: 0; }
@@ -6810,7 +6955,10 @@ table {
     .choice-drug__boxes .recommendations-item:nth-child(3n+3) {
       margin-right: 0; }
   .info-image:before {
-    display: none; } }
+    display: none; }
+  .news-box {
+    width: 100%;
+    min-height: 150px; } }
     @media all and (max-height: 576px) {
   .fancybox-slide {
     padding-left: 6px;
@@ -6838,5 +6986,14 @@ table {
     right: 110px; }
   .fancybox-thumbs__list a {
     max-width: calc(100% - 10px); } }
+    @media (max-width: 500px) {
+  .news-box__image {
+    display: none; } }
+    @media (max-width: 400px) {
+  .chief-block__btns .btn {
+    width: 100%;
+    margin-bottom: 15px; }
+    .chief-block__btns .btn:last-child {
+      margin-bottom: 0; } }
 
 /*# sourceMappingURL=maps/main.css.map */

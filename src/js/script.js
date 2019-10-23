@@ -139,8 +139,17 @@ $(document).ready(function() {
 		variableWidth: true,
 		dots: true,
 		cssEase: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-		autoplay:true,
-        autoplaySpeed: 3500
+		autoplay: false,
+		autoplaySpeed: 3500,
+		responsive: [
+			{
+				breakpoint: 999,
+				settings: {
+					slidesToShow: 1,
+					variableWidth: false
+				}
+			}
+		]
 	});
 
 	//Инициализация слайдера в мобильной версии  О компании
@@ -157,16 +166,6 @@ $(document).ready(function() {
 	});
 	
 	//Выпадашки в блоке с частыми вопросами
-	// $('.faq-box__button').on('click', function() {
-	// 	if ($('.faq-box__content').is(':visible')) {
-	// 		$('.faq-box__content').slideUp();
-	// 		$('.faq-box__minus').css({display: 'none'});
-	// 		$('.faq-box__plus').show();
-	// 	}
-	// 	$(this).next('.faq-box__content').slideDown();
-	// 	$(this).find('.faq-box__plus').hide();
-	// 	$(this).find('.faq-box__minus').css({display: 'flex'});
-	// });
 	$('.faq-box__button').on('click', function() {
 		$(this).parent().siblings().find('.faq-box__content').slideUp();
 		$(this).next().slideToggle();

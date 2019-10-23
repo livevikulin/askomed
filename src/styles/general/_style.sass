@@ -600,8 +600,11 @@ ul
 			transition: 0.2s
 		&:hover:before
 			transform: scale(0.9)
+		&__mobile
+			display: none
 .slider-about
 	display: none !important
+	z-index: 10
 	&__slide
 		width: 100%
 		img
@@ -1994,7 +1997,7 @@ table
 		justify-content: space-between
 	.reasons-box
 		display: flex
-		width: 100%
+		width: 50%
 		max-width: 564px
 		margin-right: 0
 		&__name
@@ -2146,6 +2149,7 @@ table
 				width: 100%
 				object-fit: cover
 		&__info
+			width: 100%
 			padding: 23px 16px 21px 25px
 			position: relative
 		&__data
@@ -2251,7 +2255,8 @@ table
 				opacity: 0.5
 				background: #005AA5
 		.slick-next
-			right: 420px
+			right: auto
+			left: 75%
 			&:focus
 				background: #005AA5
 			&:before
@@ -2259,7 +2264,8 @@ table
 				width: 8px
 				height: 24px
 		.slick-prev
-			left: 420px
+			left: auto
+			right: 75%
 			&:focus
 				background: #005AA5
 			&:before
@@ -3072,6 +3078,19 @@ table
 	color: $color-text !important
 	border: none !important
 	
+@media (max-width: 1600px)
+	.reviews__slider 
+		.slick-prev
+			right: 79%
+		.slick-next
+			left: 79%
+		
+@media (max-width: 1400px)
+	.reviews__slider 
+		.slick-prev
+			right: 83%
+		.slick-next
+			left: 83%
 	
 @media (max-width: 1200px)
 	.container
@@ -3086,6 +3105,11 @@ table
 				margin-bottom: 28px
 			&:nth-child(3n+3)
 				margin-right: 0
+	.reviews__slider 
+		.slick-prev
+			right: 89%
+		.slick-next
+			left: 89%
 	.tabs
 		flex-wrap: wrap
 		background: none
@@ -3119,6 +3143,15 @@ table
 				margin-bottom: 28px
 			&:nth-child(3n+3)
 				margin-right: 0
+	.news-block__title
+		text-align: center
+	.news-boxes
+		flex-direction: column
+		align-items: center
+	.news-box
+		margin-bottom: 20px
+		&:last-child
+			margin-bottom: 0
 @media (max-width: 999px)
 	main
 		overflow-x: hidden
@@ -3134,6 +3167,20 @@ table
 			margin-right: 0
 		&:nth-child(4n+4)
 			margin-bottom: 30px
+	.reasons-block 
+		h2
+			max-width: 100%
+			text-align: center
+	.wholesale 
+		.reasons-boxes
+			flex-direction: column
+			align-items: center
+		.reasons-box
+			width: 100%
+			max-width: 100%
+			margin-right: 0
+		.reasons-text
+			max-width: 100%
 	.about
 		padding-bottom: 250px
 	.about-block
@@ -3225,6 +3272,60 @@ table
 		margin-right: 20px
 	.tabs-block
 		padding: 60px 25px
+	.chief-block__info
+		max-width: 100%
+		span
+			text-align: center
+	.chief-block__photo
+		display: none
+	.chief-block__btns
+		text-align: center
+	.company
+		padding-bottom: 265px
+		.reason
+			margin-top: 0
+	.company-block__title
+		text-align: center
+	.company-content
+		flex-direction: column
+		align-items: center
+	.company-content__box
+		margin-right: 0
+		z-index: 1
+		.reason
+			height: 327px
+		&:first-child
+			height: 327px
+	.company-content__box 
+		.about-video
+			bottom: -500px
+			right: auto
+			left: 50%
+			transform: translateX(-50%)
+	.reviews__title
+		text-align: center
+	.reviews__slide
+		flex-direction: column
+		padding: 40px 35px
+		&:before
+			display: none
+	.reviews-slide__image
+		padding: 0 0 20px
+		margin-bottom: 15px
+		border: none
+		border-bottom: 1px solid #DDF2F9
+		img
+			margin: 0 auto
+	.reviews-slide__info
+		padding-left: 0
+		span
+			display: block
+			text-align: center
+	.reviews-read
+		float: right
+	.reviews__slider 
+		.slick-slide
+			margin: 0 5px
 		
 @media (max-width: 916px)
 	.drug-items 
@@ -3239,6 +3340,16 @@ table
 				margin-right: 23px
 			&:nth-child(2n+2)
 				margin-right: 0
+				
+@media (max-width: 900px)
+	.ask-block
+		flex-direction: column
+		align-items: center
+	.ask-block__contacts
+		width: 100%
+		max-width: 585px
+	.ask-block__form
+		width: 100%
 
 @media (max-width: 768px)
 	.vaccinations-boxes
@@ -3325,6 +3436,33 @@ table
 			padding-top: 0
 	.problems__boxes
 		display: none
+	.company-content
+		display: block
+	.company-content__box 
+		margin-bottom: 25px
+		.reason
+			width: 100%
+			height: auto
+			margin: 0 auto
+			background: #ffffff
+			background-image: none
+			padding: 20px 0
+			border: 10px solid #A04678
+		.about-video
+			display: none
+	.about-video__mobile
+		display: block
+		position: relative
+		.about-video
+			position: absolute
+			top: 50%
+			left: 30px
+			transform: translateY(35%)
+			span
+				right: -165px
+				&:before
+					top: -5px
+					left: -75px
 		
 @media (max-width: 635px)
 	.feedback
@@ -3390,6 +3528,19 @@ table
 		li
 			&:after
 				display: none
+	.reviews__slide
+		padding: 40px 15px
+		
+@media (max-width: 615px)
+	.ask-block__form 
+		padding: 45px 25px 75px
+		.input
+			width: 100%
+			&:nth-child(2)
+				margin-bottom: 15px
+		.textarea
+			textarea
+				min-width: 100%
 			
 @media (max-width: 603px)
 	.drug-items 
@@ -3405,3 +3556,19 @@ table
 	.info-image
 		&:before
 			display: none
+	.news-box
+		width: 100%
+		min-height: 150px
+	
+@media (max-width: 500px)
+	.news-box__image
+		display: none
+	
+		
+@media (max-width: 400px)
+	.chief-block__btns
+		.btn
+			width: 100%
+			margin-bottom: 15px
+			&:last-child
+				margin-bottom: 0
