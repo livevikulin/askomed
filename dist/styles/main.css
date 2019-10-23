@@ -3593,6 +3593,7 @@ table {
         margin-bottom: 0; }
 
 .blog {
+  width: 100%;
   padding: 20px 0 75px;
   background: #FBFBFB; }
   .blog-title {
