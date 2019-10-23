@@ -4853,8 +4853,8 @@ table {
       padding-top: 40px; }
       .catalog-item__block .vaccinations-box {
         display: inline-block;
-        margin-right: 19px; }
-        .catalog-item__block .vaccinations-box:nth-child(4n+4) {
+        margin-right: 19px !important; }
+        .catalog-item__block .vaccinations-box:nth-child(5n+5) {
           margin-right: 0; }
 
 .visible .catalog-item__minus {
@@ -6594,9 +6594,9 @@ table {
     display: block !important; }
   .partners-boxes {
     display: none; }
-  .catalog-item__block .vaccinations-box:nth-child(4n+4) {
+  .catalog-item__block .vaccinations-box:nth-child(5n+5) {
     margin-right: 19px; }
-  .catalog-item__block .vaccinations-box:nth-child(3n+3) {
+  .catalog-item__block .vaccinations-box:nth-child(4n+4) {
     margin-right: 0; }
   .header-search .search {
     width: 285px; }
@@ -6779,6 +6779,20 @@ table {
     float: right; }
   .reviews__slider .slick-slide {
     margin: 0 5px; }
+  .error:before {
+    display: none; }
+  .error:after {
+    display: none; }
+  .error-page {
+    align-items: center;
+    background: none;
+    padding: 115px 70px 130px; }
+  .error-page__main-text {
+    left: 50%;
+    transform: translateX(-50%); }
+  .error-page__image {
+    left: 50%;
+    transform: translateX(-50%); }
   header {
     display: none; }
   .header-mobile {
@@ -6794,9 +6808,9 @@ table {
     margin-right: 23px; }
   .choice-drug__boxes .recommendations-item:nth-child(2n+2) {
     margin-right: 0; }
-  .catalog-item__block .vaccinations-box:nth-child(3n+3) {
+  .catalog-item__block .vaccinations-box:nth-child(4n+4) {
     margin-right: 19px; }
-  .catalog-item__block .vaccinations-box:nth-child(2n+2) {
+  .catalog-item__block .vaccinations-box:nth-child(3n+3) {
     margin-right: 0; } }
     @media (max-width: 900px) {
   .ask-block {
@@ -6935,8 +6949,24 @@ table {
   .hotline-block__text {
     display: block;
     margin-right: 0; }
-  .catalog-items__block .vaccinations-mobile {
-    display: block; }
+  .catalog {
+    padding-bottom: 50px; }
+  .catalog-item__block {
+    padding-top: 0; }
+    .catalog-item__block .vaccinations-mobile {
+      display: block; }
+    .catalog-item__block .vaccinations-box {
+      display: none; }
+  .result-block__search ul {
+    flex-direction: column;
+    align-items: center; }
+  .result-block__name-box {
+    text-align: center; }
+  .catalog-block__search-btn svg {
+    height: 27px;
+    margin-right: 0; }
+  .catalog-block__search-btn span {
+    display: none; }
   .footer-main {
     display: none; }
   .footer-mobile {
@@ -7066,7 +7096,9 @@ table {
   .calling-block {
     text-align: center; }
     .calling-block .btn-g {
-      width: 100%; } }
+      width: 100%; }
+  .error-page {
+    padding: 115px 25px 130px; } }
     @media (max-width: 500px) {
   .news-box__image {
     display: none; } }

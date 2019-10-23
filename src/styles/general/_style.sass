@@ -2745,9 +2745,10 @@ table
 			padding-top: 40px
 			.vaccinations-box
 				display: inline-block
-				margin-right: 19px
-				&:nth-child(4n+4)
+				margin-right: 19px !important
+				&:nth-child(5n+5)
 					margin-right: 0
+					
 .visible
 	.catalog-item__minus
 		display: block
@@ -3183,9 +3184,9 @@ table
 		display: none
 	.catalog-item__block 
 		.vaccinations-box
-			&:nth-child(4n+4)
+			&:nth-child(5n+5)
 				margin-right: 19px
-			&:nth-child(3n+3)
+			&:nth-child(4n+4)
 				margin-right: 0
 		
 @media (max-width: 1140px)
@@ -3367,6 +3368,21 @@ table
 	.reviews__slider 
 		.slick-slide
 			margin: 0 5px
+	.error
+		&:before
+			display: none
+		&:after
+			display: none
+	.error-page
+		align-items: center
+		background: none
+		padding: 115px 70px 130px
+	.error-page__main-text
+		left: 50%
+		transform: translateX(-50%)
+	.error-page__image
+		left: 50%
+		transform: translateX(-50%)
 		
 @media (max-width: 916px)
 	.drug-items 
@@ -3383,9 +3399,9 @@ table
 				margin-right: 0
 	.catalog-item__block 
 		.vaccinations-box
-			&:nth-child(3n+3)
+			&:nth-child(4n+4)
 				margin-right: 19px
-			&:nth-child(2n+2)
+			&:nth-child(3n+3)
 				margin-right: 0
 				
 @media (max-width: 900px)
@@ -3532,9 +3548,26 @@ table
 	.hotline-block__text
 		display: block
 		margin-right: 0
-	.catalog-items__block
+	.catalog
+		padding-bottom: 50px
+	.catalog-item__block
+		padding-top: 0
 		.vaccinations-mobile
 			display: block
+		.vaccinations-box
+			display: none
+	.result-block__search 
+		ul
+			flex-direction: column
+			align-items: center
+	.result-block__name-box
+		text-align: center
+	.catalog-block__search-btn 
+		svg
+			height: 27px
+			margin-right: 0
+		span
+			display: none
 	
 		
 @media (max-width: 635px)
@@ -3651,6 +3684,8 @@ table
 		text-align: center
 		.btn-g
 			width: 100%
+	.error-page
+		padding: 115px 25px 130px
 	
 @media (max-width: 500px)
 	.news-box__image
