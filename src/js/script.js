@@ -151,6 +151,22 @@ $(document).ready(function() {
 			}
 		]
 	});
+	
+	//Инициализация слайдера с партнерами в мобильной версии
+	$('.js-partners').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		centerMode: true,
+		cssEase: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+		responsive: [
+			{
+				breakpoint: 999,
+				settings: {
+					slidesToShow: 2
+				}
+			}
+		]
+	});
 
 	//Инициализация слайдера в мобильной версии  О компании
 	$('.js-about').slick({

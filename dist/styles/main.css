@@ -4527,6 +4527,17 @@ table {
 
 .partners {
   padding: 30px 0 90px; }
+  .partners-slider {
+    display: none !important;
+    margin-top: 35px; }
+    .partners-slider .partner {
+      display: flex !important;
+      width: 270px !important;
+      margin: 0 15px; }
+    .partners-slider .slick-list {
+      height: 210px !important; }
+    .partners-slider .slick-track {
+      margin-top: 10px; }
   .partners-block__title {
     display: block;
     font-family: "Raleway Light";
@@ -5691,15 +5702,16 @@ table {
       border-radius: 0px 0px 8px 8px;
       z-index: 99; }
       .navbar-list__block li {
-        padding: 20px 40px;
         margin: 0; }
         .navbar-list__block li a {
+          display: block;
           font-family: "Raleway Medium";
           font-weight: 500;
           font-size: 16px;
           line-height: 19px;
           color: #454B52;
-          text-decoration: none; }
+          text-decoration: none;
+          padding: 20px 40px; }
         .navbar-list__block li:hover {
           background: #F2F2F2; }
         .navbar-list__block li:last-child {
@@ -6565,6 +6577,10 @@ table {
     margin-bottom: 20px; }
     .news-box:last-child {
       margin-bottom: 0; }
+  .partners-slider {
+    display: block !important; }
+  .partners-boxes {
+    display: none; }
   .header-search .search {
     width: 285px; }
   .header-search__text {
@@ -6767,6 +6783,8 @@ table {
   .ask-block__form {
     width: 100%; } }
     @media (max-width: 768px) {
+  .hero-slider__slide {
+    height: 250px; }
   .vaccinations-boxes {
     display: none; }
   .vaccinations-mobile {
@@ -6874,6 +6892,8 @@ table {
         .about-video__mobile .about-video span:before {
           top: -5px;
           left: -75px; }
+  .calling-block:before {
+    display: none; }
   .footer-main {
     display: none; }
   .footer-mobile {
@@ -6986,6 +7006,21 @@ table {
     right: 110px; }
   .fancybox-thumbs__list a {
     max-width: calc(100% - 10px); } }
+    @media (max-width: 520px) {
+  .product-btns {
+    flex-direction: column; }
+    .product-btns .btn-g {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px; }
+    .product-btns .btn-print {
+      width: 100%; }
+  .product-info__text {
+    max-width: 100%; }
+  .calling-block {
+    text-align: center; }
+    .calling-block .btn-g {
+      width: 100%; } }
     @media (max-width: 500px) {
   .news-box__image {
     display: none; } }
