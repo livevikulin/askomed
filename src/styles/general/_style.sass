@@ -1549,6 +1549,7 @@ table
 				height: 100%
 				object-fit: cover
 		&__info
+			width: 100%
 			padding: 30px 35px
 			position: relative
 		&__title
@@ -2428,9 +2429,18 @@ table
 			width: 270px !important
 			margin: 0 15px
 		.slick-list
-			height: 210px !important
+			height: 220px !important
 		.slick-track
-			margin-top: 10px
+			margin-top: 15px
+		.slick-slide
+			width: 300px !important
+			opacity: 0.4
+			transition: 0.6s
+		.slick-center
+			opacity: 1
+			transition: 0.6s
+			.partner
+				box-shadow: 0px 0px 25px rgba(0, 113, 207, 0.12)
 	&-block
 		&__title
 			display: block
@@ -2698,6 +2708,9 @@ table
 					margin-right: 10px
 	&-items
 		padding-top: 60px
+		&__block
+			.vaccinations-mobile
+				display: none
 	&-item
 		border-bottom: 1px solid #E0E0E0
 		padding: 0 0 25px 0
@@ -3168,6 +3181,18 @@ table
 		display: block !important
 	.partners-boxes
 		display: none
+	.catalog-item__block 
+		.vaccinations-box
+			&:nth-child(4n+4)
+				margin-right: 19px
+			&:nth-child(3n+3)
+				margin-right: 0
+		
+@media (max-width: 1140px)
+	.insurance-feedback__blocks
+		flex-direction: column
+		align-items: center
+		
 @media (max-width: 999px)
 	main
 		overflow-x: hidden
@@ -3356,6 +3381,12 @@ table
 				margin-right: 23px
 			&:nth-child(2n+2)
 				margin-right: 0
+	.catalog-item__block 
+		.vaccinations-box
+			&:nth-child(3n+3)
+				margin-right: 19px
+			&:nth-child(2n+2)
+				margin-right: 0
 				
 @media (max-width: 900px)
 	.ask-block
@@ -3484,6 +3515,27 @@ table
 	.calling-block
 		&:before
 			display: none
+	.wholesale__banner
+		span
+			font-size: 14px
+	.insurance-boxes
+		flex-direction: column
+		align-items: center
+	.insurance-box
+		margin-right: 0
+		&:first-child
+			margin-bottom: 40px
+	.hotline-block
+		text-align: center
+		&:before
+			display: none
+	.hotline-block__text
+		display: block
+		margin-right: 0
+	.catalog-items__block
+		.vaccinations-mobile
+			display: block
+	
 		
 @media (max-width: 635px)
 	.feedback
@@ -3495,7 +3547,10 @@ table
 	.feedback-form
 		padding-left: 0
 		padding-right: 0
+		padding-bottom: 0
 		.input
+			width: 100%
+		.btn
 			width: 100%
 	.map-info
 		padding: 40px 10px 60px

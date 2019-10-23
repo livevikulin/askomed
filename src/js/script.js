@@ -139,7 +139,7 @@ $(document).ready(function() {
 		variableWidth: true,
 		dots: true,
 		cssEase: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 3500,
 		responsive: [
 			{
@@ -155,9 +155,11 @@ $(document).ready(function() {
 	//Инициализация слайдера с партнерами в мобильной версии
 	$('.js-partners').slick({
 		slidesToShow: 3,
-		slidesToScroll: 1,
+		variableWidth: true,
 		centerMode: true,
 		cssEase: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+		autoplay: true,
+		autoplaySpeed: 3500,
 		responsive: [
 			{
 				breakpoint: 999,
