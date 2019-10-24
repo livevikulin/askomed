@@ -5947,7 +5947,8 @@ table {
 
 .record {
   width: 100%;
-  max-width: 698px !important; }
+  max-width: 698px !important;
+  overflow-y: auto; }
   .record-step {
     padding: 55px 60px;
     background: #ffffff;
