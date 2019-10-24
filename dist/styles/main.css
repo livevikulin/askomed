@@ -3330,7 +3330,7 @@ ul {
       font-feature-settings: 'pnum' on, 'lnum' on;
       color: #454B52; }
   .recipe-table {
-    overflow-x: scroll; }
+    overflow-x: auto; }
 
 table {
   display: table;
