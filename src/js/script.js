@@ -135,7 +135,7 @@ $(document).ready(function() {
 	//Инициализация слайдера в отзывах
 	$('.reviews__slider').slick({
 		centerMode: true,
-		slidesToShow: 3,
+		slidesToShow: 1,
 		variableWidth: true,
 		dots: true,
 		cssEase: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
@@ -145,7 +145,6 @@ $(document).ready(function() {
 			{
 				breakpoint: 999,
 				settings: {
-					slidesToShow: 1,
 					variableWidth: false
 				}
 			}
