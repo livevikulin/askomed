@@ -2485,6 +2485,7 @@ ul {
       left: 78px; }
     .vaccinations-box__image {
       position: absolute;
+      width: 100px;
       height: 100%;
       top: 0;
       left: 0; }
