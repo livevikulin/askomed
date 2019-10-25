@@ -3650,6 +3650,7 @@ table {
         object-fit: cover; }
     .blog-box__info {
       width: 100%;
+      min-height: 273px;
       padding: 30px 35px;
       position: relative; }
     .blog-box__title {
