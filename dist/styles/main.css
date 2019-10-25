@@ -6236,6 +6236,12 @@ table {
   text-align: center;
   margin-top: 35px; }
 
+.modal-question .textarea textarea {
+  width: 100%;
+  max-width: 440px;
+  min-width: 440px;
+  border-color: #E0E0E0; }
+
 .question-form__check {
   margin: 30px 0 40px; }
 
