@@ -94,8 +94,8 @@ $(document).ready(function() {
 	//Инициализация слайдера на главной
 	$('.hero-slider').slick({
 		arrows: true,
-		// autoplay: true,
-		// autoplaySpeed: 4000
+		autoplay: true,
+		autoplaySpeed: 5000
 	});
 	
 	//Слайдер с рекомендациями
