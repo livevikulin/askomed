@@ -4892,9 +4892,7 @@ table {
   border: 1px solid #BDDEE9;
   border-radius: 8px; }
   .tabs__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     border-right: 1px solid #BDDEE9;
     margin-bottom: 0; }
     .tabs__item:last-child {
