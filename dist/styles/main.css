@@ -7045,6 +7045,8 @@ table {
       text-align: center; }
     .about-text .about-buttons {
       text-align: center; }
+    .about-text .about-video {
+      display: none; }
   .about-slider {
     display: none; }
   .slider-about {
