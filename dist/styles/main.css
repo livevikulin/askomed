@@ -7224,6 +7224,12 @@ table {
         margin-bottom: 15px; }
     .ask-block__form .textarea textarea {
       min-width: 100%; } }
+    @media (max-width: 609px) {
+  .test-block h1 {
+    text-align: center; }
+  .test-block p a {
+    display: block;
+    text-align: center; } }
     @media (max-width: 603px) {
   .drug-items .recommendations-item {
     margin-right: 0; }
