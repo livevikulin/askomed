@@ -1,10 +1,14 @@
 $(document).ready(function() {
 	
+	let mobileNav = $('.mobile-nav');
+	let _body = $('body');
 	$('.burger').on('click', function() {
-		$('.mobile-nav').addClass('menu-active');
+		mobileNav.addClass('menu-active');
+		_body.css('overflow', 'hidden');
 	});
 	$('.close').on('click', function() {
-		$('.mobile-nav').removeClass('menu-active');
+		mobileNav.removeClass('menu-active');
+		_body.css('overflow', 'auto');
 	});
 	
 	$('.item-down a').on('click', function() {

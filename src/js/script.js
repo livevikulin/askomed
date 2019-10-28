@@ -17,8 +17,14 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.banner-close').on('click', function() {
+	//Баннеры сверху
+	let banner = $('.banner-close');
+	let bannerMobile = $('.header-mobile__banner a');
+	banner.on('click', function() {
 		$('.banner').hide();
+	});
+	bannerMobile.on('click', function() {
+		$('.header-mobile__banner').hide();
 	});
 	
 	//Выбор города
