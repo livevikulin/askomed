@@ -5863,6 +5863,8 @@ table {
         transform: translateY(-50%); }
     .navbar-list__block {
       display: none;
+      width: 100%;
+      max-width: 170px;
       position: absolute;
       left: 0;
       top: -16px;
