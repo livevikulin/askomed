@@ -11,7 +11,7 @@ $(document).ready(function() {
 		_body.css('overflow', 'auto');
 	});
 	
-	$('.item-down a').on('click', function() {
+	$('.nav__link').on('click', function() {
 		$(this).children().toggleClass('rotate');
 		$(this).next().slideToggle();
 	});
