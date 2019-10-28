@@ -7032,6 +7032,10 @@ table {
       margin-top: 0; }
   .reason {
     margin-top: 30px; }
+    .reason-slides {
+      padding-top: 0; }
+    .reason .slick-arrow {
+      bottom: -49px; }
   .about-text {
     padding-left: 0;
     padding-right: 0; }
