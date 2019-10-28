@@ -219,7 +219,7 @@ $(document).ready(function() {
 	$('.tabs-block').hide();
 	$('.tabs-block:first').show();
 	$('.tabs__item:first').addClass('active-tab');
-	$('.tabs__item').on('click', function() {
+	$('.tabs__item').on('mouseenter', function() {
 		$('.tabs__item').removeClass('active-tab');
 		$(this).addClass('active-tab');
 		$('.tabs-block').hide();
