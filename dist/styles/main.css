@@ -7281,8 +7281,31 @@ table {
   .fancybox-thumbs__list a {
     max-width: calc(100% - 10px); } }
     @media (max-width: 520px) {
+  h1 {
+    text-align: center; }
   h2 {
     text-align: center; }
+  .reasons {
+    padding-bottom: 50px; }
+  .about {
+    padding-top: 50px; }
+  .info-image {
+    padding-top: 0; }
+  .blog-tab {
+    display: block;
+    text-align: center; }
+  .centers {
+    padding-bottom: 25px; }
+  .faqs {
+    padding-bottom: 25px; }
+  .wholesale .faqs {
+    padding-bottom: 40px; }
+  .cooperation {
+    background-position-x: center; }
+  .insurance-feedback {
+    padding-bottom: 25px; }
+  .result {
+    padding-bottom: 50px; }
   .tabs {
     justify-content: center; }
   .tabs-block__title {
