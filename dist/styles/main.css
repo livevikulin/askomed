@@ -7281,6 +7281,18 @@ table {
   .fancybox-thumbs__list a {
     max-width: calc(100% - 10px); } }
     @media (max-width: 520px) {
+  h2 {
+    text-align: center; }
+  .tabs {
+    justify-content: center; }
+  .tabs-block__title {
+    text-align: center; }
+  .problems {
+    margin-top: 15px; }
+  .vaccines {
+    padding-bottom: 15px; }
+  .choice-drugs {
+    padding-bottom: 40px; }
   .product-btns {
     flex-direction: column; }
     .product-btns .btn-g {
