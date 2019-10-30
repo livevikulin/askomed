@@ -4589,7 +4589,8 @@ table {
     font-size: 15px;
     line-height: 0px;
     color: #454B52;
-    margin-top: 20px; }
+    margin-top: 20px;
+    outline: none; }
     .reviews-read svg {
       margin-left: 5px; }
 
