@@ -328,33 +328,37 @@ ul
 		.slick-prev
 			left: calc((100% - 1170px) / 2 - 50px)
 			&:before
-				content: url('../img/arrow-left.png')
+				content: ''
 				display: flex
 				align-items: center
 				justify-content: center
 				width: 65px
 				height: 65px
-				background: rgba(160, 164, 173, 0.5)
+				background: url('../img/arrow-left.png') no-repeat rgba(160, 164, 173, 0.5)
+				background-position: 50% 50%
 				border-radius: 50%
 				transition: 0.2s
 			&:hover
 				&:before
-					background: rgba(160, 164, 173, 0.8)
+					background: url('../img/arrow-left.png') no-repeat rgba(160, 164, 173, 0.8)
+					background-position: 50% 50%
 		.slick-next
 			right: calc((100% - 1170px) / 2 - 50px)
 			&:before
-				content: url('../img/arrow-right.png')
+				content: ''
 				display: flex
 				align-items: center
 				justify-content: center
 				width: 65px
 				height: 65px
-				background: rgba(160, 164, 173, 0.5)
+				background: url('../img/arrow-right.png') no-repeat rgba(160, 164, 173, 0.5)
+				background-position: 50% 50%
 				border-radius: 50%
 				transition: 0.2s
 			&:hover
 				&:before
-					background: rgba(160, 164, 173, 0.8)
+					background: url('../img/arrow-right.png') no-repeat rgba(160, 164, 173, 0.8)
+					background-position: 50% 50%
 .text-block
 	max-width: 658px
 	height: 392px
