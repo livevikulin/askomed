@@ -315,7 +315,7 @@
 		background: #F2F2F2
 	.mobile-nav
 		position: fixed
-		top: 56px
+		top: 0
 		left: 0
 		transform: translateX(-100vw)
 		width: 100vw
@@ -334,10 +334,11 @@
 				height: 36px
 				margin-left: 12px
 		.city
-			padding: 10px 0
+			padding-bottom: 10px
 			border-bottom: 1px solid #E0E0E0
 			&__choice
-				margin-left: 24px
+				padding: 10px 0 0 24px
+				transition: 0.3s
 				p
 					display: flex
 					font-family: Open Sans
@@ -347,6 +348,7 @@
 					line-height: 30px
 					color: #454B52
 					margin: 0
+					position: relative
 					span
 						display: flex
 						align-items: center
@@ -363,6 +365,23 @@
 						margin-bottom: 0
 					svg
 						margin-right: 10px
+			&__this
+				display: flex
+				align-items: center
+				svg
+					margin-left: 10px
+			&__block
+				display: none
+				padding-bottom: 10px
+				padding-left: 52px
+			&__other
+				font-family: Open Sans
+				font-style: normal
+				font-weight: normal
+				font-size: 14px
+				line-height: 30px
+				color: #454B52
+				text-decoration: none
 		.nav
 			padding: 13px 24px 20px
 			&__item
@@ -423,6 +442,9 @@
 				font-size: 14px
 				line-height: 21px
 				color: #8E8E8E
+.city-back
+	background: #F5F5F5
+	transition: 0.3s
 .menu-active
 	transform: translateX(0)!important
 	transition: 0.3s
