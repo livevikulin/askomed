@@ -3321,6 +3321,7 @@ ul {
         position: absolute;
         display: flex;
         align-items: center;
+        height: 16px;
         content: url("../img/Arrow.png");
         top: 0;
         right: -30px; }
