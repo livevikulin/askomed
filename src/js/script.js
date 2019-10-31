@@ -135,7 +135,9 @@ $(document).ready(function() {
 	//Инициализация слайдера в причинах
 	$('.reason-slider').slick({
 		arrows: true,
-		infinite: false,
+		autoplay: true,
+		autoplaySpeed: 3500,
+		infinite: true,
 	});
 	
 	//Инициализация слайдера в отзывах
