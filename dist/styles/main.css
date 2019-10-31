@@ -5150,6 +5150,8 @@ table {
 .vaccine-name {
   display: flex;
   width: fit-content;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
   margin: 0;
   position: relative; }
   .vaccine-name__num {
