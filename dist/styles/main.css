@@ -4615,7 +4615,7 @@ table {
     display: flex;
     justify-content: space-between; }
     .ask-block__contacts {
-      max-width: 274px;
+      max-width: 315px;
       height: 228px;
       padding: 35px 43px 65px;
       background: linear-gradient(180deg, rgba(153, 95, 148, 0.95) -3.12%, rgba(160, 70, 120, 0.95) 51.12%, rgba(188, 82, 108, 0.95) 100%); }
