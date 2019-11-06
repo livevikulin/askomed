@@ -7353,6 +7353,11 @@ table {
   .news-box {
     width: 100%;
     min-height: 150px; } }
+    @media (max-width: 580px) {
+  .header-mobile__banner p {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto; } }
     @media all and (max-height: 576px) {
   .fancybox-slide {
     padding-left: 6px;
@@ -7435,6 +7440,11 @@ table {
     @media (max-width: 500px) {
   .news-box__image {
     display: none; } }
+    @media (max-width: 420px) {
+  .header-mobile__banner p {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto; } }
     @media (max-width: 400px) {
   .chief-block__btns .btn {
     width: 100%;
