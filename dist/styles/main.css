@@ -6568,6 +6568,11 @@ table {
       width: 100%;
       height: 100%;
       object-fit: contain; }
+  .info-partner__text {
+    font-family: "Raleway Regular";
+    font-size: 15px;
+    line-height: 25px;
+    color: #454B52; }
 
 .index {
   padding: 100px 0;
