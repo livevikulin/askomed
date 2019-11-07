@@ -7112,8 +7112,6 @@ table {
   .ask-block__form {
     width: 100%; } }
     @media (max-width: 768px) {
-  .hero-slider__slide {
-    height: 250px; }
   .vaccinations-boxes {
     display: none; }
   .vaccinations-mobile {
