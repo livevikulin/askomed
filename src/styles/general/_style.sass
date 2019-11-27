@@ -1382,7 +1382,12 @@ table
 		cursor: pointer
 		position: relative
 		&:hover
-			box-shadow: 0px 2px 15px rgba(0, 113, 207, 0.12)
+			box-shadow: 0px 5px 15px 15px rgba(0, 113, 207, 0.12)
+			.animBtn
+				transition: 0.2s
+				color: #005AA5
+				svg
+					animation: animBtn 0.5s infinite 
 		&__image
 			width: 100%
 			height: 184px
@@ -1579,7 +1584,12 @@ table
 		cursor: pointer
 		position: relative
 		&:hover
-			box-shadow: 0px 2px 15px rgba(0, 113, 207, 0.12)
+			box-shadow: 0px 2px 15px 5px rgba(0, 113, 207, 0.12)
+			.animBtn
+				transition: 0.2s
+				color: #005AA5
+				svg
+					animation: animBtn 0.5s infinite
 		&:last-child
 			margin-bottom: 0
 		&__image
@@ -1985,8 +1995,8 @@ table
 			position: relative
 			span
 				display: block
-				font-family: $RS
-				font-weight: 600
+				font-family: $RM
+				font-weight: 500
 				font-size: 18px
 				line-height: 27px
 				color: $color-text
@@ -3080,6 +3090,11 @@ table
 			border-radius: 8px 0 0 8px
 			border: none
 			outline: none
+			transition: 0.2s
+			&:focus
+				background: #ffffff
+				border: 2px solid #BDDEE9
+				border-right: none
 		&-btn
 			display: flex
 			align-items: center

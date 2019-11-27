@@ -3594,7 +3594,12 @@ table {
     cursor: pointer;
     position: relative; }
     .recommendations-item:hover {
-      box-shadow: 0px 2px 15px rgba(0, 113, 207, 0.12); }
+      box-shadow: 0px 5px 15px 15px rgba(0, 113, 207, 0.12); }
+      .recommendations-item:hover .animBtn {
+        transition: 0.2s;
+        color: #005AA5; }
+        .recommendations-item:hover .animBtn svg {
+          animation: animBtn 0.5s infinite; }
     .recommendations-item__image {
       width: 100%;
       height: 184px;
@@ -3795,7 +3800,12 @@ table {
     cursor: pointer;
     position: relative; }
     .blog-box:hover {
-      box-shadow: 0px 2px 15px rgba(0, 113, 207, 0.12); }
+      box-shadow: 0px 2px 15px 5px rgba(0, 113, 207, 0.12); }
+      .blog-box:hover .animBtn {
+        transition: 0.2s;
+        color: #005AA5; }
+        .blog-box:hover .animBtn svg {
+          animation: animBtn 0.5s infinite; }
     .blog-box:last-child {
       margin-bottom: 0; }
     .blog-box__image {
@@ -4205,8 +4215,8 @@ table {
     position: relative; }
     .services-box__info span {
       display: block;
-      font-family: "Raleway Semibold";
-      font-weight: 600;
+      font-family: "Raleway Medium";
+      font-weight: 500;
       font-size: 18px;
       line-height: 27px;
       color: #454B52; }
@@ -5310,7 +5320,12 @@ table {
     background: #F0F0F0;
     border-radius: 8px 0 0 8px;
     border: none;
-    outline: none; }
+    outline: none;
+    transition: 0.2s; }
+    .choice-drug__search input:focus {
+      background: #ffffff;
+      border: 2px solid #BDDEE9;
+      border-right: none; }
   .choice-drug__search-btn {
     display: flex;
     align-items: center;
