@@ -3,6 +3,7 @@ import "slick-slider";
 import "izimodal";
 import "jquery.maskedinput";
 import "@fancyapps/fancybox";
+import "jquery-ui-bundle";
 
 
 $(document).ready(function() {
@@ -45,6 +46,9 @@ $(document).ready(function() {
 		$('.header-city__choice').slideDown();
 	});
 	
+	//Инициализация селекта
+	$(".js-select").selectmenu();
+	
 	//Запись на прием
 	$('.header-address__item').on('mousemove', function() {
 		$(this).find('.header-address__btn').show();
@@ -86,9 +90,11 @@ $(document).ready(function() {
 	//Маски
 	$("#record_born").mask("99 / 99 / 9999");
 	$(".js-phone").mask("+7 (999)-999-99-99");
+	$("#client_inn").mask("999999999999");
+	$("#client_phone").mask("+7 (999)-999-99-99");
 	
 	//Если инпут заполнен, убираем подсказку
-	var $input = $('.field');
+	var $input = $('.field, #client_message, #client_phone, #client_FIO, #client_inn');
 	$input.on('change', function() {
 		if ($(this).val() != '') {
 			$(this).next('label').hide();

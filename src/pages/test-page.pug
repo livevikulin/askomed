@@ -92,3 +92,59 @@ block content
 					.quote-block
 						span Анна Иванова, врач-иммунолог:
 						p Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого.
+			
+			.client-info
+				h3 Заявление для заказа Справки:
+				._blocks
+					._block
+						span._name 1.  ФИО налогоплательщика:
+						._area
+							span._this ИВАНОВ ИВАН ИВАНОВИЧ
+					._block
+						span._name 2.  ИНН налогоплательщика:
+						._area
+							.input
+								input(type="text" id="client_inn")
+								label(for="client_inn") ИНН
+					._block
+						span._name 3.  фИО клиента, получившего услугу (если налогоплательщик и получивший услугу – одно лицо, пропустите пункт 3 и перейдите к пункту 4:
+						._area
+							.input
+								input(type="text" id="client_FIO")
+								label(for="client_FIO") ФИО
+					._block
+						span._name 4.  Укажите центр вакцинации, где оказывалась услуга вакцинации или серопрофилактики
+						._area
+							select._select.js-select(name="centers")
+								option(value="1") Барнаул, Малахова, 146
+								option(value="2") Барнаул, Мало-Олонская, 17
+								option(value="3") Новосибирск, Крылова, 34
+								option(value="4") Новосибирск, Немировича-Данченко, 165
+					._block
+						span._name 5.  Год, за которые нужна справка:
+						._area
+							select._select.js-select(name="year")
+								option(value="1") 2016
+								option(value="2") 2017
+								option(value="3") 2018
+								option(value="4") 2019
+					._block
+						span._name 6.  Телефон налогоплательщика (необходим для уведомления о готовности справки):
+						._area
+							.input
+								input(type="text" id="client_phone")
+								label(for="client_phone") Номер телефона
+					._block
+						span._name 7.  Центр, откуда планируете забирать справку:
+						._area
+							select._select.js-select(name="centers")
+								option(value="1") Барнаул, Малахова, 146
+								option(value="2") Барнаул, Мало-Олонская, 17
+								option(value="3") Новосибирск, Крылова, 34
+								option(value="4") Новосибирск, Немировича-Данченко, 165
+					._block
+						span._name 8.  Комментарий:
+						._area
+							.input
+								input(type="text" id="client_message")
+								label(for="client_message") Сообщение

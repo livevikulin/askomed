@@ -286,6 +286,61 @@ ul
 			height: 8px
 			background: #005AA5
 			border-radius: 50%
+
+.client-info
+	padding: 24px 0
+	&__block
+		display: flex
+		align-items: center
+		margin-bottom: 24px
+		.input
+			input
+				width: 100%
+	&__area
+		width: 100%
+		.ui-selectmenu-button.ui-button
+			width: 100%
+			outline: none
+			background: none
+			border: none
+			border-bottom: 1px solid #6EC6D3
+			border-radius: 0
+			padding-left: 0
+			padding-right: 0
+		.ui-button .ui-icon
+			background-image: url('../img/arrow-down.png')
+			background-repeat: no-repeat
+			background-position: 50% 50%
+			transition: transform 0.3s
+		.ui-selectmenu-text
+			font-family: $R
+			font-size: 15px
+			line-height: 25px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: #000000
+	&__name
+		display: block
+		width: 100%
+		max-width: 600px
+		font-family: $R
+		font-size: 15px
+		line-height: 25px
+		font-feature-settings: 'pnum' on, 'lnum' on
+		color: #000000
+		margin-right: 24px
+	&__this
+		font-family: $RB
+		font-size: 15px
+		line-height: 25px
+		color: $color-text
+.ui-selectmenu-button-open
+	.ui-icon
+		transform: rotate(180deg)
+.ui-selectmenu-button-closed
+	.ui-icon
+		transform: rotate(0)
+
+
 .quote
 	padding-left: 100px
 	position: relative
@@ -3683,6 +3738,12 @@ table
 			margin-right: 0
 		span
 			display: none
+	.client-info__block
+		flex-direction: column
+		align-items: flex-start
+	.client-info__name
+		margin-right: 0
+		margin-bottom: 8px
 
 @media (max-width: 635px)
 	.feedback

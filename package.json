@@ -60,6 +60,8 @@
 		"jquery-ui-bundle": "^1.12.1-migrate",
 		"jquery.maskedinput": "^1.4.1",
 		"modernizr": "^3.7.1",
+		"select2": "^4.0.12",
+		"selectize": "^0.12.6",
 		"slick-slider": "^1.8.2",
 		"smart-grid": "^2.1.2"
 	}
