@@ -7584,21 +7584,21 @@ table {
       font-feature-settings: 'pnum' on, 'lnum' on;
       color: #525B62;
       text-decoration: none;
-      padding: 16px 21px;
+      padding: 16px 18px;
       white-space: nowrap; }
       .tabs__item a:hover {
         background: #f2f3f4; }
   .tabs-block {
     display: flex;
-    height: 548px;
-    padding: 60px 70px 50px 40px;
-    background: url("../img/bg-vacc.png"); }
+    padding: 60px 40px 50px;
+    border: 15px solid #0064aa;
+    border-image: linear-gradient(90deg, #0064aa 0%, #a04678 50%, #dc1e1e 100%) 20; }
     .tabs-block__image {
       width: 204px;
       height: 204px;
       border-radius: 50%;
       overflow: hidden;
-      margin-right: 50px;
+      margin-right: 35px;
       flex: none; }
       .tabs-block__image img {
         width: 100%;
@@ -7637,7 +7637,7 @@ table {
           margin-left: 5px; }
       .tabs-block__list li:after {
         display: block;
-        content: '...........................................................................................................................';
+        content: '.....................................................................................................................................................';
         overflow: hidden;
         line-height: 25px;
         margin: 0 5px; }
