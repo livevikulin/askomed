@@ -4912,6 +4912,8 @@ ul {
     margin-bottom: 24px; }
     .client-info__block .input input {
       width: 100%; }
+  .client-info__blocks {
+    width: 50%; }
   .client-info__area {
     width: 100%; }
     .client-info__area .ui-selectmenu-button.ui-button {
@@ -4934,6 +4936,11 @@ ul {
       line-height: 25px;
       font-feature-settings: 'pnum' on, 'lnum' on;
       color: #000000; }
+    .client-info__area span {
+      font-family: "Raleway Regular";
+      font-size: 13px;
+      line-height: 22px;
+      color: #6EC6D3; }
   .client-info__name {
     display: block;
     width: 100%;
@@ -9747,6 +9754,8 @@ table {
   .client-info__name {
     margin-right: 0;
     margin-bottom: 8px; }
+  .client-info__blocks {
+    width: 100%; }
   .footer-main {
     display: none; }
   .footer-mobile {

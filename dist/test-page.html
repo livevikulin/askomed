@@ -282,28 +282,34 @@
         <div class="client-info">
           <h3>Заявление для заказа Справки:</h3>
           <div class="client-info__blocks">
-            <div class="client-info__block"><span class="client-info__name">1.  ФИО налогоплательщика:</span>
-              <div class="client-info__area"><span class="client-info__this">ИВАНОВ ИВАН ИВАНОВИЧ</span></div>
+            <div class="client-info__block">
+              <div class="client-info__area">
+                <div class="input">
+                  <input type="text" id="client_tax">
+                  <label for="client_tax">ФИО налогоплательщика</label>
+                </div>
+              </div>
             </div>
-            <div class="client-info__block"><span class="client-info__name">2.  ИНН налогоплательщика:</span>
+            <div class="client-info__block">
               <div class="client-info__area">
                 <div class="input">
                   <input type="text" id="client_inn">
-                  <label for="client_inn">ИНН</label>
+                  <label for="client_inn">ИНН налогоплательщика</label>
                 </div>
               </div>
             </div>
-            <div class="client-info__block"><span class="client-info__name">3.  фИО клиента, получившего услугу (если налогоплательщик и получивший услугу – одно лицо, пропустите пункт 3 и перейдите к пункту 4:</span>
+            <div class="client-info__block">
               <div class="client-info__area">
                 <div class="input">
                   <input type="text" id="client_FIO">
-                  <label for="client_FIO">ФИО</label>
-                </div>
+                  <label for="client_FIO">фИО клиента, получившего услугу</label>
+                </div><span>если налогоплательщик и получивший услугу – одно лицо, пропустите пункт 3</span>
               </div>
             </div>
-            <div class="client-info__block"><span class="client-info__name">4.  Укажите центр вакцинации, где оказывалась услуга вакцинации или серопрофилактики</span>
+            <div class="client-info__block">
               <div class="client-info__area">
                 <select class="client-info__select js-select" name="centers">
+                  <option disabled selected>Укажите центр вакцинации, где оказывалась услуга</option>
                   <option value="1">Барнаул, Малахова, 146</option>
                   <option value="2">Барнаул, Мало-Олонская, 17</option>
                   <option value="3">Новосибирск, Крылова, 34</option>
@@ -311,9 +317,10 @@
                 </select>
               </div>
             </div>
-            <div class="client-info__block"><span class="client-info__name">5.  Год, за которые нужна справка:</span>
+            <div class="client-info__block">
               <div class="client-info__area">
                 <select class="client-info__select js-select" name="year">
+                  <option disabled selected>Год, за который нужна справка</option>
                   <option value="1">2016</option>
                   <option value="2">2017</option>
                   <option value="3">2018</option>
@@ -321,17 +328,18 @@
                 </select>
               </div>
             </div>
-            <div class="client-info__block"><span class="client-info__name">6.  Телефон налогоплательщика (необходим для уведомления о готовности справки):</span>
+            <div class="client-info__block">
               <div class="client-info__area">
                 <div class="input">
                   <input type="text" id="client_phone">
-                  <label for="client_phone">Номер телефона</label>
+                  <label for="client_phone">Телефон налогоплательщика</label>
                 </div>
               </div>
             </div>
-            <div class="client-info__block"><span class="client-info__name">7.  Центр, откуда планируете забирать справку:</span>
+            <div class="client-info__block">
               <div class="client-info__area">
                 <select class="client-info__select js-select" name="centers">
+                  <option disabled selected>Центр, откуда планируете забирать справку</option>
                   <option value="1">Барнаул, Малахова, 146</option>
                   <option value="2">Барнаул, Мало-Олонская, 17</option>
                   <option value="3">Новосибирск, Крылова, 34</option>
@@ -339,14 +347,14 @@
                 </select>
               </div>
             </div>
-            <div class="client-info__block"><span class="client-info__name">8.  Комментарий:</span>
+            <div class="client-info__block">
               <div class="client-info__area">
                 <div class="input">
                   <input type="text" id="client_message">
-                  <label for="client_message">Сообщение</label>
+                  <label for="client_message">Комментарий</label>
                 </div>
               </div>
-            </div>
+            </div><a class="btn" href="#">Отправить</a>
           </div>
         </div>
       </div>
