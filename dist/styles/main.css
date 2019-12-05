@@ -4957,6 +4957,15 @@ ul {
     line-height: 25px;
     color: #454B52; }
 
+.client-form__input {
+  width: 100%;
+  max-width: 585px;
+  margin-bottom: 20px; }
+  .client-form__input .input {
+    width: 100%; }
+    .client-form__input .input input {
+      width: 100%; }
+
 .ui-selectmenu-button-open .ui-icon {
   transform: rotate(180deg); }
 

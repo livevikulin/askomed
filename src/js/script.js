@@ -92,6 +92,7 @@ $(document).ready(function() {
 	$(".js-phone").mask("+7 (999)-999-99-99");
 	$("#client_inn").mask("999999999999");
 	$("#client_phone").mask("+7 (999)-999-99-99");
+	$("#phone_client").mask("+7 (999)-999-99-99");
 	
 	//Если инпут заполнен, убираем подсказку
 	var $input = $('.field, #client_message, #client_phone, #client_FIO, #client_inn');
