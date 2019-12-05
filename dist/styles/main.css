@@ -7575,6 +7575,7 @@ table {
 
 .tabs {
   display: flex;
+  width: 120%;
   list-style: none;
   padding: 0;
   background: #FFFFFF;
@@ -7659,6 +7660,18 @@ table {
         margin: 0 5px; }
       .tabs-block__list .dot-list span {
         float: left; }
+
+.tabs-wrapper {
+  overflow-x: auto;
+  margin-bottom: 16px; }
+  .tabs-wrapper::-webkit-scrollbar {
+    height: 5px; }
+  .tabs-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 50%; }
+  .tabs-wrapper::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #0064aa 0%, #a04678 50%, #dc1e1e 100%);
+    border-radius: 50%; }
 
 .vaccine-name {
   display: flex;
@@ -9336,7 +9349,8 @@ table {
   .tabs {
     flex-wrap: wrap;
     background: none;
-    border: none; }
+    border: none;
+    width: auto; }
   .tabs__item {
     border: 1px solid #BDDEE9;
     border-radius: 6px;

@@ -2939,6 +2939,7 @@ table
 		padding-top: 20px
 .tabs
 	display: flex
+	width: 120%
 	list-style: none
 	padding: 0
 	background: #FFFFFF
@@ -3026,6 +3027,17 @@ table
 			.dot-list
 				span 
 					float: left
+.tabs-wrapper
+	overflow-x: auto
+	margin-bottom: 16px
+	&::-webkit-scrollbar
+		height: 5px
+	&::-webkit-scrollbar-track
+		background: #f1f1f1
+		border-radius: 50%
+	&::-webkit-scrollbar-thumb
+		background: linear-gradient(90deg, #0064aa 0%, #a04678 50%, #dc1e1e 100%)
+		border-radius: 50%
 
 .vaccine-name
 	display: flex
@@ -3316,6 +3328,7 @@ table
 		flex-wrap: wrap
 		background: none
 		border: none
+		width: auto
 	.tabs__item
 		border: 1px solid #BDDEE9
 		border-radius: 6px
