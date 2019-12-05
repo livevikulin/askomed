@@ -6322,10 +6322,12 @@ table {
         bottom: 0;
         background: linear-gradient(to top, #fff 0, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
         cursor: pointer; }
-    .blog-box__tag {
+    .blog-box__tags {
       position: absolute;
       bottom: 20px;
       left: 36px;
+      display: flex; }
+    .blog-box__tag {
       font-family: "Raleway Regular";
       font-size: 13px;
       display: flex;
@@ -6341,6 +6343,8 @@ table {
       .blog-box__tag:hover {
         background: #BDDEE9;
         color: #ffffff; }
+      .blog-box__tag:nth-child(n+2) {
+        margin-left: 8px; }
     .blog-box__next {
       display: block;
       font-family: "Raleway Regular";
@@ -6351,7 +6355,8 @@ table {
       text-align: right;
       position: absolute;
       bottom: 30px;
-      right: 30px; }
+      right: 30px;
+      z-index: 10; }
       .blog-box__next svg {
         margin-left: 5px; }
     .blog-box__link {
@@ -9659,6 +9664,16 @@ table {
     padding: 30px 35px 50px; }
   .blog-box__image {
     display: none; }
+  .blog-box__tags {
+    width: 100%;
+    max-width: 230px;
+    flex-wrap: wrap; }
+  .blog-box__tag:nth-child(3n+3) {
+    margin-left: 0; }
+  .blog-box__tag:nth-child(n+3) {
+    margin-top: 4px; }
+  .blog-box__text:after {
+    background: linear-gradient(to top, #fff 30%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%); }
   .pagination-num a {
     padding: 10px 15px; }
   .blog-tabs {
@@ -9947,6 +9962,13 @@ table {
     width: 100%;
     margin-bottom: 15px; }
     .chief-block__btns .btn:last-child {
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+  .blog-box__tags {
+    max-width: 190px; }
+  .blog-box__tag:nth-child(n+2) {
+    margin-top: 8px;
+    margin-left: 0; }
+  .blog-box__text:after {
+    background: linear-gradient(to top, #fff 55%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%); } }
 
 /*# sourceMappingURL=maps/main.css.map */
