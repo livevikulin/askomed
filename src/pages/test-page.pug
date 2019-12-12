@@ -146,27 +146,34 @@ block content
 							.input
 								input(type="text" id="client_message")
 								label(for="client_message") Комментарий
+					.checkbox
+						input(type="checkbox" id="checkbox_info")
+						label(for="checkbox_info") Я согласен с политикой конфиденциальности и пользовательским соглашением
 					a.btn(href="#") Отправить
 			.client-form
 				h3 Вакцинация юр. лица форма
-				._input
-					.input
-						input(type="text" id="name_client" class="field")
-						label(for="name_client") Ваше имя
-				._input
-					.input
-						input(type="text" id="name_company" class="field")
-						label(for="name_company") Название компании
-				._input
-					.input
-						input(type="text" id="phone_client" class="field")
-						label(for="phone_client") Телефон
-				._input
-					.input
-						input(type="text" id="mail_client" class="field")
-						label(for="mail_client") Электронный адрес
-				._input
-					.input
-						input(type="text" id="message_client" class="field")
-						label(for="message_client") Ваше сообщение
-				a.btn(href="#") Отправить
+				._blocks
+					._input
+						.input
+							input(type="text" id="name_client" class="field")
+							label(for="name_client") Ваше имя
+					._input
+						.input
+							input(type="text" id="name_company" class="field")
+							label(for="name_company") Название компании
+					._input
+						.input
+							input(type="text" id="phone_client" class="field")
+							label(for="phone_client") Телефон
+					._input
+						.input
+							input(type="text" id="mail_client" class="field")
+							label(for="mail_client") Электронный адрес
+					._input
+						.input
+							input(type="text" id="message_client" class="field")
+							label(for="message_client") Ваше сообщение
+					.checkbox
+						input(type="checkbox" id="checkbox_info2")
+						label(for="checkbox_info2") Я согласен с политикой конфиденциальности и пользовательским соглашением
+					a.btn(href="#") Отправить
